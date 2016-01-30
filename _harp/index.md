@@ -1,7 +1,9 @@
-# AMS GDA
 ### The AMS Game Development Association
 
 Hi there! We're the AMS-GDA, a student run game design team here at the UBC. Every year, we get together and make a new game, mixing in our collective creative efforts to make a fun, engaging game that's hard to put down. We work towards expanding our knowledge of the tools, techniques, and processes used in video game development. Speakers from the industry also come in and do Q&As. We even host mini Game Jams every year.
+
+
+
 Can you code? Illustrate? Make music? Market like Mad Men? Join us! We accept anyone willing to contribute. If you've got other skills or want to start from scratch and have an appetite for learning, we'd love to have you. Sign up here
 ## Current Project
 ### Billy's First World
@@ -10,7 +12,7 @@ Billy's First World is our First (ha) game! It's a top-down shooter that takes p
 
 ## Team
 
-* [<img src]Gowtham Mohan - Founder, President, Developer
+* Gowtham Mohan - Founder, President, Developer
 * Jeanie Suparman - VP Internal, Developer
 * Mahta Kamyab - Art Designer, Club Secratary
 * Shrey Swades Nayak - Treasurer
@@ -20,6 +22,7 @@ Billy's First World is our First (ha) game! It's a top-down shooter that takes p
 * Jay Friso - Lead Developer
 * Max Ahn - Lead Gameplay Designer
 * You? - Think you'd be a good fit with us? Sign up here
+
 
 ## FAQ
 * What happens in club meetings?
