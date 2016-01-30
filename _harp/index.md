@@ -11,7 +11,7 @@ Can you code? Illustrate? Make music? Love games? Join us! We accept anyone will
 * Gowtham Mohan - Founder, President, Developer
 * Jeanie Suparman - VP Internal, Developer
 * Mahta Kamyab - Art Designer, Club Secratary
-* Shrey Swades Nayak - Treasurer
+* Shrey Swades Nayak - Treasurer, Gameplay Designer
 * Saif Sajid - Web Developer, Designer
 * Shobhit Sahu - Marketing Director
 * Pinia Chandra - Lead Art Designer
