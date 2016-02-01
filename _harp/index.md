@@ -1,4 +1,4 @@
-### THE AMS GAME DEVELOPMENT ASSOCIATION
+### The ams game development association
 
 Hi there! We're AGDA , a student-run game  development team here at UBC. Every year, we get together and make new games, mixing in our collective talent and creative efforts to make a fun, engaging game that's hard to put down. Our goal is to work towards expanding our knowledge of the tools, techniques, and processes used in video game development. Speakers from the industry also come in and do Q&As. We also host an annual Vancouver game jam!
 
@@ -8,15 +8,16 @@ Can you code? Illustrate? Make music? Love games? Join us! We accept anyone will
 
 ### The Team
 
-* Gowtham Mohan - Founder, President, Developer
-* Jeanie Suparman - VP Internal, Developer
-* Mahta Kamyab - Art Designer, Club Secratary
-* Shrey Swades Nayak - Treasurer, Gameplay Designer
-* Saif Sajid - Web Developer, Designer
-* Shobhit Sahu - Marketing Director
-* Pinia Chandra - Lead Art Designer
-* Jay Friso - Lead Developer
+* Gowtham Mohan -  President, Developer
+* Jeanie Suparman -  Advisor, Developer
+* Mahta Kamyab -  Administrator, Art Designer
+* Shrey Swades Nayak -  Treasurer, Gameplay Designer
+* Jay Friso - Lead Gameplay Developer
 * Max Ahn - Lead Gameplay Designer
+* Pinia Chandra - Lead Art Designer
+* Saif Sajid - Web Developer, Designer
+* Shobhit Sahu - Marketing Lead
+* Ryan Crasta - Events & Recruitment Lead
 * You? - Think you'd be a good fit with us? [Sign up!](https://docs.google.com/forms/d/120_DmU-KcXTUjz_B-NMoEUqNyv2p-vMc6qTl5qvhP_0/viewform?usp=send_form)
 
 
