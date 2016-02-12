@@ -8,17 +8,46 @@ Can you code? Illustrate? Make music? Love games? Join us! We accept anyone will
 
 ### The Team
 
-* Gowtham Mohan -  President, Developer
-* Jeanie Suparman -  Advisor, Developer
-* Mahta Kamyab -  Administrator, Art Designer
-* Shrey Swades Nayak -  Treasurer, Gameplay Designer
-* Jay Friso - Lead Gameplay Developer
-* Max Ahn - Lead Gameplay Designer
-* Pinia Chandra - Lead Art Designer
-* Saif Sajid - Web Developer, Designer
-* Shobhit Sahu - Marketing Lead
-* Ryan Crasta - Events & Recruitment Lead
-* You? - Think you'd be a good fit with us? [Sign up!](https://docs.google.com/forms/d/120_DmU-KcXTUjz_B-NMoEUqNyv2p-vMc6qTl5qvhP_0/viewform?usp=send_form)
+<div class="grid">
+  <div class="col-1-3">
+		 <img src="images/gowtham.jpg">
+     <p class='name'>Gowtham Mohan</p>
+     <p class='role'>President, Developer</p>
+		 
+  </div>
+  <div class="col-1-3">
+		 <img src="images/jeanie.jpg">
+     <p class='name'>Jeanie Suparman</p>
+     <p class='role'>Advisor, Developer</p>
+		 
+  </div>
+  <div class="col-1-3">
+		 <img src="images/shrey.jpg">
+     <p class='name'>Shrey Swades Nayak</p>
+     <p class='role'>Treasurer, Gameplay Designer</p>
+		 
+  </div>
+  <div class="col-1-3">
+ 		 <img src="images/jay.jpg">
+     <p class='name'>Jay Friso</p>
+     <p class='role'>Lead Gameplay Developer</p>
+		 
+  </div>
+  <div class="col-1-3">
+ 	 <img src="images/max.jpg">
+		
+     <p class='name'>Max Ahn</p>
+     <p class='role'>Lead Gameplay Designer</p>
+		 
+  </div>
+  <div class="col-1-3">
+ 	 <img src="images/ryan.jpg">
+		
+     <p class='name'>Ryan Crasta</p>
+     <p class='role'>Events &amp; Recruitment Lead</p>
+		 
+  </div>
+</div>
 
 
 ### FAQ
