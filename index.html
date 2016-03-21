@@ -1,23 +1,288 @@
-<!DOCTYPE html><html><head><link rel="stylesheet" href="css/main.css"><link rel="stylesheet" href="css/animate.css"><title>AGDA</title></head><body><img id="logo" src="images/logo.png"><h3>The ams game development association</h3><p>Hi there! We&#39;re AGDA , a student-run game  development team here at UBC. Every year, we get together and make new games, mixing in our collective talent and creative efforts to make a fun, engaging game that&#39;s hard to put down. Our goal is to work towards expanding our knowledge of the tools, techniques, and processes used in video game development. Speakers from the industry also come in and do Q&amp;As. We also host an annual Vancouver game jam!</p>
-<p>Can you code? Illustrate? Make music? Love games? Join us! We accept anyone willing to contribute. If you aren’t a pro then here’s your chance to become one: <a href="https://docs.google.com/forms/d/120_DmU-KcXTUjz_B-NMoEUqNyv2p-vMc6qTl5qvhP_0/viewform?usp=send_form">Sign up here!</a></p>
-<h3>The Team</h3><ul>
-<li>Gowtham Mohan -  President, Developer</li>
-<li>Jeanie Suparman -  Advisor, Developer</li>
-<li>Mahta Kamyab -  Administrator, Art Designer</li>
-<li>Shrey Swades Nayak -  Treasurer, Gameplay Designer</li>
-<li>Jay Friso - Lead Gameplay Developer</li>
-<li>Max Ahn - Lead Gameplay Designer</li>
-<li>Pinia Chandra - Lead Art Designer</li>
-<li>Saif Sajid - Web Developer</li>
-<li>Shobhit Sahu - Marketing Lead</li>
-<li>Ryan Crasta - Events &amp; Recruitment Lead</li>
-<li>You? - Think you&#39;d be a good fit with us? <a href="https://docs.google.com/forms/d/120_DmU-KcXTUjz_B-NMoEUqNyv2p-vMc6qTl5qvhP_0/viewform?usp=send_form">Sign up!</a></li>
-</ul>
-<h3>FAQ</h3><p><strong>How often do you meet?</strong></p>
-<p>Each team has a weekly meeting. Team leaders will also have additional short meetings with club executives to give updates/concerns. We also hold weekly jam sessions. They are optional, but it&#39;s the perfect time and environment for you to work on your game!</p>
-<p><strong>What happens in club meetings?</strong></p>
-<p>The weekly meeting will be for addressing the things  you have been up to, problems you encountered, game planning, setting up goals and milestones among yourselves, and of course making games.  Keep everyone in the circle!</p>
-<p><strong>Can I join mid-semester?</strong></p>
-<p>Sure! We work continuously throughout the semester and there will be some catching up to do, but if you&#39;re up for it, we&#39;d love to have you.</p>
-<p><strong>What&#39;s the developement environment?</strong></p>
-<p>We mainly work with the Unity game engine, so it might be a good idea to get familiar through a few tutorials. We also use Tiled, Photoshop and Blender. We used those software last year, but we constantly found new things we can try and are better suited for certain purposes- so feel free to explore and use any software you like! </p></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>AGDA</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/grayscale.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <!--<i class="fa fa-play-circle"></i>  <span class="light">Start</span> Bootstrap-->
+					
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#download">Download</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+		<style>
+		#myCanvas {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+		}
+		.intro-body {
+			z-index: 2;
+		}
+		</style>
+		<canvas id="myCanvas" ></canvas>
+		
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">We<span id="we"> Make </span>Games</h1>
+                        <p class="intro-text">We are the AMS Game Development Association.<br>Created at UBC.</p>
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+	
+	<script type="text/paperscript" canvas="myCanvas">
+		// The amount of circles we want to make:
+		var count = 150;
+
+		var clrs = ["ff481b", "red", "green", "blue","yellow"]
+
+		// Create a symbol, which we will use to place instances of later:
+		var path = new Path.Circle({
+			center: [0, 0],
+			radius: 10,
+			fillColor: "rgba(255, 255, 255, .3)",
+			strokeColor: 'rgba(255, 255, 255, .35)'
+		});
+
+		var symbol = new Symbol(path);
+		
+
+		// Place the instances of the symbol:
+		for (var i = 0; i < count; i++) {
+			// The center position is a random point in the view:
+			var center = Point.random() * view.size;
+			var placedSymbol = symbol.place(center);
+			placedSymbol.scale(i / count);
+		}
+
+		// The onFrame function is called up to 60 times a second:
+		function onFrame(event) {
+			// Run through the active layer's children list and change
+			// the position of the placed symbols:
+			for (var i = 0; i < count; i++) {
+				var item = project.activeLayer.children[i];
+		
+				// Move the item 1/20th of its width to the right. This way
+				// larger circles move faster than smaller circles:
+				item.position.x += item.bounds.width / 20;
+
+				// If the item has left the view on the right, move it back
+				// to the left:
+				if (item.bounds.left > view.size.width) {
+					item.position.x = -item.bounds.width;
+				}
+			}
+		}
+		
+		project.currentStyle.fillColor = 'black';
+
+		tool.fixedDistance = 30;
+
+		function onMouseDrag(event) {			
+			var center = event.middlePoint;
+			var placedSymbol = symbol.place(center);
+			count++;
+		}
+	</script>
+	
+
+    <!-- About Section -->
+    <section id="about" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>About AGDA</h2>
+                <p>Hi there! We're AGDA , a student-run game development team here at UBC. Every year, we get together and make new games, mixing in our collective talent and creative efforts to make a fun, engaging game that's hard to put down. Our goal is to work towards expanding our knowledge of the tools, techniques, and processes used in video game development. Speakers from the industry also come in and do Q&amp;As. We also host an annual Vancouver game jam!
+
+</p>
+                <p>Can you code? Illustrate? Make music? Love games? Join us! We accept anyone willing to contribute. If you aren’t a pro then here’s your chance to become one: <a href="https://docs.google.com/forms/d/120_DmU-KcXTUjz_B-NMoEUqNyv2p-vMc6qTl5qvhP_0/viewform?usp=send_form">Sign up here!</a></p>
+            </div>
+        </div>
+		
+		<div class="grid">
+		  <div class="col-md-4">
+		         <img src="img/gowtham.jpg">
+		     <p class="name">Gowtham Mohan</p>
+		     <p class="role">President, Developer</p>
+
+		  </div>
+		  <div class="col-md-4">
+		         <img src="img/jeanie.jpg">
+		     <p class="name">Jeanie Suparman</p>
+		     <p class="role">Advisor, Developer</p>
+
+		  </div>
+		  <div class="col-md-4">
+		         <img src="img/shrey.jpg">
+		     <p class="name">Shrey Swades Nayak</p>
+		     <p class="role">Treasurer, Gameplay Designer</p>
+
+		  </div>
+		  <div class="col-md-4">
+		          <img src="img/jay.jpg">
+		     <p class="name">Jay Friso</p>
+		     <p class="role">Lead Gameplay Developer</p>
+
+		  </div>
+		  <div class="col-md-4">
+		      <img src="img/max.jpg">
+
+		     <p class="name">Max Ahn</p>
+		     <p class="role">Lead Gameplay Designer</p>
+
+		  </div>
+		  <div class="col-d">
+		      <img src="img/ryan.jpg">
+
+		     <p class="name">Ryan Crasta</p>
+		     <p class="role">Events &amp; Recruitment Lead</p>
+
+		  </div>
+		</div>
+    </section>
+
+    <!-- Download Section 
+    <section id="download" class="content-section text-center">
+        <div class="download-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Download Grayscale</h2>
+                    <p>You can download Grayscale for free on the preview page at Start Bootstrap.</p>
+                    <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a>
+                </div>
+            </div>
+        </div>
+    </section> 
+-->
+		
+	<section class="container content-section text-center">
+		<h3>FAQ</h3><p><strong>How often do you meet?</strong></p>
+		<p>Each team has a weekly meeting. Team leaders will also have additional short meetings with club executives to give updates/concerns. We also hold weekly jam sessions. They are optional, but it&#39;s the perfect time and environment for you to work on your game!</p>
+		<p><strong>What happens in club meetings?</strong></p>
+		<p>The weekly meeting will be for addressing the things  you have been up to, problems you encountered, game planning, setting up goals and milestones among yourselves, and of course making games.  Keep everyone in the circle!</p>
+		<p><strong>Can I join mid-semester?</strong></p>
+		<p>Sure! We work continuously throughout the semester and there will be some catching up to do, but if you&#39;re up for it, we&#39;d love to have you.</p>
+		<p><strong>What&#39;s the developement environment?</strong></p>
+		<p>We mainly work with the Unity game engine, so it might be a good idea to get familiar through a few tutorials. We also use Tiled, Photoshop and Blender. We used those software last year, but we constantly found new things we can try and are better suited for certain purposes- so feel free to explore and use any software you like! </p>
+	</section>
+	
+    <!-- Contact Section -->
+    <section id="contact" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Contact AGDA</h2>
+                <p>Feel free to email us if you have any questions, or to just say hello!</p>
+                <p><a href="mailto:contact@amsgda.com">contact@amsgda.com</a>
+                </p><!--
+                <ul class="list-inline banner-social-buttons">
+                    <li>
+                        <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                    </li>
+                    <li>
+                        <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
+                    </li>
+                </ul>-->
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <div id="map"></div>
+
+    <!-- Footer 
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; Your Website 2014</p>
+        </div>
+    </footer> -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/paper-full.min.js"></script>
+	
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ 
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>  -->
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/grayscale.js"></script>
+
+</body>
+
+</html>
