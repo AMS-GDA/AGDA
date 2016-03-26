@@ -1,0 +1,65 @@
+﻿/* global settings */
+[class*='col-']:last-of-type {
+    padding: 40px;
+}
+
+[class*='col-'] {
+    float: none;
+}
+
+.content-section {
+    padding-top: 0;
+}
+
+/* section-specific settings */
+.intro {
+    padding-top: 0;
+}
+
+.placeholder {
+    visibility: hidden;
+}
+
+.love, .play, .make {
+    position: absolute;
+}
+
+.play, .make {
+    display: none;
+}
+
+.about__pictures > div {
+    float: left;
+}
+
+.about__text {
+    margin-top: 10vh;
+}
+
+.faq__title {
+    margin-top: 10vh;
+}
+
+.contact__information {
+    margin-top: 35vh;
+}
+
+/* for bigger screens */
+@media (min-width: 768px) {
+    .intro-body {
+        padding-bottom: 200px;
+    }
+}
+
+/* for smaller screens */
+@media (max-width: 991px) {
+    .about__pictures > div {
+        float: none;
+    }
+}
+
+@media (max-width: 1199px) {
+    .about__pictures > div:last-of-type {
+        padding: 40px 0 40px 35px;
+    }
+}

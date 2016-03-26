@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -16,6 +16,7 @@
 
     <!-- Custom CSS -->
     <link href="css/grayscale.css" rel="stylesheet">
+    <link href="css/AgdaGlobalStyles.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -57,7 +58,7 @@
                         <a class="page-scroll" href="#about">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#download">Download</a>
+                        <a class="page-scroll" href="#FAQ">FAQ</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
@@ -87,7 +88,14 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">We<span id="we"> Make </span>Games</h1>
+                        <h1 class="brand-heading">
+                        We
+                            <span class="love"> Love </span>
+                            <span class="play"> Play </span>
+                            <span class="make"> Make </span>
+                            <span class="placeholder"> Play </span>
+                        Games
+                        </h1>
                         <p class="intro-text">We are the AMS Game Development Association.<br>Created at UBC.</p>
                         <a href="#about" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
@@ -155,9 +163,9 @@
 	
 
     <!-- About Section -->
-    <section id="about" class="container content-section text-center">
+    <section id="about" class="container content-section text-center about">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
+            <div class="col-lg-8 col-lg-offset-2 about__text">
                 <h2>About AGDA</h2>
                 <p>Hi there! We're AGDA , a student-run game development team here at UBC. Every year, we get together and make new games, mixing in our collective talent and creative efforts to make a fun, engaging game that's hard to put down. Our goal is to work towards expanding our knowledge of the tools, techniques, and processes used in video game development. Speakers from the industry also come in and do Q&amp;As. We also host an annual Vancouver game jam!
 
@@ -166,7 +174,7 @@
             </div>
         </div>
 		
-		<div class="grid">
+		<div class="grid about__pictures">
 		  <div class="col-md-4">
 		         <img src="img/gowtham.jpg">
 		     <p class="name">Gowtham Mohan</p>
@@ -222,8 +230,9 @@
     </section> 
 -->
 		
-	<section class="container content-section text-center">
-		<h3>FAQ</h3><p><strong>How often do you meet?</strong></p>
+	<section id="FAQ" class="container content-section text-center faq">
+		<h3 class="faq__title">FAQ</h3>
+        <p><strong>How often do you meet?</strong></p>
 		<p>Each team has a weekly meeting. Team leaders will also have additional short meetings with club executives to give updates/concerns. We also hold weekly jam sessions. They are optional, but it&#39;s the perfect time and environment for you to work on your game!</p>
 		<p><strong>What happens in club meetings?</strong></p>
 		<p>The weekly meeting will be for addressing the things  you have been up to, problems you encountered, game planning, setting up goals and milestones among yourselves, and of course making games.  Keep everyone in the circle!</p>
@@ -234,9 +243,9 @@
 	</section>
 	
     <!-- Contact Section -->
-    <section id="contact" class="container content-section text-center">
+    <section id="contact" class="container content-section text-center contact">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
+            <div class="col-lg-8 col-lg-offset-2 contact__information">
                 <h2>Contact AGDA</h2>
                 <p>Feel free to email us if you have any questions, or to just say hello!</p>
                 <p><a href="mailto:info@amsgda.com">info@amsgda.com</a>
@@ -281,6 +290,7 @@
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>  -->
 
     <!-- Custom Theme JavaScript -->
+    <script src="js/AgdaGlobalScripts.js"></script>
     <script src="js/grayscale.js"></script>
 
 </body>
