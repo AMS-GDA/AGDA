@@ -67,3 +67,18 @@
         padding: 40px 0 40px 35px;
     }
 }
+
+.q_block {
+    margin-bottom: 30px;
+}
+
+.question {
+    /*font-family: 'Titillium Web', sans-serif;*/
+    font-weight: bold;
+    margin: 0 0 0px;
+}
+
+.answer {
+    /*font-family: 'Antic Slab', serif;*/
+    margin: 0 0 0px;
+}
