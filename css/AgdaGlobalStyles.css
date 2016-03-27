@@ -112,3 +112,8 @@ h3 {
     font-family: 'Antic Slab', serif;
     font-size: 18px;
 }
+
+.clip-circle {
+    -webkit-clip-path: circle(55% at 50% 65%);
+    clip-path: circle(50% at 50% 50%);
+}
