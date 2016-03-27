@@ -73,12 +73,42 @@
 }
 
 .question {
-    /*font-family: 'Titillium Web', sans-serif;*/
+    font-family: 'Antic Slab', serif;
     font-weight: bold;
     margin: 0 0 0px;
 }
 
 .answer {
-    /*font-family: 'Antic Slab', serif;*/
+    font-family: 'Antic Slab', serif;
     margin: 0 0 0px;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    margin: 0 0 16px;
+}
+
+.subtitle{
+    font-family: 'Antic Slab', serif;
+    font-size: 32px;
+    margin: 0 0 0px;
+}
+
+.content-text {
+    font-family: 'Antic Slab', serif;
+    /*font-size: 32px;*/
+    margin: 0 0 0px;
+}
+
+.name {
+    font-family: 'Antic Slab', serif;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0 0 0px;
+}
+
+.role {
+    font-family: 'Antic Slab', serif;
+    font-size: 18px;
 }
