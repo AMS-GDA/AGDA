@@ -176,13 +176,15 @@ ul.nav.navbar-nav {
 }
 [class*='col-'] {
     float: left;
-    height: 300px
+}
+.intro [class*='col-'] {
+    height: 300px;
 }
 .col-2-3 {
-    width: 66.66%
+    width: 66.66%;
 }
 .col-1-3 {
-    width: 33.33%
+    width: 33.33%;
 }
 .grid:after {
     content: "";
