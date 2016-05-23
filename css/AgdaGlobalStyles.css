@@ -28,8 +28,18 @@
     display: none;
 }
 
+.about__pictures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .about__pictures > div {
     float: left;
+}
+
+.about__pictures > h3 {
+    width: 100%;
 }
 
 .about__text {
@@ -59,12 +69,6 @@
 @media (max-width: 991px) {
     .about__pictures > div {
         float: none;
-    }
-}
-
-@media (max-width: 1199px) {
-    .about__pictures > div:last-of-type {
-        padding: 40px 0 40px 35px;
     }
 }
 
@@ -113,7 +117,7 @@ h3 {
     font-size: 18px;
 }
 
-.clip-circle {
-    -webkit-clip-path: circle(55% at 50% 65%);
-    clip-path: circle(50% at 50% 50%);
+.headshot {
+  max-width: 100%;
+  border-radius: 50%;
 }
