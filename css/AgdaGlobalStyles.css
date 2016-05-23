@@ -122,8 +122,14 @@ h3 {
   max-width: 100%;
   border-radius: 50%;
   transition: background-image ease 0.4s;
-  min-height: 185px;
+  min-height: 250px;
   background-size: cover;
+}
+
+@media (max-width: 1199px) {
+    .headshot {
+        min-height: 185px;
+    }
 }
 
 @media (max-width: 991px) {
