@@ -32,6 +32,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    transition: all ease 1s;
 }
 
 .about__pictures > div {
@@ -120,4 +121,78 @@ h3 {
 .headshot {
   max-width: 100%;
   border-radius: 50%;
+  transition: background-image ease 0.4s;
+  min-height: 185px;
+  background-size: cover;
+}
+
+@media (max-width: 991px) {
+    .headshot {
+        height: 240px;
+        width: 200px;
+    }
+}
+
+/*
+ *
+ *
+ * INDIVIDUAL HEADSHOT PROPERTIES
+ *
+ *
+ */
+
+ .headshot.gowtham {
+   background-image: url(../img/headshots/old/gowtham.jpg);
+ }
+
+ .headshot.gowtham:hover {
+   background-image: url(../img/headshots/gowtham.jpg);
+ }
+
+ .headshot.jeanie {
+   background-image: url(../img/headshots/old/jeanie.jpg);
+ }
+
+ .headshot.jeanie:hover {
+   background-image: url(../img/headshots/jeanie.jpg);
+ }
+
+.headshot.shrey {
+  background-image: url(../img/headshots/shrey.jpg);
+}
+
+.headshot.shrey:hover {
+  background-image: url(../img/headshots/funshot-shrey.jpg);
+}
+
+.headshot.maia {
+  background-image: url(../img/headshots/maia.jpg);
+}
+
+.headshot.maia:hover {
+  background-image: url(../img/headshots/funshot-maia.jpg);
+}
+
+.headshot.jay {
+  background-image: url(../img/headshots/jay.jpg);
+}
+
+.headshot.jay:hover {
+  background-image: url(../img/headshots/funshot-jay.jpg);
+}
+
+.headshot.max {
+  background-image: url(../img/headshots/max.jpg);
+}
+
+.headshot.max:hover {
+  background-image: url(../img/headshots/funshot-max.jpg);
+}
+
+.headshot.pinia {
+  background-image: url(../img/headshots/pinia.jpg);
+}
+
+.headshot.pinia:hover {
+  background-image: url(../img/headshots/funshot-pinia.jpg);
 }
