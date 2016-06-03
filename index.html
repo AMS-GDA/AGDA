@@ -26,6 +26,7 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <link href="css/lightbox.css" rel="stylesheet">
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -46,6 +47,9 @@
                 </li>
                 <li>
                     <a class="page-scroll" href="#about">About</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#gallery">Gallery</a>
                 </li>
                 <li>
                     <a class="page-scroll" href="#FAQ">FAQ</a>
@@ -84,10 +88,11 @@
                         <span class="placeholder"> Play </span>
                         Games
                     </h1>
+
                     <p class="subtitle">
-                      We are the AMS Game Development Association.
-                      <br />
-                      Created at UBC.
+                        We are the AMS Game Development Association.
+                        <br/>
+                        Created at UBC.
                     </p>
                     <a href="#about" class="btn btn-circle page-scroll">
                         <i class="fa fa-angle-double-down animated"></i>
@@ -140,6 +145,14 @@
 			var placedSymbol = symbol.place(center);
 			count++;
 		}
+
+
+
+
+
+
+
+
 </script>
 
 <!-- About Section -->
@@ -147,6 +160,7 @@
     <div class="row">
         <div class="col-lg-8 col-lg-offset-2 about__text">
             <h3>About AGDA</h3>
+
             <p class="content-text">
                 Hi there! We're AGDA , a student-run game development team here
                 at UBC. Every year, we get together and make new games, mixing
@@ -157,14 +171,15 @@
                 industry also come in and do Q&amp;As. We also host an annual
                 Vancouver game jam!
             </p>
+
             <p class="content-text">
                 Can you code? Illustrate? Make music? Love games? Join us! We
                 accept anyone willing to contribute. If you aren’t a pro then
                 here’s your chance to become one:
                 <a href="http://goo.gl/forms/mp2duef7xwYRoOWq2">
-                  Sign up here!
+                    Sign up here!
                 </a>
-                <br />
+                <br/>
                 Even if you'd rather play games than make them, there is still
                 a place for you here.
             </p>
@@ -172,50 +187,99 @@
     </div>
     <div class="grid about__pictures">
         <h3>Our Team</h3>
+
         <div class="col-md-4 .col-xs-12">
             <div class="headshot gowtham"></div>
             <p class="name">Gowtham Mohan</p>
+
             <p class="role">President, Developer</p>
         </div>
         <div class="col-md-4 .col-xs-12">
             <div class="headshot jeanie"></div>
             <p class="name">Jeanie Suparman</p>
+
             <p class="role">Vice President, Developer</p>
         </div>
         <div class="col-md-4 .col-xs-12">
             <div class="headshot shrey"></div>
             <p class="name">Shrey Swades Nayak</p>
+
             <p class="role">Treasurer, Gameplay Designer</p>
         </div>
         <div class="col-md-4 .col-xs-12">
             <div class="headshot maia"></div>
             <p class="name">Maia Kamyab</p>
+
             <p class="role">Secretary, Background Artist</p>
         </div>
         <div class="col-md-4 .col-xs-12">
             <div class="headshot jay"></div>
             <p class="name">Jay Friso</p>
+
             <p class="role">Lead Gameplay Developer</p>
         </div>
         <div class="col-md-4 .col-xs-12">
             <div class="headshot max"></div>
             <p class="name">Max Ahn</p>
+
             <p class="role">Lead Gameplay Designer</p>
         </div>
         <div class="col-md-4 .col-xs-12">
             <div class="headshot pinia"></div>
             <p class="name">Pinia Chandra</p>
+
             <p class="role">Lead Artist</p>
         </div>
     </div>
 </section>
 
+
+<!-- Gallery -->
+<section id="gallery" class="container text-center">
+
+
+    <div class="grid about__pictures">
+        <h3>Gallery</h3>
+
+        <div class="col-md-4 .col-xs-12">
+            <a href="img/gallery/mop_screen_1.png" data-lightbox="mop">
+                <img class="img-responsive"
+                     src="img/gallery/mop_screen_1.png">
+            </a>
+        </div>
+
+        <div class="col-md-4 .col-xs-12">
+            <a href="img/gallery/mop_screen_2.png" data-lightbox="mop">
+                <img class="img-responsive"
+                     src="img/gallery/mop_screen_2.png">
+            </a>
+        </div>
+
+        <div class="col-md-4 .col-xs-12">
+            <a href="img/gallery/mop_screen_3.jpeg" data-lightbox="mop">
+                <img class="img-responsive"
+                     src="img/gallery/mop_screen_3.jpeg">
+            </a>
+        </div>
+        <!-- TODO use javascript to load all images together -->
+        <!--
+         <div class="col-md-4 .col-xs-12">
+            <a href="img/image" data-lightbox="none">
+                <img class="img-responsive"
+                     src="img/image">
+            </a>
+        </div>-->
+    </div>
+</section>
+
 <section id="FAQ" class="container content-section text-center faq">
     <h3 class="faq__title">FAQ</h3>
+
     <div class="q_block">
         <p class="question">
-          How often do we meet?
+            How often do we meet?
         </p>
+
         <p class="answer">
             Each team has a weekly meeting. Team leaders will also have
             additional short meetings with club executives to give
@@ -228,6 +292,7 @@
         <p class="question">
             What happens in our club meetings?
         </p>
+
         <p class="answer">
             The weekly meeting will be for addressing the things you have been
             up to, problems you encountered, game planning, setting up goals and
@@ -237,19 +302,21 @@
     </div>
     <div class="q_block">
         <p class="question">Can I join mid-semester?</p>
+
         <p class="answer">
-          Sure! We work continuously throughout the semester and there will be
-          some catching up to do, but if you&#39;re up for it, we&#39;d love to
-          have you.</p>
+            Sure! We work continuously throughout the semester and there will be
+            some catching up to do, but if you&#39;re up for it, we&#39;d love to
+            have you.</p>
     </div>
     <div class="q_block">
         <p class="question">What&#39;s the development environment?</p>
+
         <p class="answer">
-          We mainly work with the Unity game engine, so it might be a good idea
-          to get familiar through a few tutorials. We also use Tiled, Photoshop
-          and Blender. We used those software last year, but we constantly found
-          new things we can try and are better suited for certain purposes- so
-          feel free to explore and use any software you like!</p>
+            We mainly work with the Unity game engine, so it might be a good idea
+            to get familiar through a few tutorials. We also use Tiled, Photoshop
+            and Blender. We used those software last year, but we constantly found
+            new things we can try and are better suited for certain purposes- so
+            feel free to explore and use any software you like!</p>
     </div>
 </section>
 
@@ -258,11 +325,13 @@
     <div class="row">
         <div class="col-lg-8 col-lg-offset-2 contact__information">
             <h3>Contact AGDA</h3>
+
             <p class="content-text">
-              Feel free to email us if you have any questions, or to just say hello!
+                Feel free to email us if you have any questions, or to just say hello!
             </p>
+
             <p class="content-text">
-              <a href="mailto:info@amsgda.com">info@amsgda.com</a>
+                <a href="mailto:info@amsgda.com">info@amsgda.com</a>
             </p>
         </div>
     </div>
@@ -281,6 +350,8 @@
 <!-- Custom Theme JavaScript -->
 <script src="js/AgdaGlobalScripts.js"></script>
 <script src="js/grayscale.js"></script>
+
+<script src="js/lightbox.js"></script>
 
 </body>
 
