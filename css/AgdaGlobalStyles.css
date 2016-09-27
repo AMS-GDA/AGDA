@@ -202,3 +202,11 @@ h3 {
 .headshot.pinia:hover {
   background-image: url(../img/headshots/funshot-pinia.jpg);
 }
+
+.headshot.eamonn {
+  background-image: url(../img/headshots/eamonn.jpg);
+}
+
+.headshot.eamonn:hover {
+  background-image: url(../img/headshots/funshot-eamonn.jpg);
+}
