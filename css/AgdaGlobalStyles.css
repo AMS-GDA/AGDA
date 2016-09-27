@@ -1,10 +1,10 @@
 ﻿/* global settings */
 [class*='col-']:last-of-type {
-    padding: 40px;
+  padding: 40px;
 }
 
 [class*='col-'] {
-    float: none;
+  float: none;
 }
 
 .content-section {
@@ -36,11 +36,11 @@
 }
 
 .about__pictures > div {
-    float: left;
+  float: left;
 }
 
 .about__pictures > h3 {
-    width: 100%;
+  width: 100%;
 }
 
 .about__text {
@@ -80,50 +80,76 @@
 .question {
     font-family: 'Antic Slab', serif;
     font-weight: bold;
-    margin: 0 0 0px;
+    margin: 0;
 }
 
 .answer {
     font-family: 'Antic Slab', serif;
-    margin: 0 0 0px;
+    margin: 0;
 }
 
 h3 {
     font-family: 'Montserrat', sans-serif;
     font-size: 32px;
-    margin: 0 0 16px;
+    margin: 0;
+		margin-bottom: 16px;
 }
 
 .subtitle{
     font-family: 'Antic Slab', serif;
     font-size: 32px;
-    margin: 0 0 0px;
+    margin: 0;
 }
 
 .content-text {
     font-family: 'Antic Slab', serif;
-    /*font-size: 32px;*/
-    margin: 0 0 0px;
+    margin: 0;
+}
+
+.exec-grid {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 }
 
 .name {
     font-family: 'Antic Slab', serif;
     font-weight: bold;
     font-size: 18px;
-    margin: 0 0 0px;
+    margin: 0;
 }
 
 .role {
     font-family: 'Antic Slab', serif;
     font-size: 18px;
+		margin-bottom: 5px;
 }
 
 .headshot {
-  max-width: 100%;
-  border-radius: 50%;
-  transition: background-image ease 0.4s;
-  min-height: 250px;
-  background-size: cover;
+	  max-width: 100%;
+	  border-radius: 50%;
+	  transition: background-image ease 0.4s;
+	  min-height: 250px;
+	  background-size: cover;
+}
+
+.linkedin,
+.github {
+		background-size: contain;
+		background-repeat: no-repeat;
+		width: 45px;
+		height: 45px;
+		display: inline-block;;
+		margin: 0 auto;
+		cursor: pointer;
+}
+
+.linkedin {
+		background-image: url(../img/linkedin.png);
+}
+
+.github {
+		background-image: url(../img/github.png);
 }
 
 @media (max-width: 1199px) {
@@ -136,6 +162,7 @@ h3 {
     .headshot {
         height: 240px;
         width: 200px;
+				margin: 0 auto;
     }
 }
 
