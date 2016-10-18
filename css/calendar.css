@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+}
+
+.calendar-logo__wrapper {
+    height: 50px;
+    padding: 5px;
+}
+
+.calendar-logo__content {
+    display: block;
+    height: 100%;
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.calendar_content {
+    padding: 10px;
+}

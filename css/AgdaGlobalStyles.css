@@ -1,10 +1,10 @@
 ﻿/* global settings */
 [class*='col-']:last-of-type {
-  padding: 40px;
+    padding: 40px;
 }
 
 [class*='col-'] {
-  float: none;
+    float: none;
 }
 
 .content-section {
@@ -20,7 +20,9 @@
     visibility: hidden;
 }
 
-.love, .play, .make {
+.love,
+.play,
+.make {
     position: absolute;
 }
 
@@ -36,11 +38,11 @@
 }
 
 .about__pictures > div {
-  float: left;
+    float: left;
 }
 
 .about__pictures > h3 {
-  width: 100%;
+    width: 100%;
 }
 
 .about__text {
@@ -92,7 +94,7 @@ h3 {
     font-family: 'Montserrat', sans-serif;
     font-size: 32px;
     margin: 0;
-		margin-bottom: 16px;
+	margin-bottom: 16px;
 }
 
 .subtitle{
@@ -107,9 +109,9 @@ h3 {
 }
 
 .exec-grid {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .name {
@@ -122,34 +124,34 @@ h3 {
 .role {
     font-family: 'Antic Slab', serif;
     font-size: 18px;
-		margin-bottom: 5px;
+	margin-bottom: 5px;
 }
 
 .headshot {
-	  max-width: 100%;
-	  border-radius: 50%;
-	  transition: background-image ease 0.4s;
-	  min-height: 250px;
-	  background-size: cover;
+  max-width: 100%;
+  border-radius: 50%;
+  transition: background-image ease 0.4s;
+  min-height: 250px;
+  background-size: cover;
 }
 
 .linkedin,
 .github {
-		background-size: contain;
-		background-repeat: no-repeat;
-		width: 45px;
-		height: 45px;
-		display: inline-block;;
-		margin: 0 auto;
-		cursor: pointer;
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 45px;
+	height: 45px;
+	display: inline-block;;
+	margin: 0 auto;
+	cursor: pointer;
 }
 
 .linkedin {
-		background-image: url(../img/linkedin.png);
+	background-image: url(../img/linkedin.png);
 }
 
 .github {
-		background-image: url(../img/github.png);
+	background-image: url(../img/github.png);
 }
 
 @media (max-width: 1199px) {
@@ -162,7 +164,7 @@ h3 {
     .headshot {
         height: 240px;
         width: 200px;
-				margin: 0 auto;
+		margin: 0 auto;
     }
 }
 
@@ -174,66 +176,66 @@ h3 {
  *
  */
 
- .headshot.gowtham {
-   background-image: url(../img/headshots/old/gowtham.jpg);
- }
+.headshot.gowtham {
+    background-image: url(../img/headshots/old/gowtham.jpg);
+}
 
- .headshot.gowtham:hover {
-   background-image: url(../img/headshots/gowtham.jpg);
- }
+.headshot.gowtham:hover {
+    background-image: url(../img/headshots/gowtham.jpg);
+}
 
- .headshot.jeanie {
-   background-image: url(../img/headshots/old/jeanie.jpg);
- }
+.headshot.jeanie {
+    background-image: url(../img/headshots/old/jeanie.jpg);
+}
 
- .headshot.jeanie:hover {
-   background-image: url(../img/headshots/jeanie.jpg);
- }
+.headshot.jeanie:hover {
+    background-image: url(../img/headshots/jeanie.jpg);
+}
 
 .headshot.shrey {
-  background-image: url(../img/headshots/old/shrey.jpg);
+    background-image: url(../img/headshots/old/shrey.jpg);
 }
 
 .headshot.shrey:hover {
-  background-image: url(../img/headshots/funshot-shrey.jpg);
+    background-image: url(../img/headshots/funshot-shrey.jpg);
 }
 
 .headshot.maia {
-  background-image: url(../img/headshots/maia.jpg);
+    background-image: url(../img/headshots/maia.jpg);
 }
 
 .headshot.maia:hover {
-  background-image: url(../img/headshots/funshot-maia.jpg);
+    background-image: url(../img/headshots/funshot-maia.jpg);
 }
 
 .headshot.jay {
-  background-image: url(../img/headshots/jay.jpg);
+    background-image: url(../img/headshots/jay.jpg);
 }
 
 .headshot.jay:hover {
-  background-image: url(../img/headshots/funshot-jay.jpg);
+    background-image: url(../img/headshots/funshot-jay.jpg);
 }
 
 .headshot.max {
-  background-image: url(../img/headshots/max.jpg);
+    background-image: url(../img/headshots/max.jpg);
 }
 
 .headshot.max:hover {
-  background-image: url(../img/headshots/funshot-max.jpg);
+    background-image: url(../img/headshots/funshot-max.jpg);
 }
 
 .headshot.pinia {
-  background-image: url(../img/headshots/pinia.jpg);
+    background-image: url(../img/headshots/pinia.jpg);
 }
 
 .headshot.pinia:hover {
-  background-image: url(../img/headshots/funshot-pinia.jpg);
+    background-image: url(../img/headshots/funshot-pinia.jpg);
 }
 
 .headshot.eamonn {
-  background-image: url(../img/headshots/eamonn.jpg);
+    background-image: url(../img/headshots/eamonn.jpg);
 }
 
 .headshot.eamonn:hover {
-  background-image: url(../img/headshots/funshot-eamonn.jpg);
+    background-image: url(../img/headshots/funshot-eamonn.jpg);
 }
