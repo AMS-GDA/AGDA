@@ -11,6 +11,10 @@
     padding-top: 0;
 }
 
+body {
+    font-family: 'Lato', sans-serif;
+}
+
 /* Bubble canvas */
 
 #myCanvas {
@@ -92,31 +96,28 @@
 }
 
 .question {
-    font-family: 'Antic Slab', serif;
     font-weight: bold;
     margin: 0;
 }
 
 .answer {
-    font-family: 'Antic Slab', serif;
     margin: 0;
+    line-height: 1.25;
 }
 
 h3 {
-    font-family: 'Montserrat', sans-serif;
     font-size: 32px;
     margin: 0;
 	margin-bottom: 16px;
 }
 
 .subtitle{
-    font-family: 'Antic Slab', serif;
     font-size: 32px;
     margin: 0;
+    line-height: 1.25;
 }
 
 .content-text {
-    font-family: 'Antic Slab', serif;
     margin: 0;
 }
 
@@ -127,14 +128,12 @@ h3 {
 }
 
 .name {
-    font-family: 'Antic Slab', serif;
     font-weight: bold;
     font-size: 18px;
     margin: 0;
 }
 
 .role {
-    font-family: 'Antic Slab', serif;
     font-size: 18px;
 	margin-bottom: 5px;
 }
@@ -182,9 +181,7 @@ h3 {
 
 /*
  *
- *
  * INDIVIDUAL HEADSHOT PROPERTIES
- *
  *
  */
 
