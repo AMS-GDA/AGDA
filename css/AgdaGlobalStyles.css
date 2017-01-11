@@ -11,9 +11,21 @@
     padding-top: 0;
 }
 
+/* Bubble canvas */
+
+#myCanvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
 /* section-specific settings */
 .intro {
     padding-top: 0;
+}
+
+.intro-body {
+    z-index: 2;
 }
 
 .placeholder {
