@@ -12,42 +12,30 @@ body {
 }
 
 section {
-    padding: 50px;
-    min-height: 100vh;
-    display: flex;
+    border-bottom: #fff solid 1px;
 }
 
 .content-wrapper {
+    padding: 50px;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100%;
-    border: #fff solid 1px;
-    background-size: cover;
+}
+
+.vr-main,
+.vr-signup,
+.vr-pros {
+    background-image: url(../images/vr.png);
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
 }
 
-section:nth-child(odd) .content-wrapper {
-    background-image: url(http://www.investors.com/wp-content/uploads/2016/04/CLICK02_Oculus_042116_company.jpg);
-}
-
-section:nth-child(even) .content-wrapper {
-    background-image: url(../images/background-1.jpg);
-}
-
-section:first-child .content-wrapper {
-    background: #000;
-}
-
 .vr-main {
     padding: 0;
-}
-
-.vr-main .content-wrapper {
-    border: none;
-    padding: 50px;
 }
 
 .section-header {
@@ -57,6 +45,48 @@ section:first-child .content-wrapper {
 .vr-header {
     font-size: 45px;
     padding: 20px;
+    text-align: center;
+}
+
+.vr-header-welcome {
+    margin: 0;
+    font-size: 16px;
+}
+
+.vr-quick-access {
+    width: 100%;
+}
+
+.vr-quick-access-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 35px;
+}
+
+.vr-quick-access-header {
+    text-align: center;
+    margin: 0;
+    padding: 15px;
+}
+
+.vr-quick-access-menu li {
+    padding: 5px;
+}
+
+.vr-quick-access-menu li:hover {
+    font-size: 20px;
+    text-shadow: 0 0 8px rgb(255,255,255);
+}
+
+.vr-quick-access-menu a {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .vr-introduction {
