@@ -15,6 +15,10 @@ section {
     border-bottom: #fff solid 1px;
 }
 
+section:last-child {
+    border: none;
+}
+
 .content-wrapper {
     padding: 50px;
     min-height: 100vh;
@@ -40,6 +44,7 @@ section {
 
 .section-header {
     font-size: 25px;
+    text-align: center;
 }
 
 .vr-header {
@@ -55,6 +60,7 @@ section {
 
 .vr-quick-access {
     width: 100%;
+    max-width: 800px;
 }
 
 .vr-quick-access-menu {
@@ -109,9 +115,23 @@ section {
     padding: 5px 0;
 }
 
+.vr-signup {
+    text-align: center;
+}
+
 .vr-signup a {
     color: #fff;
     cursor: pointer;
     font-size: 40px;
     text-decoration: none;
+}
+
+.vr-signup a:hover {
+    text-shadow: 0 0 8px rgb(255,255,255);
+}
+
+@media all and (max-width: 768px) {
+    .vr-quick-access {
+        display: none;
+    }
 }
