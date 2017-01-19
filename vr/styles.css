@@ -29,8 +29,8 @@ section:last-child {
 }
 
 .vr-main,
-.vr-signup,
-.vr-pros {
+.vr-pros,
+.vr-contact {
     background-image: url(../images/vr.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -48,51 +48,14 @@ section:last-child {
 }
 
 .vr-header {
-    font-size: 45px;
+    font-size: 65px;
     padding: 20px;
     text-align: center;
 }
 
 .vr-header-welcome {
     margin: 0;
-    font-size: 16px;
-}
-
-.vr-quick-access {
-    width: 100%;
-    max-width: 800px;
-}
-
-.vr-quick-access-menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    min-height: 35px;
-}
-
-.vr-quick-access-header {
-    text-align: center;
-    margin: 0;
-    padding: 15px;
-}
-
-.vr-quick-access-menu li {
-    padding: 5px;
-}
-
-.vr-quick-access-menu li:hover {
     font-size: 20px;
-    text-shadow: 0 0 8px rgb(255,255,255);
-}
-
-.vr-quick-access-menu a {
-    color: #fff;
-    text-decoration: none;
-    cursor: pointer;
 }
 
 .vr-introduction {
@@ -117,6 +80,7 @@ section:last-child {
 
 .vr-signup {
     text-align: center;
+    padding: 20px 10px;
 }
 
 .vr-signup a {
@@ -130,8 +94,13 @@ section:last-child {
     text-shadow: 0 0 8px rgb(255,255,255);
 }
 
+.vr-contact a {
+    color: #fff;
+    text-decoration: none;
+}
+
 @media all and (max-width: 768px) {
-    .vr-quick-access {
-        display: none;
+    .vr-header {
+        font-size: 55px;
     }
 }
