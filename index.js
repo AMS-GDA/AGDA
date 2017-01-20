@@ -5,7 +5,6 @@ import Home from './components/Home.jsx';
 import Calendar from './components/Calendar.jsx';
 import Vr from './components/Vr.jsx';
 import About from './components/About.jsx';
-import Menu from './components/Menu/Menu.jsx';
 
 const router = (
     <Router history={browserHistory}>
@@ -17,9 +16,6 @@ const router = (
 );
 
 ReactDOM.render(
-    <div>
-        <Menu />
-        {router}
-    </div>,
+    {router},
     document.getElementById('home')
 );

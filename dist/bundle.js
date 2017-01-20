@@ -72,10 +72,6 @@
 	
 	var _About2 = _interopRequireDefault(_About);
 	
-	var _Menu = __webpack_require__(238);
-	
-	var _Menu2 = _interopRequireDefault(_Menu);
-	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var router = _react2.default.createElement(
@@ -87,12 +83,7 @@
 	    _react2.default.createElement(_reactRouter.Route, { name: 'about', path: '/about', component: _About2.default })
 	);
 	
-	_reactDom2.default.render(_react2.default.createElement(
-	    'div',
-	    null,
-	    _react2.default.createElement(_Menu2.default, null),
-	    router
-	), document.getElementById('home'));
+	_reactDom2.default.render({ router: router }, document.getElementById('home'));
 
 /***/ },
 /* 1 */
@@ -26636,6 +26627,7 @@
 	            return _react2.default.createElement(
 	                'div',
 	                null,
+	                _react2.default.createElement(_Menu2.default, null),
 	                _react2.default.createElement(
 	                    'div',
 	                    { className: _home2.default.intro },
