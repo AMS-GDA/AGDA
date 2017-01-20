@@ -64,13 +64,21 @@
 	
 	var _Calendar2 = _interopRequireDefault(_Calendar);
 	
-	var _Vr = __webpack_require__(246);
+	var _Vr = __webpack_require__(248);
 	
 	var _Vr2 = _interopRequireDefault(_Vr);
 	
-	var _About = __webpack_require__(247);
+	var _About = __webpack_require__(249);
 	
 	var _About2 = _interopRequireDefault(_About);
+	
+	var _Members = __webpack_require__(252);
+	
+	var _Members2 = _interopRequireDefault(_Members);
+	
+	var _Teams = __webpack_require__(253);
+	
+	var _Teams2 = _interopRequireDefault(_Teams);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -80,7 +88,9 @@
 	    _react2.default.createElement(_reactRouter.Route, { name: 'home', path: '/', component: _Home2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { name: 'calendar', path: '/calendar', component: _Calendar2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { name: 'vr', path: '/vr', component: _Vr2.default }),
-	    _react2.default.createElement(_reactRouter.Route, { name: 'about', path: '/about', component: _About2.default })
+	    _react2.default.createElement(_reactRouter.Route, { name: 'about', path: '/about', component: _About2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { name: 'members', path: '/members', component: _Members2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { name: 'teams', path: '/members/teams', component: _Teams2.default })
 	), document.getElementById('home'));
 
 /***/ },
@@ -27068,6 +27078,15 @@
 	                    { className: _menu2.default.menuItem },
 	                    _react2.default.createElement(
 	                        _reactRouter.Link,
+	                        { to: 'members' },
+	                        'Member Resources'
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: _menu2.default.menuItem },
+	                    _react2.default.createElement(
+	                        _reactRouter.Link,
 	                        { to: 'vr' },
 	                        'VR Division'
 	                    )
@@ -27220,6 +27239,15 @@
 	                    { className: _mobileMenu2.default.menuItem },
 	                    _react2.default.createElement(
 	                        _reactRouter.Link,
+	                        { to: 'members' },
+	                        'Member Resources'
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: _mobileMenu2.default.menuItem },
+	                    _react2.default.createElement(
+	                        _reactRouter.Link,
 	                        { to: 'vr' },
 	                        'VR Division'
 	                    )
@@ -27343,7 +27371,7 @@
 	
 	var _utility = __webpack_require__(241);
 	
-	var _calendar = __webpack_require__(248);
+	var _calendar = __webpack_require__(246);
 	
 	var _calendar2 = _interopRequireDefault(_calendar);
 	
@@ -27367,6 +27395,49 @@
 
 /***/ },
 /* 246 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(247);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(237)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../node_modules/css-loader/index.js?{\"modules\":true,\"localIdentName\":\"[name]__[local]___[hash:base64:5]\"}!./calendar.css", function() {
+				var newContent = require("!!./../node_modules/css-loader/index.js?{\"modules\":true,\"localIdentName\":\"[name]__[local]___[hash:base64:5]\"}!./calendar.css");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 247 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(236)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, ".calendar__container___2JbU_ {\n    padding: 20px 10px;\n}\n\n.calendar__containerDesktop___2wzj5 {\n    padding: 10px 20px;\n}\n", ""]);
+	
+	// exports
+	exports.locals = {
+		"container": "calendar__container___2JbU_",
+		"containerDesktop": "calendar__containerDesktop___2wzj5"
+	};
+
+/***/ },
+/* 248 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -27415,7 +27486,7 @@
 	exports.default = Vr;
 
 /***/ },
-/* 247 */
+/* 249 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -27464,47 +27535,104 @@
 	exports.default = About;
 
 /***/ },
-/* 248 */
+/* 250 */,
+/* 251 */,
+/* 252 */
 /***/ function(module, exports, __webpack_require__) {
 
-	// style-loader: Adds some css to the DOM by adding a <style> tag
+	'use strict';
 	
-	// load the styles
-	var content = __webpack_require__(249);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(237)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../node_modules/css-loader/index.js?{\"modules\":true,\"localIdentName\":\"[name]__[local]___[hash:base64:5]\"}!./calendar.css", function() {
-				var newContent = require("!!./../node_modules/css-loader/index.js?{\"modules\":true,\"localIdentName\":\"[name]__[local]___[hash:base64:5]\"}!./calendar.css");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var Membrs = function (_Component) {
+	  _inherits(Membrs, _Component);
+	
+	  function Membrs() {
+	    _classCallCheck(this, Membrs);
+	
+	    return _possibleConstructorReturn(this, (Membrs.__proto__ || Object.getPrototypeOf(Membrs)).apply(this, arguments));
+	  }
+	
+	  _createClass(Membrs, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'h1',
+	        null,
+	        'Hello this is members'
+	      );
+	    }
+	  }]);
+	
+	  return Membrs;
+	}(_react.Component);
+	
+	exports.default = Membrs;
 
 /***/ },
-/* 249 */
+/* 253 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(236)();
-	// imports
+	'use strict';
 	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 	
-	// module
-	exports.push([module.id, ".calendar__container___2JbU_ {\n    padding: 20px 10px;\n}\n\n.calendar__containerDesktop___2wzj5 {\n    padding: 10px 20px;\n}\n", ""]);
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
-	// exports
-	exports.locals = {
-		"container": "calendar__container___2JbU_",
-		"containerDesktop": "calendar__containerDesktop___2wzj5"
-	};
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var Teams = function (_Component) {
+	  _inherits(Teams, _Component);
+	
+	  function Teams() {
+	    _classCallCheck(this, Teams);
+	
+	    return _possibleConstructorReturn(this, (Teams.__proto__ || Object.getPrototypeOf(Teams)).apply(this, arguments));
+	  }
+	
+	  _createClass(Teams, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'h1',
+	        null,
+	        'Hello this is teams'
+	      );
+	    }
+	  }]);
+	
+	  return Teams;
+	}(_react.Component);
+	
+	exports.default = Teams;
 
 /***/ }
 /******/ ]);

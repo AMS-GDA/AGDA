@@ -18,6 +18,7 @@ export default class MobileMenu extends Component {
                 <div className={css.menuItem}><Link to="/">Home</Link></div>
                 <div className={css.menuItem}><Link to="about">About</Link></div>
                 <div className={css.menuItem}><Link to="calendar">Calendar</Link></div>
+                <div className={css.menuItem}><Link to="members">Member Resources</Link></div>
                 <div className={css.menuItem}><Link to="vr">VR Division</Link></div>
             </div>
         );
