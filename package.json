@@ -30,6 +30,8 @@
     "classnames": "^2.2.5",
     "clean-webpack-plugin": "^0.1.15",
     "css-loader": "^0.26.1",
+    "eslint": "^3.13.1",
+    "eslint-plugin-react": "^6.9.0",
     "style-loader": "^0.13.1",
     "webpack": "^1.14.0",
     "webpack-dev-server": "^1.16.2"
