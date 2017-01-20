@@ -74,16 +74,14 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	var router = _react2.default.createElement(
+	_reactDom2.default.render(_react2.default.createElement(
 	    _reactRouter.Router,
 	    { history: _reactRouter.browserHistory },
 	    _react2.default.createElement(_reactRouter.Route, { name: 'home', path: '/', component: _Home2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { name: 'calendar', path: '/calendar', component: _Calendar2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { name: 'vr', path: '/vr', component: _Vr2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { name: 'about', path: '/about', component: _About2.default })
-	);
-	
-	_reactDom2.default.render({ router: router }, document.getElementById('home'));
+	), document.getElementById('home'));
 
 /***/ },
 /* 1 */
@@ -27030,44 +27028,49 @@
 	function desktopMenu() {
 	    return _react2.default.createElement(
 	        'div',
-	        { className: _menu2.default.wrapper },
+	        null,
+	        _react2.default.createElement('div', { className: _menu2.default.placeholder }),
 	        _react2.default.createElement(
 	            'div',
-	            { className: _menu2.default.menuItem },
-	            _react2.default.createElement(
-	                _reactRouter.Link,
-	                { to: '/' },
-	                'Home'
-	            )
-	        ),
-	        _react2.default.createElement(
-	            'div',
-	            { className: _menu2.default.itemWrapper },
+	            { className: _menu2.default.wrapper },
 	            _react2.default.createElement(
 	                'div',
 	                { className: _menu2.default.menuItem },
 	                _react2.default.createElement(
 	                    _reactRouter.Link,
-	                    { to: 'about' },
-	                    'About'
+	                    { to: '/' },
+	                    'Home'
 	                )
 	            ),
 	            _react2.default.createElement(
 	                'div',
-	                { className: _menu2.default.menuItem },
+	                { className: _menu2.default.itemWrapper },
 	                _react2.default.createElement(
-	                    _reactRouter.Link,
-	                    { to: 'calendar' },
-	                    'Calendar'
-	                )
-	            ),
-	            _react2.default.createElement(
-	                'div',
-	                { className: _menu2.default.menuItem },
+	                    'div',
+	                    { className: _menu2.default.menuItem },
+	                    _react2.default.createElement(
+	                        _reactRouter.Link,
+	                        { to: 'about' },
+	                        'About'
+	                    )
+	                ),
 	                _react2.default.createElement(
-	                    _reactRouter.Link,
-	                    { to: 'vr' },
-	                    'VR Division'
+	                    'div',
+	                    { className: _menu2.default.menuItem },
+	                    _react2.default.createElement(
+	                        _reactRouter.Link,
+	                        { to: 'calendar' },
+	                        'Calendar'
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: _menu2.default.menuItem },
+	                    _react2.default.createElement(
+	                        _reactRouter.Link,
+	                        { to: 'vr' },
+	                        'VR Division'
+	                    )
 	                )
 	            )
 	        )
@@ -27109,13 +27112,14 @@
 	
 	
 	// module
-	exports.push([module.id, ".menu__wrapper___3wYGK {\n    display: flex;\n    width: 100vw;\n    height: 30px;\n    justify-content: space-between;\n    color: #fff;\n    background-color: #000;\n    position: fixed;\n    top: 0;\n    left: 0;\n    box-shadow: 0px 0px 10px #fff;\n}\n\n.menu__itemWrapper___3eztX {\n    display: flex;\n}\n\n.menu__menuItem___6eH0Z {\n    padding: 0 5px;\n}\n\n.menu__menuItem___6eH0Z a {\n    text-decoration: none;\n    color: inherit;\n    padding: 7px;\n    line-height: 1;\n    display: block;\n}\n\n.menu__menuItem___6eH0Z a:hover {\n    cursor: pointer;\n    background-color: #666;\n}\n", ""]);
+	exports.push([module.id, ".menu__wrapper___3wYGK {\n    display: flex;\n    width: 100vw;\n    height: 30px;\n    justify-content: space-between;\n    color: #fff;\n    background-color: #000;\n    position: fixed;\n    top: 0;\n    left: 0;\n    box-shadow: 0px 0px 10px #fff;\n}\n\n.menu__itemWrapper___3eztX {\n    display: flex;\n}\n\n.menu__menuItem___6eH0Z {\n    padding: 0 5px;\n}\n\n.menu__menuItem___6eH0Z a {\n    text-decoration: none;\n    color: inherit;\n    padding: 7px;\n    line-height: 1;\n    display: block;\n}\n\n.menu__menuItem___6eH0Z a:hover {\n    cursor: pointer;\n    background-color: #666;\n}\n\n.menu__placeholder___3FoNc {\n    height: 30px;\n    width:100%;\n    display: block;\n    position: relative;\n}\n", ""]);
 	
 	// exports
 	exports.locals = {
 		"wrapper": "menu__wrapper___3wYGK",
 		"itemWrapper": "menu__itemWrapper___3eztX",
-		"menuItem": "menu__menuItem___6eH0Z"
+		"menuItem": "menu__menuItem___6eH0Z",
+		"placeholder": "menu__placeholder___3FoNc"
 	};
 
 /***/ },
@@ -27325,47 +27329,41 @@
 	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
-	  value: true
+	    value: true
 	});
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	exports.default = Calendar;
 	
 	var _react = __webpack_require__(1);
 	
 	var _react2 = _interopRequireDefault(_react);
 	
+	var _Menu = __webpack_require__(238);
+	
+	var _Menu2 = _interopRequireDefault(_Menu);
+	
+	var _utility = __webpack_require__(241);
+	
+	var _calendar = __webpack_require__(248);
+	
+	var _calendar2 = _interopRequireDefault(_calendar);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	var Calendar = function (_Component) {
-	  _inherits(Calendar, _Component);
-	
-	  function Calendar() {
-	    _classCallCheck(this, Calendar);
-	
-	    return _possibleConstructorReturn(this, (Calendar.__proto__ || Object.getPrototypeOf(Calendar)).apply(this, arguments));
-	  }
-	
-	  _createClass(Calendar, [{
-	    key: 'render',
-	    value: function render() {
-	      return _react2.default.createElement(
-	        'h1',
+	function Calendar() {
+	    var calendarLink = 'https://calendar.google.com/calendar/embed?title=AGDA%20Events%20%26%20Deadlines&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=ja39g1205oba012pbbt1j4ci74%40group.calendar.google.com&amp;color=%23B1440E&amp;src=fna27vp4jdb7sb15d0rqvk5ljs%40group.calendar.google.com&amp;color=%23691426&amp;ctz=America%2FVancouver';
+	    var deviceHeight = window.innerHeight;
+	    var iframeLink = _react2.default.createElement('iframe', { src: calendarLink, width: '100%', height: (0, _utility.isMobile)() ? deviceHeight - 40 : deviceHeight - 54, frameBorder: '0', scrolling: 'no' });
+	    return _react2.default.createElement(
+	        'div',
 	        null,
-	        'Hello this is calendar'
-	      );
-	    }
-	  }]);
-	
-	  return Calendar;
-	}(_react.Component);
-	
-	exports.default = Calendar;
+	        _react2.default.createElement(_Menu2.default, null),
+	        _react2.default.createElement(
+	            'div',
+	            { className: (0, _utility.isMobile)() ? _calendar2.default.container : _calendar2.default.containerDesktop },
+	            iframeLink
+	        )
+	    );
+	}
 
 /***/ },
 /* 246 */
@@ -27464,6 +27462,49 @@
 	}(_react.Component);
 	
 	exports.default = About;
+
+/***/ },
+/* 248 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(249);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(237)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../node_modules/css-loader/index.js?{\"modules\":true,\"localIdentName\":\"[name]__[local]___[hash:base64:5]\"}!./calendar.css", function() {
+				var newContent = require("!!./../node_modules/css-loader/index.js?{\"modules\":true,\"localIdentName\":\"[name]__[local]___[hash:base64:5]\"}!./calendar.css");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 249 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(236)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, ".calendar__container___2JbU_ {\n    padding: 20px 10px;\n}\n\n.calendar__containerDesktop___2wzj5 {\n    padding: 10px 20px;\n}\n", ""]);
+	
+	// exports
+	exports.locals = {
+		"container": "calendar__container___2JbU_",
+		"containerDesktop": "calendar__containerDesktop___2wzj5"
+	};
 
 /***/ }
 /******/ ]);

@@ -10,12 +10,15 @@ export default function Menu() {
 
 function desktopMenu() {
     return (
-        <div className={css.wrapper}>
-            <div className={css.menuItem}><Link to="/">Home</Link></div>
-            <div className={css.itemWrapper}>
-                <div className={css.menuItem}><Link to="about">About</Link></div>
-                <div className={css.menuItem}><Link to="calendar">Calendar</Link></div>
-                <div className={css.menuItem}><Link to="vr">VR Division</Link></div>
+        <div>
+            <div className={css.placeholder}></div>
+            <div className={css.wrapper}>
+                <div className={css.menuItem}><Link to="/">Home</Link></div>
+                <div className={css.itemWrapper}>
+                    <div className={css.menuItem}><Link to="about">About</Link></div>
+                    <div className={css.menuItem}><Link to="calendar">Calendar</Link></div>
+                    <div className={css.menuItem}><Link to="vr">VR Division</Link></div>
+                </div>
             </div>
         </div>
     );
