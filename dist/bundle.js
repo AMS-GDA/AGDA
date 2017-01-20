@@ -72,15 +72,26 @@
 	
 	var _About2 = _interopRequireDefault(_About);
 	
+	var _Menu = __webpack_require__(238);
+	
+	var _Menu2 = _interopRequireDefault(_Menu);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	_reactDom2.default.render(_react2.default.createElement(
+	var router = _react2.default.createElement(
 	    _reactRouter.Router,
 	    { history: _reactRouter.browserHistory },
 	    _react2.default.createElement(_reactRouter.Route, { name: 'home', path: '/', component: _Home2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { name: 'calendar', path: '/calendar', component: _Calendar2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { name: 'vr', path: '/vr', component: _Vr2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { name: 'about', path: '/about', component: _About2.default })
+	);
+	
+	_reactDom2.default.render(_react2.default.createElement(
+	    'div',
+	    null,
+	    _react2.default.createElement(_Menu2.default, null),
+	    router
 	), document.getElementById('home'));
 
 /***/ },
@@ -26625,7 +26636,6 @@
 	            return _react2.default.createElement(
 	                'div',
 	                null,
-	                _react2.default.createElement(_Menu2.default, null),
 	                _react2.default.createElement(
 	                    'div',
 	                    { className: _home2.default.intro },
@@ -27032,7 +27042,11 @@
 	        _react2.default.createElement(
 	            'div',
 	            { className: _menu2.default.menuItem },
-	            'Home'
+	            _react2.default.createElement(
+	                _reactRouter.Link,
+	                { to: '/' },
+	                'Home'
+	            )
 	        ),
 	        _react2.default.createElement(
 	            'div',
@@ -27103,7 +27117,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".menu__wrapper___3wYGK {\n    display: flex;\n    width: 100vw;\n    height: 30px;\n    justify-content: space-between;\n}\n\n.menu__itemWrapper___3eztX {\n    display: flex;\n}\n\n.menu__menuItem___6eH0Z {\n    padding: 7px;\n    line-height: 1;\n}\n\n.menu__menuItem___6eH0Z a {\n    text-decoration: none;\n    color: inherit;\n}\n\n.menu__menuItem___6eH0Z a:hover {\n    cursor: pointer;\n}\n", ""]);
+	exports.push([module.id, ".menu__wrapper___3wYGK {\n    display: flex;\n    width: 100vw;\n    height: 30px;\n    justify-content: space-between;\n    color: #fff;\n    background-color: #000;\n    position: fixed;\n    top: 0;\n    left: 0;\n    box-shadow: 0px 0px 10px #fff;\n}\n\n.menu__itemWrapper___3eztX {\n    display: flex;\n}\n\n.menu__menuItem___6eH0Z {\n    padding: 0 5px;\n}\n\n.menu__menuItem___6eH0Z a {\n    text-decoration: none;\n    color: inherit;\n    padding: 7px;\n    line-height: 1;\n    display: block;\n}\n\n.menu__menuItem___6eH0Z a:hover {\n    cursor: pointer;\n    background-color: #666;\n}\n", ""]);
 	
 	// exports
 	exports.locals = {
@@ -27123,7 +27137,7 @@
 	});
 	exports.isMobile = isMobile;
 	function isMobile() {
-	    return window !== null && typeof window !== 'undefined' && window.innerWidth < 768;
+	    return window !== null && typeof window !== 'undefined' && window.innerWidth < 500;
 	}
 
 /***/ },

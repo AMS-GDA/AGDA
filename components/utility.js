@@ -1,3 +1,3 @@
 export function isMobile() {
-    return window !== null && typeof window !== 'undefined' && window.innerWidth < 768;
+    return window !== null && typeof window !== 'undefined' && window.innerWidth < 500;
 }

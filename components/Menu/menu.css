@@ -3,6 +3,12 @@
     width: 100vw;
     height: 30px;
     justify-content: space-between;
+    color: #fff;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 0px 10px #fff;
 }
 
 .itemWrapper {
@@ -10,15 +16,18 @@
 }
 
 .menuItem {
-    padding: 7px;
-    line-height: 1;
+    padding: 0 5px;
 }
 
 .menuItem a {
     text-decoration: none;
     color: inherit;
+    padding: 7px;
+    line-height: 1;
+    display: block;
 }
 
 .menuItem a:hover {
     cursor: pointer;
+    background-color: #666;
 }

@@ -33,7 +33,6 @@ export default class Home extends Component {
         let word = showWord === 0 ? 'Love' : showWord === 1 ? 'Play' : 'Make';
         return (
             <div>
-                <Menu />
                 <div className={css.intro}>We {word} Games</div>
             </div>
         );
