@@ -7,15 +7,17 @@ import Vr from './components/Vr.jsx';
 import About from './components/About.jsx';
 import Members from './components/MembersResources/Members.jsx';
 import Teams from './components/MembersResources/Teams.jsx';
+import AgreementFaq from './components/MembersResources/AgreementFaq.jsx';
 
 ReactDOM.render(
     <Router history={browserHistory}>
-        <Route name="home" path="/" component={Home} />
-        <Route name="calendar" path="/calendar" component={Calendar} />
-        <Route name="vr" path="/vr" component={Vr} />
-        <Route name="about" path="/about" component={About} />
-        <Route name="members" path="/members" component={Members} />
-        <Route name="teams" path="/members/teams" component={Teams} />
+        <Route path="/" component={Home} />
+        <Route path="/calendar" component={Calendar} />
+        <Route path="/vr" component={Vr} />
+        <Route path="/about" component={About} />
+        <Route path="/members" component={Members} />
+        <Route path="/members/teams" component={Teams} />
+        <Route path="members/agreement-faq" component={AgreementFaq} />
     </Router>,
     document.getElementById('home')
 );
