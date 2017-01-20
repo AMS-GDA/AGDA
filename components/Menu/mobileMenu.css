@@ -26,7 +26,7 @@
 .wrapper {
     position: fixed;
     z-index: 1;
-    background-color: black;
+    background-color: #000;
     height: 100vh;
     width: 100vw;
     color: white;
@@ -36,16 +36,20 @@
 }
 
 .menuItem {
-    padding: 15px 0;
+    margin-bottom: 5px;
 }
 
 .menuItem a {
     text-decoration: none;
     color: inherit;
+    display: block;
+    padding: 15px;
+    border-radius: 20px;
 }
 
 .menuItem a:hover {
     cursor: pointer;
+    background-color: #666;
 }
 
 .closeBar {
