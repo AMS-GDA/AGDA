@@ -60,13 +60,17 @@
 	
 	var _Home2 = _interopRequireDefault(_Home);
 	
-	var _Calendar = __webpack_require__(238);
+	var _Calendar = __webpack_require__(241);
 	
 	var _Calendar2 = _interopRequireDefault(_Calendar);
 	
-	var _Vr = __webpack_require__(239);
+	var _Vr = __webpack_require__(242);
 	
 	var _Vr2 = _interopRequireDefault(_Vr);
+	
+	var _About = __webpack_require__(243);
+	
+	var _About2 = _interopRequireDefault(_About);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -75,7 +79,8 @@
 	    { history: _reactRouter.browserHistory },
 	    _react2.default.createElement(_reactRouter.Route, { name: 'home', path: '/', component: _Home2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { name: 'calendar', path: '/calendar', component: _Calendar2.default }),
-	    _react2.default.createElement(_reactRouter.Route, { name: 'vr', path: '/vr', component: _Vr2.default })
+	    _react2.default.createElement(_reactRouter.Route, { name: 'vr', path: '/vr', component: _Vr2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { name: 'about', path: '/about', component: _About2.default })
 	), document.getElementById('home'));
 
 /***/ },
@@ -26566,6 +26571,10 @@
 	
 	var _home2 = _interopRequireDefault(_home);
 	
+	var _Menu = __webpack_require__(245);
+	
+	var _Menu2 = _interopRequireDefault(_Menu);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -26616,6 +26625,7 @@
 	            return _react2.default.createElement(
 	                'div',
 	                null,
+	                _react2.default.createElement(_Menu2.default, null),
 	                _react2.default.createElement(
 	                    'div',
 	                    { className: _home2.default.intro },
@@ -26983,7 +26993,10 @@
 
 
 /***/ },
-/* 238 */
+/* 238 */,
+/* 239 */,
+/* 240 */,
+/* 241 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -27032,7 +27045,7 @@
 	exports.default = Calendar;
 
 /***/ },
-/* 239 */
+/* 242 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -27079,6 +27092,375 @@
 	}(_react.Component);
 	
 	exports.default = Vr;
+
+/***/ },
+/* 243 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var About = function (_Component) {
+	  _inherits(About, _Component);
+	
+	  function About() {
+	    _classCallCheck(this, About);
+	
+	    return _possibleConstructorReturn(this, (About.__proto__ || Object.getPrototypeOf(About)).apply(this, arguments));
+	  }
+	
+	  _createClass(About, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'h1',
+	        null,
+	        'Hello this is about'
+	      );
+	    }
+	  }]);
+	
+	  return About;
+	}(_react.Component);
+	
+	exports.default = About;
+
+/***/ },
+/* 244 */
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	exports.isMobile = isMobile;
+	function isMobile() {
+	    return window !== null && typeof window !== 'undefined' && window.innerWidth < 768;
+	}
+
+/***/ },
+/* 245 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	exports.default = Menu;
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactRouter = __webpack_require__(178);
+	
+	var _menu = __webpack_require__(246);
+	
+	var _menu2 = _interopRequireDefault(_menu);
+	
+	var _utility = __webpack_require__(244);
+	
+	var _MobileMenu = __webpack_require__(248);
+	
+	var _MobileMenu2 = _interopRequireDefault(_MobileMenu);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function Menu() {
+	    return (0, _utility.isMobile)() ? _react2.default.createElement(_MobileMenu2.default, null) : desktopMenu();
+	}
+	
+	function desktopMenu() {
+	    return _react2.default.createElement(
+	        'div',
+	        { className: _menu2.default.wrapper },
+	        _react2.default.createElement(
+	            'div',
+	            { className: _menu2.default.menuItem },
+	            'Home'
+	        ),
+	        _react2.default.createElement(
+	            'div',
+	            { className: _menu2.default.itemWrapper },
+	            _react2.default.createElement(
+	                'div',
+	                { className: _menu2.default.menuItem },
+	                _react2.default.createElement(
+	                    _reactRouter.Link,
+	                    { to: 'about' },
+	                    'About'
+	                )
+	            ),
+	            _react2.default.createElement(
+	                'div',
+	                { className: _menu2.default.menuItem },
+	                _react2.default.createElement(
+	                    _reactRouter.Link,
+	                    { to: 'calendar' },
+	                    'Calendar'
+	                )
+	            ),
+	            _react2.default.createElement(
+	                'div',
+	                { className: _menu2.default.menuItem },
+	                _react2.default.createElement(
+	                    _reactRouter.Link,
+	                    { to: 'vr' },
+	                    'VR Division'
+	                )
+	            )
+	        )
+	    );
+	}
+
+/***/ },
+/* 246 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(247);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(237)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js?{\"modules\":true,\"localIdentName\":\"[name]__[local]___[hash:base64:5]\"}!./menu.css", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js?{\"modules\":true,\"localIdentName\":\"[name]__[local]___[hash:base64:5]\"}!./menu.css");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 247 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(236)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, ".menu__wrapper___3wYGK {\n    display: flex;\n    width: 100vw;\n    height: 30px;\n    justify-content: space-between;\n}\n\n.menu__itemWrapper___3eztX {\n    display: flex;\n}\n\n.menu__menuItem___6eH0Z {\n    padding: 7px;\n    line-height: 1;\n}\n\n.menu__menuItem___6eH0Z a {\n    text-decoration: none;\n    color: inherit;\n}\n\n.menu__menuItem___6eH0Z a:hover {\n    cursor: pointer;\n}\n", ""]);
+	
+	// exports
+	exports.locals = {
+		"wrapper": "menu__wrapper___3wYGK",
+		"itemWrapper": "menu__itemWrapper___3eztX",
+		"menuItem": "menu__menuItem___6eH0Z"
+	};
+
+/***/ },
+/* 248 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactRouter = __webpack_require__(178);
+	
+	var _mobileMenu = __webpack_require__(249);
+	
+	var _mobileMenu2 = _interopRequireDefault(_mobileMenu);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var MobileMenu = function (_Component) {
+	    _inherits(MobileMenu, _Component);
+	
+	    function MobileMenu(props) {
+	        _classCallCheck(this, MobileMenu);
+	
+	        var _this = _possibleConstructorReturn(this, (MobileMenu.__proto__ || Object.getPrototypeOf(MobileMenu)).call(this, props));
+	
+	        _this.state = {
+	            isOpen: false
+	        };
+	        _this.toggleMenu = _this.toggleMenu.bind(_this);
+	        return _this;
+	    }
+	
+	    _createClass(MobileMenu, [{
+	        key: 'menuItems',
+	        value: function menuItems() {
+	            return _react2.default.createElement(
+	                'div',
+	                { className: _mobileMenu2.default.wrapper },
+	                this.menuIcon(),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: _mobileMenu2.default.menuItem },
+	                    _react2.default.createElement(
+	                        _reactRouter.Link,
+	                        { to: '/' },
+	                        'Home'
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: _mobileMenu2.default.menuItem },
+	                    _react2.default.createElement(
+	                        _reactRouter.Link,
+	                        { to: 'about' },
+	                        'About'
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: _mobileMenu2.default.menuItem },
+	                    _react2.default.createElement(
+	                        _reactRouter.Link,
+	                        { to: 'calendar' },
+	                        'Calendar'
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: _mobileMenu2.default.menuItem },
+	                    _react2.default.createElement(
+	                        _reactRouter.Link,
+	                        { to: 'vr' },
+	                        'VR Division'
+	                    )
+	                )
+	            );
+	        }
+	    }, {
+	        key: 'menuIcon',
+	        value: function menuIcon() {
+	            return _react2.default.createElement(
+	                'div',
+	                { className: _mobileMenu2.default.icon, onClick: this.toggleMenu, id: 'menu' },
+	                _react2.default.createElement('div', { className: _mobileMenu2.default.iconBar }),
+	                _react2.default.createElement('div', { className: _mobileMenu2.default.iconBar }),
+	                _react2.default.createElement('div', { className: _mobileMenu2.default.iconBar })
+	            );
+	        }
+	    }, {
+	        key: 'toggleMenu',
+	        value: function toggleMenu() {
+	            var _this2 = this;
+	
+	            var isOpen = !this.state.isOpen;
+	            this.setState({ isOpen: isOpen });
+	            if (isOpen) {
+	                setTimeout(function () {
+	                    _this2.addExtraClassForMenuOpen();
+	                }, 50);
+	            }
+	        }
+	    }, {
+	        key: 'addExtraClassForMenuOpen',
+	        value: function addExtraClassForMenuOpen() {
+	            if (document.getElementById('menu') !== null) {
+	                var childElems = document.getElementById('menu').children;
+	                for (var i = 0; i < childElems.length; i++) {
+	                    childElems[i].classList.add(_mobileMenu2.default.closeBar);
+	                }
+	            }
+	        }
+	    }, {
+	        key: 'render',
+	        value: function render() {
+	            var _state = this.state,
+	                isOpen = _state.isOpen,
+	                hasBeenToggled = _state.hasBeenToggled;
+	
+	            return isOpen ? this.menuItems() : this.menuIcon();
+	        }
+	    }]);
+	
+	    return MobileMenu;
+	}(_react.Component);
+	
+	exports.default = MobileMenu;
+
+/***/ },
+/* 249 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(250);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(237)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js?{\"modules\":true,\"localIdentName\":\"[name]__[local]___[hash:base64:5]\"}!./mobileMenu.css", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js?{\"modules\":true,\"localIdentName\":\"[name]__[local]___[hash:base64:5]\"}!./mobileMenu.css");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 250 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(236)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, ".mobileMenu__icon___3637P {\n    height: 50px;\n    width: 50px;\n    background-color: #fff;\n    border-radius: 25px;\n    padding: 9px;\n    position: fixed;\n    right: 15px;\n    top: 15px;\n    box-shadow: 0px 0px 10px #000;\n}\n\n.mobileMenu__icon___3637P:hover {\n    cursor: pointer;\n}\n\n.mobileMenu__iconBar___2qiEN {\n    height: 4px;\n    width: 100%;\n    background-color: #000;\n    margin: 5px auto;\n    border-radius: 2px;\n    transition: transform ease 1s, position ease 0.7s;\n}\n\n.mobileMenu__wrapper___1Z90H {\n    position: fixed;\n    z-index: 1;\n    background-color: black;\n    height: 100vh;\n    width: 100vw;\n    color: white;\n    font-size: 30px;\n    padding: 30px;\n    line-height: 1;\n}\n\n.mobileMenu__menuItem___2xZHG {\n    padding: 15px 0;\n}\n\n.mobileMenu__menuItem___2xZHG a {\n    text-decoration: none;\n    color: inherit;\n}\n\n.mobileMenu__menuItem___2xZHG a:hover {\n    cursor: pointer;\n}\n\n.mobileMenu__closeBar___3OU6R {\n    transform: rotate(45deg);\n    margin: 0;\n    position: absolute;\n    width: 32px;\n    top: 22px;\n}\n\n.mobileMenu__closeBar___3OU6R:nth-child(2) {\n    transform: rotate(135deg);\n}\n", ""]);
+	
+	// exports
+	exports.locals = {
+		"icon": "mobileMenu__icon___3637P",
+		"iconBar": "mobileMenu__iconBar___2qiEN",
+		"wrapper": "mobileMenu__wrapper___1Z90H",
+		"menuItem": "mobileMenu__menuItem___2xZHG",
+		"closeBar": "mobileMenu__closeBar___3OU6R"
+	};
 
 /***/ }
 /******/ ]);
