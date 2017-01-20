@@ -1,6 +1,12 @@
 # Dependency directories
 node_modules
 
+# Source maps
+*.map
+
 # Cache
 _site/
 .sass-cache/
+
+# Log files
+*.log
