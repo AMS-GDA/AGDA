@@ -87,15 +87,15 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	_reactDom2.default.render(_react2.default.createElement(
-	    _reactRouter.Router,
-	    { history: _reactRouter.browserHistory },
-	    _react2.default.createElement(_reactRouter.Route, { path: '/', component: _Home2.default }),
-	    _react2.default.createElement(_reactRouter.Route, { path: '/calendar', component: _Calendar2.default }),
-	    _react2.default.createElement(_reactRouter.Route, { path: '/vr', component: _Vr2.default }),
-	    _react2.default.createElement(_reactRouter.Route, { path: '/about', component: _About2.default }),
-	    _react2.default.createElement(_reactRouter.Route, { path: '/members', component: _Members2.default }),
-	    _react2.default.createElement(_reactRouter.Route, { path: '/members/teams', component: _Teams2.default }),
-	    _react2.default.createElement(_reactRouter.Route, { path: 'members/agreement-faq', component: _AgreementFaq2.default })
+	  _reactRouter.Router,
+	  { history: _reactRouter.browserHistory },
+	  _react2.default.createElement(_reactRouter.Route, { path: '/', component: _Home2.default }),
+	  _react2.default.createElement(_reactRouter.Route, { path: '/calendar', component: _Calendar2.default }),
+	  _react2.default.createElement(_reactRouter.Route, { path: '/vr', component: _Vr2.default }),
+	  _react2.default.createElement(_reactRouter.Route, { path: '/about', component: _About2.default }),
+	  _react2.default.createElement(_reactRouter.Route, { path: '/members', component: _Members2.default }),
+	  _react2.default.createElement(_reactRouter.Route, { path: '/members/teams', component: _Teams2.default }),
+	  _react2.default.createElement(_reactRouter.Route, { path: 'members/agreement-faq', component: _AgreementFaq2.default })
 	), document.getElementById('home'));
 
 /***/ },
@@ -26571,7 +26571,7 @@
 	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
-	    value: true
+	  value: true
 	});
 	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -26579,8 +26579,6 @@
 	var _react = __webpack_require__(1);
 	
 	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactRouter = __webpack_require__(178);
 	
 	var _home = __webpack_require__(234);
 	
@@ -26599,60 +26597,60 @@
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
 	var Home = function (_Component) {
-	    _inherits(Home, _Component);
+	  _inherits(Home, _Component);
 	
-	    function Home(props) {
-	        _classCallCheck(this, Home);
+	  function Home(props) {
+	    _classCallCheck(this, Home);
 	
-	        var _this = _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).call(this, props));
+	    var _this = _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).call(this, props));
 	
-	        _this.state = {
-	            showWord: 0
-	        };
-	        _this.switchWord = _this.switchWord.bind(_this);
-	        return _this;
+	    _this.state = {
+	      showWord: 0
+	    };
+	    _this.switchWord = _this.switchWord.bind(_this);
+	    return _this;
+	  }
+	
+	  _createClass(Home, [{
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      var self = this;
+	      setTimeout(function () {
+	        self.switchWord();
+	        setTimeout(function () {
+	          self.switchWord();
+	          clearTimeout();
+	        }, 1500);
+	      }, 1500);
 	    }
+	  }, {
+	    key: 'switchWord',
+	    value: function switchWord() {
+	      var showWord = this.state.showWord + 1;
+	      this.setState({ showWord: showWord });
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      var showWord = this.state.showWord;
 	
-	    _createClass(Home, [{
-	        key: 'componentDidMount',
-	        value: function componentDidMount() {
-	            var self = this;
-	            setTimeout(function () {
-	                self.switchWord();
-	                setTimeout(function () {
-	                    self.switchWord();
-	                    clearTimeout();
-	                }, 1500);
-	            }, 1500);
-	        }
-	    }, {
-	        key: 'switchWord',
-	        value: function switchWord() {
-	            var showWord = this.state.showWord + 1;
-	            this.setState({ showWord: showWord });
-	        }
-	    }, {
-	        key: 'render',
-	        value: function render() {
-	            var showWord = this.state.showWord;
+	      var word = showWord === 0 ? 'Love' : showWord === 1 ? 'Play' : 'Make';
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(_Menu2.default, null),
+	        _react2.default.createElement(
+	          'div',
+	          { className: _home2.default.intro },
+	          'We ',
+	          word,
+	          ' Games'
+	        )
+	      );
+	    }
+	  }]);
 	
-	            var word = showWord === 0 ? 'Love' : showWord === 1 ? 'Play' : 'Make';
-	            return _react2.default.createElement(
-	                'div',
-	                null,
-	                _react2.default.createElement(_Menu2.default, null),
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: _home2.default.intro },
-	                    'We ',
-	                    word,
-	                    ' Games'
-	                )
-	            );
-	        }
-	    }]);
-	
-	    return Home;
+	  return Home;
 	}(_react.Component);
 	
 	exports.default = Home;
@@ -27014,7 +27012,7 @@
 	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
-	    value: true
+	  value: true
 	});
 	exports.default = Menu;
 	
@@ -27037,68 +27035,68 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function Menu() {
-	    return (0, _utility.isMobile)() ? _react2.default.createElement(_MobileMenu2.default, null) : desktopMenu();
+	  return (0, _utility.isMobile)() ? _react2.default.createElement(_MobileMenu2.default, null) : desktopMenu();
 	}
 	
 	function desktopMenu() {
-	    return _react2.default.createElement(
+	  return _react2.default.createElement(
+	    'div',
+	    null,
+	    _react2.default.createElement('div', { className: _menu2.default.placeholder }),
+	    _react2.default.createElement(
+	      'div',
+	      { className: _menu2.default.wrapper },
+	      _react2.default.createElement(
 	        'div',
-	        null,
-	        _react2.default.createElement('div', { className: _menu2.default.placeholder }),
+	        { className: _menu2.default.menuItem },
 	        _react2.default.createElement(
-	            'div',
-	            { className: _menu2.default.wrapper },
-	            _react2.default.createElement(
-	                'div',
-	                { className: _menu2.default.menuItem },
-	                _react2.default.createElement(
-	                    _reactRouter.Link,
-	                    { to: '/' },
-	                    'Home'
-	                )
-	            ),
-	            _react2.default.createElement(
-	                'div',
-	                { className: _menu2.default.itemWrapper },
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: _menu2.default.menuItem },
-	                    _react2.default.createElement(
-	                        _reactRouter.Link,
-	                        { to: 'about' },
-	                        'About'
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: _menu2.default.menuItem },
-	                    _react2.default.createElement(
-	                        _reactRouter.Link,
-	                        { to: 'calendar' },
-	                        'Calendar'
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: _menu2.default.menuItem },
-	                    _react2.default.createElement(
-	                        _reactRouter.Link,
-	                        { to: 'members' },
-	                        'Member Resources'
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: _menu2.default.menuItem },
-	                    _react2.default.createElement(
-	                        _reactRouter.Link,
-	                        { to: 'vr' },
-	                        'VR Division'
-	                    )
-	                )
-	            )
+	          _reactRouter.Link,
+	          { to: '/' },
+	          'Home'
 	        )
-	    );
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: _menu2.default.itemWrapper },
+	        _react2.default.createElement(
+	          'div',
+	          { className: _menu2.default.menuItem },
+	          _react2.default.createElement(
+	            _reactRouter.Link,
+	            { to: 'about' },
+	            'About'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: _menu2.default.menuItem },
+	          _react2.default.createElement(
+	            _reactRouter.Link,
+	            { to: 'calendar' },
+	            'Calendar'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: _menu2.default.menuItem },
+	          _react2.default.createElement(
+	            _reactRouter.Link,
+	            { to: 'members' },
+	            'Member Resources'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: _menu2.default.menuItem },
+	          _react2.default.createElement(
+	            _reactRouter.Link,
+	            { to: 'vr' },
+	            'VR Division'
+	          )
+	        )
+	      )
+	    )
+	  );
 	}
 
 /***/ },
@@ -27153,11 +27151,11 @@
 	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
-	    value: true
+	  value: true
 	});
 	exports.isMobile = isMobile;
 	function isMobile() {
-	    return window !== null && typeof window !== 'undefined' && window.innerWidth < 500;
+	  return window !== null && typeof window !== 'undefined' && window.innerWidth < 500;
 	}
 
 /***/ },
@@ -27167,7 +27165,7 @@
 	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
-	    value: true
+	  value: true
 	});
 	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -27191,120 +27189,116 @@
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
 	var MobileMenu = function (_Component) {
-	    _inherits(MobileMenu, _Component);
+	  _inherits(MobileMenu, _Component);
 	
-	    function MobileMenu(props) {
-	        _classCallCheck(this, MobileMenu);
+	  function MobileMenu(props) {
+	    _classCallCheck(this, MobileMenu);
 	
-	        var _this = _possibleConstructorReturn(this, (MobileMenu.__proto__ || Object.getPrototypeOf(MobileMenu)).call(this, props));
+	    var _this = _possibleConstructorReturn(this, (MobileMenu.__proto__ || Object.getPrototypeOf(MobileMenu)).call(this, props));
 	
-	        _this.state = {
-	            isOpen: false
-	        };
-	        _this.toggleMenu = _this.toggleMenu.bind(_this);
-	        return _this;
+	    _this.state = {
+	      isOpen: false
+	    };
+	    _this.toggleMenu = _this.toggleMenu.bind(_this);
+	    return _this;
+	  }
+	
+	  _createClass(MobileMenu, [{
+	    key: 'menuItems',
+	    value: function menuItems() {
+	      return _react2.default.createElement(
+	        'div',
+	        { className: _mobileMenu2.default.wrapper },
+	        this.menuIcon(),
+	        _react2.default.createElement(
+	          'div',
+	          { className: _mobileMenu2.default.menuItem },
+	          _react2.default.createElement(
+	            _reactRouter.Link,
+	            { to: '/' },
+	            'Home'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: _mobileMenu2.default.menuItem },
+	          _react2.default.createElement(
+	            _reactRouter.Link,
+	            { to: 'about' },
+	            'About'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: _mobileMenu2.default.menuItem },
+	          _react2.default.createElement(
+	            _reactRouter.Link,
+	            { to: 'calendar' },
+	            'Calendar'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: _mobileMenu2.default.menuItem },
+	          _react2.default.createElement(
+	            _reactRouter.Link,
+	            { to: 'members' },
+	            'Member Resources'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: _mobileMenu2.default.menuItem },
+	          _react2.default.createElement(
+	            _reactRouter.Link,
+	            { to: 'vr' },
+	            'VR Division'
+	          )
+	        )
+	      );
 	    }
+	  }, {
+	    key: 'menuIcon',
+	    value: function menuIcon() {
+	      return _react2.default.createElement(
+	        'div',
+	        { className: _mobileMenu2.default.icon, onClick: this.toggleMenu, id: 'menu' },
+	        _react2.default.createElement('div', { className: _mobileMenu2.default.iconBar }),
+	        _react2.default.createElement('div', { className: _mobileMenu2.default.iconBar }),
+	        _react2.default.createElement('div', { className: _mobileMenu2.default.iconBar })
+	      );
+	    }
+	  }, {
+	    key: 'toggleMenu',
+	    value: function toggleMenu() {
+	      var _this2 = this;
 	
-	    _createClass(MobileMenu, [{
-	        key: 'menuItems',
-	        value: function menuItems() {
-	            return _react2.default.createElement(
-	                'div',
-	                { className: _mobileMenu2.default.wrapper },
-	                this.menuIcon(),
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: _mobileMenu2.default.menuItem },
-	                    _react2.default.createElement(
-	                        _reactRouter.Link,
-	                        { to: '/' },
-	                        'Home'
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: _mobileMenu2.default.menuItem },
-	                    _react2.default.createElement(
-	                        _reactRouter.Link,
-	                        { to: 'about' },
-	                        'About'
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: _mobileMenu2.default.menuItem },
-	                    _react2.default.createElement(
-	                        _reactRouter.Link,
-	                        { to: 'calendar' },
-	                        'Calendar'
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: _mobileMenu2.default.menuItem },
-	                    _react2.default.createElement(
-	                        _reactRouter.Link,
-	                        { to: 'members' },
-	                        'Member Resources'
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: _mobileMenu2.default.menuItem },
-	                    _react2.default.createElement(
-	                        _reactRouter.Link,
-	                        { to: 'vr' },
-	                        'VR Division'
-	                    )
-	                )
-	            );
+	      var isOpen = !this.state.isOpen;
+	      this.setState({ isOpen: isOpen });
+	      if (isOpen) {
+	        setTimeout(function () {
+	          _this2.addExtraClassForMenuOpen();
+	        }, 50);
+	      }
+	    }
+	  }, {
+	    key: 'addExtraClassForMenuOpen',
+	    value: function addExtraClassForMenuOpen() {
+	      if (document.getElementById('menu') !== null) {
+	        var childElems = document.getElementById('menu').children;
+	        for (var i = 0; i < childElems.length; i++) {
+	          childElems[i].classList.add(_mobileMenu2.default.closeBar);
 	        }
-	    }, {
-	        key: 'menuIcon',
-	        value: function menuIcon() {
-	            return _react2.default.createElement(
-	                'div',
-	                { className: _mobileMenu2.default.icon, onClick: this.toggleMenu, id: 'menu' },
-	                _react2.default.createElement('div', { className: _mobileMenu2.default.iconBar }),
-	                _react2.default.createElement('div', { className: _mobileMenu2.default.iconBar }),
-	                _react2.default.createElement('div', { className: _mobileMenu2.default.iconBar })
-	            );
-	        }
-	    }, {
-	        key: 'toggleMenu',
-	        value: function toggleMenu() {
-	            var _this2 = this;
+	      }
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      return this.state.isOpen ? this.menuItems() : this.menuIcon();
+	    }
+	  }]);
 	
-	            var isOpen = !this.state.isOpen;
-	            this.setState({ isOpen: isOpen });
-	            if (isOpen) {
-	                setTimeout(function () {
-	                    _this2.addExtraClassForMenuOpen();
-	                }, 50);
-	            }
-	        }
-	    }, {
-	        key: 'addExtraClassForMenuOpen',
-	        value: function addExtraClassForMenuOpen() {
-	            if (document.getElementById('menu') !== null) {
-	                var childElems = document.getElementById('menu').children;
-	                for (var i = 0; i < childElems.length; i++) {
-	                    childElems[i].classList.add(_mobileMenu2.default.closeBar);
-	                }
-	            }
-	        }
-	    }, {
-	        key: 'render',
-	        value: function render() {
-	            var _state = this.state,
-	                isOpen = _state.isOpen,
-	                hasBeenToggled = _state.hasBeenToggled;
-	
-	            return isOpen ? this.menuItems() : this.menuIcon();
-	        }
-	    }]);
-	
-	    return MobileMenu;
+	  return MobileMenu;
 	}(_react.Component);
 	
 	exports.default = MobileMenu;
@@ -27362,7 +27356,7 @@
 	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
-	    value: true
+	  value: true
 	});
 	exports.default = Calendar;
 	
@@ -27383,19 +27377,19 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function Calendar() {
-	    var calendarLink = 'https://calendar.google.com/calendar/embed?title=AGDA%20Events%20%26%20Deadlines&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=ja39g1205oba012pbbt1j4ci74%40group.calendar.google.com&amp;color=%23B1440E&amp;src=fna27vp4jdb7sb15d0rqvk5ljs%40group.calendar.google.com&amp;color=%23691426&amp;ctz=America%2FVancouver';
-	    var deviceHeight = window.innerHeight;
-	    var iframeLink = _react2.default.createElement('iframe', { src: calendarLink, width: '100%', height: (0, _utility.isMobile)() ? deviceHeight - 40 : deviceHeight - 54, frameBorder: '0', scrolling: 'no' });
-	    return _react2.default.createElement(
-	        'div',
-	        null,
-	        _react2.default.createElement(_Menu2.default, null),
-	        _react2.default.createElement(
-	            'div',
-	            { className: (0, _utility.isMobile)() ? _calendar2.default.container : _calendar2.default.containerDesktop },
-	            iframeLink
-	        )
-	    );
+	  var calendarLink = 'https://calendar.google.com/calendar/embed?title=AGDA%20Events%20%26%20Deadlines&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=ja39g1205oba012pbbt1j4ci74%40group.calendar.google.com&amp;color=%23B1440E&amp;src=fna27vp4jdb7sb15d0rqvk5ljs%40group.calendar.google.com&amp;color=%23691426&amp;ctz=America%2FVancouver';
+	  var deviceHeight = window.innerHeight;
+	  var iframeLink = _react2.default.createElement('iframe', { src: calendarLink, width: '100%', height: (0, _utility.isMobile)() ? deviceHeight - 40 : deviceHeight - 54, frameBorder: '0', scrolling: 'no' });
+	  return _react2.default.createElement(
+	    'div',
+	    null,
+	    _react2.default.createElement(_Menu2.default, null),
+	    _react2.default.createElement(
+	      'div',
+	      { className: (0, _utility.isMobile)() ? _calendar2.default.container : _calendar2.default.containerDesktop },
+	      iframeLink
+	    )
+	  );
 	}
 
 /***/ },
@@ -27546,7 +27540,7 @@
 	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
-	    value: true
+	  value: true
 	});
 	exports.default = Members;
 	
@@ -27579,90 +27573,90 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function Members() {
-	    return _react2.default.createElement(
+	  return _react2.default.createElement(
+	    'div',
+	    { className: _members2.default.container },
+	    _react2.default.createElement(_Menu2.default, null),
+	    _react2.default.createElement(
+	      'div',
+	      { className: _members2.default.content },
+	      _react2.default.createElement(
 	        'div',
-	        { className: _members2.default.container },
-	        _react2.default.createElement(_Menu2.default, null),
-	        _react2.default.createElement(
-	            'div',
-	            { className: _members2.default.content },
-	            _react2.default.createElement(
-	                'div',
-	                { className: _members2.default.title },
-	                'Well, hello there!',
-	                _react2.default.createElement('br', null),
-	                'What brings you here today?'
-	            ),
-	            _react2.default.createElement(
-	                _Resource2.default,
-	                { link: links.AUDIO, isExternal: true },
-	                'I need to borrow audio recording equipment'
-	            ),
-	            _react2.default.createElement(
-	                _Resource2.default,
-	                { link: 'teams', isExternal: false },
-	                'I\'m looking for a team to join or looking for another member for my team'
-	            ),
-	            _react2.default.createElement(
-	                _Resource2.default,
-	                { link: links.STARTER, isExternal: true },
-	                'I\'m new to AGDA, or I just want to see the starter pack'
-	            ),
-	            _react2.default.createElement(
-	                _Resource2.default,
-	                { link: 'agreement-faq', isExternal: false },
-	                'I have questions regarding the team agreement'
-	            ),
-	            _react2.default.createElement(
-	                _ResourceExpandable2.default,
-	                null,
-	                'I missed a workshop',
-	                workshop
-	            ),
-	            _react2.default.createElement(
-	                _Resource2.default,
-	                { link: links.TBT, isExternal: true },
-	                '#TBT - remember the time you came to our icebreaker?'
-	            )
-	        )
-	    );
+	        { className: _members2.default.title },
+	        'Well, hello there!',
+	        _react2.default.createElement('br', null),
+	        'What brings you here today?'
+	      ),
+	      _react2.default.createElement(
+	        _Resource2.default,
+	        { link: links.AUDIO, isExternal: true },
+	        'I need to borrow audio recording equipment'
+	      ),
+	      _react2.default.createElement(
+	        _Resource2.default,
+	        { link: 'teams', isExternal: false },
+	        'I\'m looking for a team to join or looking for another member for my team'
+	      ),
+	      _react2.default.createElement(
+	        _Resource2.default,
+	        { link: links.STARTER, isExternal: true },
+	        'I\'m new to AGDA, or I just want to see the starter pack'
+	      ),
+	      _react2.default.createElement(
+	        _Resource2.default,
+	        { link: 'agreement-faq', isExternal: false },
+	        'I have questions regarding the team agreement'
+	      ),
+	      _react2.default.createElement(
+	        _ResourceExpandable2.default,
+	        null,
+	        'I missed a workshop',
+	        workshop
+	      ),
+	      _react2.default.createElement(
+	        _Resource2.default,
+	        { link: links.TBT, isExternal: true },
+	        '#TBT - remember the time you came to our icebreaker?'
+	      )
+	    )
+	  );
 	}
 	
 	function workshop() {
-	    return _react2.default.createElement(
-	        'div',
-	        { className: _members2.default.workshop },
-	        _react2.default.createElement(
-	            'span',
-	            null,
-	            _react2.default.createElement(
-	                'a',
-	                { href: links.WORK_DAN, target: '_blank' },
-	                'Unity 3D'
-	            ),
-	            ' by',
-	            _react2.default.createElement(
-	                'a',
-	                { href: 'http://www.danielsnd.com/', target: '_blank' },
-	                'Daniel Snd'
-	            )
-	        ),
-	        _react2.default.createElement(
-	            'a',
-	            { href: links.WORK_TRELLO, target: '_blank' },
-	            'Task management with Trello'
-	        ),
-	        _react2.default.createElement(
-	            'a',
-	            { href: links.WORK_GIT, target: '_blank' },
-	            'Code management with Git (Introduction)'
-	        ),
-	        _react2.default.createElement(
-	            'a',
-	            { href: links.WORK_GIT_TREE, target: '_blank' },
-	            'Code management with Git (SourceTree GUI)'
-	        )
-	    );
+	  return _react2.default.createElement(
+	    'div',
+	    { className: _members2.default.workshop },
+	    _react2.default.createElement(
+	      'span',
+	      null,
+	      _react2.default.createElement(
+	        'a',
+	        { href: links.WORK_DAN, target: '_blank' },
+	        'Unity 3D'
+	      ),
+	      ' by',
+	      _react2.default.createElement(
+	        'a',
+	        { href: 'http://www.danielsnd.com/', target: '_blank' },
+	        'Daniel Snd'
+	      )
+	    ),
+	    _react2.default.createElement(
+	      'a',
+	      { href: links.WORK_TRELLO, target: '_blank' },
+	      'Task management with Trello'
+	    ),
+	    _react2.default.createElement(
+	      'a',
+	      { href: links.WORK_GIT, target: '_blank' },
+	      'Code management with Git (Introduction)'
+	    ),
+	    _react2.default.createElement(
+	      'a',
+	      { href: links.WORK_GIT_TREE, target: '_blank' },
+	      'Code management with Git (SourceTree GUI)'
+	    )
+	  );
 	}
 
 /***/ },
@@ -27716,7 +27710,7 @@
 	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
-	    value: true
+	  value: true
 	});
 	exports.default = Resource;
 	
@@ -27733,38 +27727,38 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function Resource(_ref) {
-	    var children = _ref.children,
-	        isExternal = _ref.isExternal,
-	        link = _ref.link;
+	  var children = _ref.children,
+	      isExternal = _ref.isExternal,
+	      link = _ref.link;
 	
-	    var linkElement = isExternal ? getExternalLink(link, children) : getInternalLink(link, children);
-	    return _react2.default.createElement(
-	        'div',
-	        { className: _resource2.default.resource },
-	        linkElement
-	    );
+	  var linkElement = isExternal ? getExternalLink(link, children) : getInternalLink(link, children);
+	  return _react2.default.createElement(
+	    'div',
+	    { className: _resource2.default.resource },
+	    linkElement
+	  );
 	}
 	
 	function getInternalLink(link, text) {
-	    return _react2.default.createElement(
-	        _reactRouter.Link,
-	        { to: 'members/' + link },
-	        text
-	    );
+	  return _react2.default.createElement(
+	    _reactRouter.Link,
+	    { to: 'members/' + link },
+	    text
+	  );
 	}
 	
 	function getExternalLink(link, text) {
-	    return _react2.default.createElement(
-	        'a',
-	        { href: link, target: '_blank' },
-	        text
-	    );
+	  return _react2.default.createElement(
+	    'a',
+	    { href: link, target: '_blank' },
+	    text
+	  );
 	}
 	
 	Resource.propTypes = {
-	    link: _react.PropTypes.string.isRequired,
-	    isExternal: _react.PropTypes.bool.isRequired,
-	    children: _react.PropTypes.string.isRequired
+	  link: _react.PropTypes.string.isRequired,
+	  isExternal: _react.PropTypes.bool.isRequired,
+	  children: _react.PropTypes.string.isRequired
 	};
 
 /***/ },
@@ -27820,7 +27814,7 @@
 	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
-	    value: true
+	  value: true
 	});
 	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -27846,60 +27840,60 @@
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
 	var ResourceExpandable = function (_Component) {
-	    _inherits(ResourceExpandable, _Component);
+	  _inherits(ResourceExpandable, _Component);
 	
-	    function ResourceExpandable(props) {
-	        _classCallCheck(this, ResourceExpandable);
+	  function ResourceExpandable(props) {
+	    _classCallCheck(this, ResourceExpandable);
 	
-	        var _this = _possibleConstructorReturn(this, (ResourceExpandable.__proto__ || Object.getPrototypeOf(ResourceExpandable)).call(this, props));
+	    var _this = _possibleConstructorReturn(this, (ResourceExpandable.__proto__ || Object.getPrototypeOf(ResourceExpandable)).call(this, props));
 	
-	        _this.state = {
-	            isExpanded: false
-	        };
-	        _this.handleClick = _this.handleClick.bind(_this);
-	        return _this;
+	    _this.state = {
+	      isExpanded: false
+	    };
+	    _this.handleClick = _this.handleClick.bind(_this);
+	    return _this;
+	  }
+	
+	  _createClass(ResourceExpandable, [{
+	    key: 'handleClick',
+	    value: function handleClick() {
+	      var isExpanded = !this.state.isExpanded;
+	      this.setState({ isExpanded: isExpanded });
 	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      var children = this.props.children;
+	      var isExpanded = this.state.isExpanded;
 	
-	    _createClass(ResourceExpandable, [{
-	        key: 'handleClick',
-	        value: function handleClick() {
-	            var isExpanded = !this.state.isExpanded;
-	            this.setState({ isExpanded: isExpanded });
-	        }
-	    }, {
-	        key: 'render',
-	        value: function render() {
-	            var children = this.props.children;
-	            var isExpanded = this.state.isExpanded;
+	      var className = (0, _classnames2.default)(_resource2.default.bar, isExpanded ? _resource2.default.close : '');
+	      return _react2.default.createElement(
+	        'div',
+	        { className: _resource2.default.resource },
+	        _react2.default.createElement(
+	          'div',
+	          { className: _resource2.default.expandTitle, onClick: this.handleClick },
+	          _react2.default.createElement(
+	            'div',
+	            { className: _resource2.default.icon },
+	            _react2.default.createElement('div', { className: className }),
+	            _react2.default.createElement('div', { className: className })
+	          ),
+	          children[0]
+	        ),
+	        isExpanded ? children[1]() : null
+	      );
+	    }
+	  }]);
 	
-	            var className = (0, _classnames2.default)(_resource2.default.bar, isExpanded ? _resource2.default.close : '');
-	            return _react2.default.createElement(
-	                'div',
-	                { className: _resource2.default.resource },
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: _resource2.default.expandTitle, onClick: this.handleClick },
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: _resource2.default.icon },
-	                        _react2.default.createElement('div', { className: className }),
-	                        _react2.default.createElement('div', { className: className })
-	                    ),
-	                    children[0]
-	                ),
-	                isExpanded ? children[1]() : null
-	            );
-	        }
-	    }]);
-	
-	    return ResourceExpandable;
+	  return ResourceExpandable;
 	}(_react.Component);
 	
 	exports.default = ResourceExpandable;
 	
 	
 	ResourceExpandable.propTypes = {
-	    children: _react.PropTypes.array.isRequired
+	  children: _react.PropTypes.array.isRequired
 	};
 
 /***/ },

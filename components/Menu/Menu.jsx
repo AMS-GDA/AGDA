@@ -5,22 +5,22 @@ import {isMobile} from '../utility.js';
 import MobileMenu from './MobileMenu.jsx';
 
 export default function Menu() {
-    return isMobile() ? <MobileMenu /> : desktopMenu();
+  return isMobile() ? <MobileMenu /> : desktopMenu();
 }
 
 function desktopMenu() {
-    return (
-        <div>
-            <div className={css.placeholder}></div>
-            <div className={css.wrapper}>
-                <div className={css.menuItem}><Link to="/">Home</Link></div>
-                <div className={css.itemWrapper}>
-                    <div className={css.menuItem}><Link to="about">About</Link></div>
-                    <div className={css.menuItem}><Link to="calendar">Calendar</Link></div>
-                    <div className={css.menuItem}><Link to="members">Member Resources</Link></div>
-                    <div className={css.menuItem}><Link to="vr">VR Division</Link></div>
-                </div>
-            </div>
+  return (
+    <div>
+      <div className={css.placeholder}></div>
+      <div className={css.wrapper}>
+        <div className={css.menuItem}><Link to="/">Home</Link></div>
+        <div className={css.itemWrapper}>
+          <div className={css.menuItem}><Link to="about">About</Link></div>
+          <div className={css.menuItem}><Link to="calendar">Calendar</Link></div>
+          <div className={css.menuItem}><Link to="members">Member Resources</Link></div>
+          <div className={css.menuItem}><Link to="vr">VR Division</Link></div>
         </div>
-    );
+      </div>
+    </div>
+  );
 }

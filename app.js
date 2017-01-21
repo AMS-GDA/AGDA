@@ -6,8 +6,7 @@ var app = express();
 app.use(express.static(__dirname));
 
 app.get('*', function (request, response){
-    response.sendFile(path.resolve(__dirname, 'index.html'));
-})
+  response.sendFile(path.resolve(__dirname, 'index.html'));
+});
 
-app.listen(port)
-console.log('server started on port ' + port);
+app.listen(port);
