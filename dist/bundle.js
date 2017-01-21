@@ -88,7 +88,7 @@
 	
 	_reactDom2.default.render(_react2.default.createElement(
 	    _reactRouter.Router,
-	    { history: _reactRouter.hashHistory },
+	    { history: _reactRouter.browserHistory },
 	    _react2.default.createElement(_reactRouter.Route, { path: '/', component: _Home2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: '/calendar', component: _Calendar2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: '/vr', component: _Vr2.default }),

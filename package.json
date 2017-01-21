@@ -4,8 +4,7 @@
   "description": "Official website of AGDA, UBC's AMS Game Development Association",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --progress --colors --port 8080",
-    "build": "webpack --watch",
+    "start": "node app.js",
     "lint": "eslint components/*"
   },
   "repository": {
@@ -36,7 +35,6 @@
     "eslint-plugin-react": "^6.9.0",
     "json-loader": "^0.5.4",
     "style-loader": "^0.13.1",
-    "webpack": "^1.14.0",
-    "webpack-dev-server": "^1.16.2"
+    "webpack": "^1.14.0"
   }
 }
