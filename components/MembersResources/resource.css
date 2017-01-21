@@ -1,0 +1,51 @@
+.resource {
+    padding: 0 15px 5px 15px;
+    line-height: 1;
+}
+
+.resource a {
+    padding: 12px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+.expandTitle {
+    padding: 12px;
+    display: flex;
+}
+
+.expandTitle:hover,
+.resource a:hover {
+    cursor: pointer;
+    background-color: #666;
+    border-radius: 14px;
+}
+
+.icon {
+    height: 16px;
+    width: 16px;
+    margin-right: 10px;
+    position: relative;
+}
+
+.bar {
+    width: 16px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    top: 7px;
+    transition: transform ease 0.5s;
+}
+
+.bar:first-child {
+    transform: rotate(90deg);
+}
+
+.close:first-child {
+    transform: rotate(45deg);
+}
+
+.close:last-child {
+    transform: rotate(135deg);
+}

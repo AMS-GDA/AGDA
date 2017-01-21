@@ -27568,6 +27568,10 @@
 	
 	var _Resource2 = _interopRequireDefault(_Resource);
 	
+	var _ResourceExpandable = __webpack_require__(261);
+	
+	var _ResourceExpandable2 = _interopRequireDefault(_ResourceExpandable);
+	
 	var _ExternalLinks = __webpack_require__(258);
 	
 	var links = _interopRequireWildcard(_ExternalLinks);
@@ -27599,74 +27603,78 @@
 	            'div',
 	            { className: _members2.default.content },
 	            _react2.default.createElement(
+	                'div',
+	                { className: _members2.default.contentTitle },
+	                'What brings you here today?'
+	            ),
+	            _react2.default.createElement(
 	                _Resource2.default,
 	                { link: links.AUDIO, isExternal: true },
-	                'Do you need to borrow audio recording equipment?',
-	                'Click here to visit the request form'
+	                'I need to borrow audio recording equipment'
 	            ),
 	            _react2.default.createElement(
 	                _Resource2.default,
 	                { link: 'teams', isExternal: false },
-	                'Are you looking for a team to join or looking for another member for your team?',
-	                'Click here to visit the team search page'
+	                'I\'m looking for a team to join or looking for another member for my team'
 	            ),
 	            _react2.default.createElement(
 	                _Resource2.default,
 	                { link: links.STARTER, isExternal: true },
-	                'New to AGDA?',
-	                'Click here to see the starter pack'
+	                'I\'m new to AGDA, or I just want to see the starter pack'
 	            ),
 	            _react2.default.createElement(
 	                _Resource2.default,
 	                { link: 'agreement-faq', isExternal: false },
-	                'Do you have questions regarding the team agreement?',
-	                'Click here to see the agreement\'s FAQ'
+	                'I have questions regarding the team agreement'
 	            ),
 	            _react2.default.createElement(
-	                _Resource2.default,
+	                _ResourceExpandable2.default,
 	                null,
-	                'Did you miss a workshop?',
-	                _react2.default.createElement(
-	                    'span',
-	                    null,
-	                    _react2.default.createElement(
-	                        'span',
-	                        null,
-	                        _react2.default.createElement(
-	                            'a',
-	                            { href: links.WORK_DAN, target: '_blank' },
-	                            'Unity 3D'
-	                        ),
-	                        ' by',
-	                        _react2.default.createElement(
-	                            'a',
-	                            { href: 'http://www.danielsnd.com/', target: '_blank' },
-	                            'Daniel Snd'
-	                        )
-	                    ),
-	                    _react2.default.createElement(
-	                        'a',
-	                        { href: links.WORK_TRELLO, target: '_blank' },
-	                        'Task management with Trello'
-	                    ),
-	                    _react2.default.createElement(
-	                        'a',
-	                        { href: links.WORK_GIT, target: '_blank' },
-	                        'Code management with Git (Introduction)'
-	                    ),
-	                    _react2.default.createElement(
-	                        'a',
-	                        { href: links.WORK_GIT_TREE, target: '_blank' },
-	                        'Code management with Git (SourceTree GUI)'
-	                    )
-	                )
+	                'I missed a workshop',
+	                workshop
 	            ),
 	            _react2.default.createElement(
 	                _Resource2.default,
 	                { link: links.TBT, isExternal: true },
-	                '#TBT - remember the time you came to our icebreaker?',
-	                'Click here to see the slides'
+	                '#TBT - remember the time you came to our icebreaker?'
 	            )
+	        )
+	    );
+	}
+	
+	function workshop() {
+	    return _react2.default.createElement(
+	        'div',
+	        { className: _members2.default.workshop },
+	        _react2.default.createElement(
+	            'span',
+	            null,
+	            _react2.default.createElement(
+	                'a',
+	                { href: links.WORK_DAN, target: '_blank' },
+	                'Unity 3D'
+	            ),
+	            ' by',
+	            _react2.default.createElement(
+	                'a',
+	                { href: 'http://www.danielsnd.com/', target: '_blank' },
+	                'Daniel Snd'
+	            )
+	        ),
+	        _react2.default.createElement(
+	            'a',
+	            { href: links.WORK_TRELLO, target: '_blank' },
+	            'Task management with Trello'
+	        ),
+	        _react2.default.createElement(
+	            'a',
+	            { href: links.WORK_GIT, target: '_blank' },
+	            'Code management with Git (Introduction)'
+	        ),
+	        _react2.default.createElement(
+	            'a',
+	            { href: links.WORK_GIT_TREE, target: '_blank' },
+	            'Code management with Git (SourceTree GUI)'
 	        )
 	    );
 	}
@@ -27755,10 +27763,14 @@
 	
 	
 	// module
-	exports.push([module.id, "", ""]);
+	exports.push([module.id, ".members__header___QOI2z,\n.members__content___1vGER {\n    height: 90vh; /* fallback if calc not supported in browser */\n    height: calc(100vh - 30px);\n}\n\n.members__workshop___2qFrW {\n    display: block;\n    line-height: 1;\n    padding-left: 20px;\n}\n\n.members__workshop___2qFrW span {\n    display: flex;\n    align-items: baseline;\n}\n", ""]);
 	
 	// exports
-
+	exports.locals = {
+		"header": "members__header___QOI2z",
+		"content": "members__content___1vGER",
+		"workshop": "members__workshop___2qFrW"
+	};
 
 /***/ },
 /* 256 */
@@ -27826,9 +27838,9 @@
 	
 	var _reactRouter = __webpack_require__(178);
 	
-	var _members = __webpack_require__(254);
+	var _resource = __webpack_require__(259);
 	
-	var _members2 = _interopRequireDefault(_members);
+	var _resource2 = _interopRequireDefault(_resource);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -27837,25 +27849,11 @@
 	        isExternal = _ref.isExternal,
 	        link = _ref.link;
 	
-	    var linkElement = '';
-	    if (link) {
-	        linkElement = isExternal ? getExternalLink(link, children[1]) : getInternalLink(link, children[1]);
-	    } else {
-	        linkElement = children[1];
-	    }
+	    var linkElement = isExternal ? getExternalLink(link, children) : getInternalLink(link, children);
 	    return _react2.default.createElement(
 	        'div',
-	        { className: _members2.default.resource },
-	        _react2.default.createElement(
-	            'p',
-	            null,
-	            children[0]
-	        ),
-	        _react2.default.createElement(
-	            'div',
-	            { className: _members2.default.link },
-	            linkElement
-	        )
+	        { className: _resource2.default.resource },
+	        linkElement
 	    );
 	}
 	
@@ -27875,15 +27873,10 @@
 	    );
 	}
 	
-	Resource.defaultProps = {
-	    link: null,
-	    isExternal: true
-	};
-	
 	Resource.propTypes = {
-	    link: _react.PropTypes.string,
-	    isExternal: _react.PropTypes.bool,
-	    children: _react.PropTypes.array.isRequired
+	    link: _react.PropTypes.string.isRequired,
+	    isExternal: _react.PropTypes.bool.isRequired,
+	    children: _react.PropTypes.string.isRequired
 	};
 
 /***/ },
@@ -27902,6 +27895,197 @@
 	var WORK_GIT = exports.WORK_GIT = 'https://docs.google.com/presentation/d/1PhCg7efLOsAoCGWSzGYViCnpsHh5rYCTAo_m4gQj7DI/edit?usp=sharing';
 	var WORK_GIT_TREE = exports.WORK_GIT_TREE = '';
 	var TBT = exports.TBT = 'https://docs.google.com/presentation/d/1a2XqVipP0EyjcwqQp6Em3Gf9TmmnfJ-4isHHLBDw43Q/edit?usp=sharing';
+
+/***/ },
+/* 259 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(260);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(237)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js?{\"modules\":true,\"localIdentName\":\"[name]__[local]___[hash:base64:5]\"}!./resource.css", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js?{\"modules\":true,\"localIdentName\":\"[name]__[local]___[hash:base64:5]\"}!./resource.css");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 260 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(236)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, ".resource__resource___1AhYv {\n    padding: 0 15px 5px 15px;\n    line-height: 1;\n}\n\n.resource__resource___1AhYv a {\n    padding: 12px;\n    color: #fff;\n    text-decoration: none;\n    display: block;\n}\n\n.resource__expandTitle___xcI5p {\n    padding: 12px;\n    display: flex;\n}\n\n.resource__expandTitle___xcI5p:hover,\n.resource__resource___1AhYv a:hover {\n    cursor: pointer;\n    background-color: #666;\n    border-radius: 14px;\n}\n\n.resource__icon___1rdB8 {\n    height: 16px;\n    width: 16px;\n    margin-right: 10px;\n    position: relative;\n}\n\n.resource__bar___177i4 {\n    width: 16px;\n    height: 2px;\n    background-color: white;\n    position: absolute;\n    top: 7px;\n    transition: transform ease 0.5s;\n}\n\n.resource__bar___177i4:first-child {\n    transform: rotate(90deg);\n}\n\n.resource__close___2ukS3:first-child {\n    transform: rotate(45deg);\n}\n\n.resource__close___2ukS3:last-child {\n    transform: rotate(135deg);\n}\n", ""]);
+	
+	// exports
+	exports.locals = {
+		"resource": "resource__resource___1AhYv",
+		"expandTitle": "resource__expandTitle___xcI5p",
+		"icon": "resource__icon___1rdB8",
+		"bar": "resource__bar___177i4",
+		"close": "resource__close___2ukS3"
+	};
+
+/***/ },
+/* 261 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _classnames = __webpack_require__(264);
+	
+	var _classnames2 = _interopRequireDefault(_classnames);
+	
+	var _resource = __webpack_require__(259);
+	
+	var _resource2 = _interopRequireDefault(_resource);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var ResourceExpandable = function (_Component) {
+	    _inherits(ResourceExpandable, _Component);
+	
+	    function ResourceExpandable(props) {
+	        _classCallCheck(this, ResourceExpandable);
+	
+	        var _this = _possibleConstructorReturn(this, (ResourceExpandable.__proto__ || Object.getPrototypeOf(ResourceExpandable)).call(this, props));
+	
+	        _this.state = {
+	            isExpanded: false
+	        };
+	        _this.handleClick = _this.handleClick.bind(_this);
+	        return _this;
+	    }
+	
+	    _createClass(ResourceExpandable, [{
+	        key: 'handleClick',
+	        value: function handleClick() {
+	            var isExpanded = !this.state.isExpanded;
+	            this.setState({ isExpanded: isExpanded });
+	        }
+	    }, {
+	        key: 'render',
+	        value: function render() {
+	            var children = this.props.children;
+	            var isExpanded = this.state.isExpanded;
+	
+	            var className = (0, _classnames2.default)(_resource2.default.bar, isExpanded ? _resource2.default.close : '');
+	            return _react2.default.createElement(
+	                'div',
+	                { className: _resource2.default.resource },
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: _resource2.default.expandTitle, onClick: this.handleClick },
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: _resource2.default.icon },
+	                        _react2.default.createElement('div', { className: className }),
+	                        _react2.default.createElement('div', { className: className })
+	                    ),
+	                    children[0]
+	                ),
+	                isExpanded ? children[1]() : null
+	            );
+	        }
+	    }]);
+	
+	    return ResourceExpandable;
+	}(_react.Component);
+	
+	exports.default = ResourceExpandable;
+	
+	
+	ResourceExpandable.propTypes = {
+	    children: _react.PropTypes.array.isRequired
+	};
+
+/***/ },
+/* 262 */,
+/* 263 */,
+/* 264 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
+	  Copyright (c) 2016 Jed Watson.
+	  Licensed under the MIT License (MIT), see
+	  http://jedwatson.github.io/classnames
+	*/
+	/* global define */
+	
+	(function () {
+		'use strict';
+	
+		var hasOwn = {}.hasOwnProperty;
+	
+		function classNames () {
+			var classes = [];
+	
+			for (var i = 0; i < arguments.length; i++) {
+				var arg = arguments[i];
+				if (!arg) continue;
+	
+				var argType = typeof arg;
+	
+				if (argType === 'string' || argType === 'number') {
+					classes.push(arg);
+				} else if (Array.isArray(arg)) {
+					classes.push(classNames.apply(null, arg));
+				} else if (argType === 'object') {
+					for (var key in arg) {
+						if (hasOwn.call(arg, key) && arg[key]) {
+							classes.push(key);
+						}
+					}
+				}
+			}
+	
+			return classes.join(' ');
+		}
+	
+		if (typeof module !== 'undefined' && module.exports) {
+			module.exports = classNames;
+		} else if (true) {
+			// register as 'classnames', consistent with npm package name
+			!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = function () {
+				return classNames;
+			}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+		} else {
+			window.classNames = classNames;
+		}
+	}());
+
 
 /***/ }
 /******/ ]);

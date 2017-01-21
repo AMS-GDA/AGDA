@@ -1,0 +1,16 @@
+.header,
+.content {
+    height: 90vh; /* fallback if calc not supported in browser */
+    height: calc(100vh - 30px);
+}
+
+.workshop {
+    display: block;
+    line-height: 1;
+    padding-left: 20px;
+}
+
+.workshop span {
+    display: flex;
+    align-items: baseline;
+}
