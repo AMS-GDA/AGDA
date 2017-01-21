@@ -9,14 +9,8 @@ export default function Members() {
     return (
         <div className={css.container}>
             <Menu />
-            <div className={css.header}>
-                <p className={css.title}>AGDA Member Resources</p>
-                <p className={css.subtitle}>
-                    Members subtitle ~ wow much great such nice
-                </p>
-            </div>
             <div className={css.content}>
-                <div className={css.contentTitle}>What brings you here today?</div>
+                <div className={css.title}>Well, hello there!<br/>What brings you here today?</div>
                 <Resource link={links.AUDIO} isExternal={true}>
                     {'I need to borrow audio recording equipment'}
                 </Resource>

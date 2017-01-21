@@ -27587,24 +27587,12 @@
 	        _react2.default.createElement(_Menu2.default, null),
 	        _react2.default.createElement(
 	            'div',
-	            { className: _members2.default.header },
-	            _react2.default.createElement(
-	                'p',
-	                { className: _members2.default.title },
-	                'AGDA Member Resources'
-	            ),
-	            _react2.default.createElement(
-	                'p',
-	                { className: _members2.default.subtitle },
-	                'Members subtitle ~ wow much great such nice'
-	            )
-	        ),
-	        _react2.default.createElement(
-	            'div',
 	            { className: _members2.default.content },
 	            _react2.default.createElement(
 	                'div',
-	                { className: _members2.default.contentTitle },
+	                { className: _members2.default.title },
+	                'Well, hello there!',
+	                _react2.default.createElement('br', null),
 	                'What brings you here today?'
 	            ),
 	            _react2.default.createElement(
@@ -27763,12 +27751,12 @@
 	
 	
 	// module
-	exports.push([module.id, ".members__header___QOI2z,\n.members__content___1vGER {\n    height: 90vh; /* fallback if calc not supported in browser */\n    height: calc(100vh - 30px);\n}\n\n.members__workshop___2qFrW {\n    display: block;\n    line-height: 1;\n    padding-left: 20px;\n}\n\n.members__workshop___2qFrW span {\n    display: flex;\n    align-items: baseline;\n}\n", ""]);
+	exports.push([module.id, ".members__content___1vGER {\n    max-width: 800px;\n}\n\n.members__title___2-3BO {\n    padding: 30px;\n    font-size: 25px;\n}\n\n.members__workshop___2qFrW {\n    display: block;\n    line-height: 1;\n    padding-left: 20px;\n}\n\n.members__workshop___2qFrW span {\n    display: flex;\n    align-items: baseline;\n}\n", ""]);
 	
 	// exports
 	exports.locals = {
-		"header": "members__header___QOI2z",
 		"content": "members__content___1vGER",
+		"title": "members__title___2-3BO",
 		"workshop": "members__workshop___2qFrW"
 	};
 
