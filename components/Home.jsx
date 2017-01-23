@@ -22,6 +22,10 @@ export default class Home extends Component {
     }, 1500);
   }
 
+  componentWillUnmount() {
+    clearTimeout();
+  }
+
   switchWord() {
     const showWord = this.state.showWord + 1;
     this.setState({showWord});

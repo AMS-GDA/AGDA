@@ -8,6 +8,7 @@
     right: 15px;
     top: 15px;
     box-shadow: 0px 0px 10px #000;
+    z-index: 1;
 }
 
 .icon:hover {

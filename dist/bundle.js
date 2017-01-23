@@ -68,7 +68,7 @@
 	
 	var _Vr2 = _interopRequireDefault(_Vr);
 	
-	var _About = __webpack_require__(249);
+	var _About = __webpack_require__(261);
 	
 	var _About2 = _interopRequireDefault(_About);
 	
@@ -26624,6 +26624,11 @@
 	      }, 1500);
 	    }
 	  }, {
+	    key: 'componentWillUnmount',
+	    value: function componentWillUnmount() {
+	      clearTimeout();
+	    }
+	  }, {
 	    key: 'switchWord',
 	    value: function switchWord() {
 	      var showWord = this.state.showWord + 1;
@@ -27134,7 +27139,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".menu__wrapper___3wYGK {\n    display: flex;\n    width: 100vw;\n    height: 30px;\n    justify-content: space-between;\n    color: #fff;\n    background-color: #000;\n    position: fixed;\n    top: 0;\n    left: 0;\n    box-shadow: 0px 0px 10px #fff;\n}\n\n.menu__itemWrapper___3eztX {\n    display: flex;\n}\n\n.menu__menuItem___6eH0Z {\n    padding: 0 5px;\n}\n\n.menu__menuItem___6eH0Z a {\n    text-decoration: none;\n    color: inherit;\n    padding: 7px;\n    line-height: 1;\n    display: block;\n}\n\n.menu__menuItem___6eH0Z a:hover {\n    cursor: pointer;\n    background-color: #666;\n}\n\n.menu__placeholder___3FoNc {\n    height: 30px;\n    width:100%;\n    display: block;\n    position: relative;\n}\n", ""]);
+	exports.push([module.id, ".menu__wrapper___3wYGK {\n    display: flex;\n    width: 100vw;\n    height: 30px;\n    justify-content: space-between;\n    color: #fff;\n    background-color: #000;\n    position: fixed;\n    top: 0;\n    left: 0;\n    box-shadow: 0px 0px 10px #fff;\n    z-index: 1;\n}\n\n.menu__itemWrapper___3eztX {\n    display: flex;\n}\n\n.menu__menuItem___6eH0Z {\n    padding: 0 5px;\n}\n\n.menu__menuItem___6eH0Z a {\n    text-decoration: none;\n    color: inherit;\n    padding: 7px;\n    line-height: 1;\n    display: block;\n}\n\n.menu__menuItem___6eH0Z a:hover {\n    cursor: pointer;\n    background-color: #666;\n}\n\n.menu__placeholder___3FoNc {\n    height: 30px;\n    width:100%;\n    display: block;\n    position: relative;\n}\n", ""]);
 	
 	// exports
 	exports.locals = {
@@ -27338,7 +27343,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".mobileMenu__icon___3637P {\n    height: 50px;\n    width: 50px;\n    background-color: #fff;\n    border-radius: 25px;\n    padding: 9px;\n    position: fixed;\n    right: 15px;\n    top: 15px;\n    box-shadow: 0px 0px 10px #000;\n}\n\n.mobileMenu__icon___3637P:hover {\n    cursor: pointer;\n}\n\n.mobileMenu__iconBar___2qiEN {\n    height: 4px;\n    width: 100%;\n    background-color: #000;\n    margin: 5px auto;\n    border-radius: 2px;\n    transition: transform ease 1s, position ease 0.7s;\n}\n\n.mobileMenu__wrapper___1Z90H {\n    position: fixed;\n    z-index: 1;\n    background-color: #000;\n    height: 100vh;\n    width: 100vw;\n    color: white;\n    font-size: 30px;\n    padding: 30px;\n    line-height: 1;\n}\n\n.mobileMenu__menuItem___2xZHG {\n    margin-bottom: 5px;\n}\n\n.mobileMenu__menuItem___2xZHG a {\n    text-decoration: none;\n    color: inherit;\n    display: block;\n    padding: 15px;\n    border-radius: 20px;\n}\n\n.mobileMenu__menuItem___2xZHG a:hover {\n    cursor: pointer;\n    background-color: #666;\n}\n\n.mobileMenu__closeBar___3OU6R {\n    transform: rotate(45deg);\n    margin: 0;\n    position: absolute;\n    width: 32px;\n    top: 22px;\n}\n\n.mobileMenu__closeBar___3OU6R:nth-child(2) {\n    transform: rotate(135deg);\n}\n", ""]);
+	exports.push([module.id, ".mobileMenu__icon___3637P {\n    height: 50px;\n    width: 50px;\n    background-color: #fff;\n    border-radius: 25px;\n    padding: 9px;\n    position: fixed;\n    right: 15px;\n    top: 15px;\n    box-shadow: 0px 0px 10px #000;\n    z-index: 1;\n}\n\n.mobileMenu__icon___3637P:hover {\n    cursor: pointer;\n}\n\n.mobileMenu__iconBar___2qiEN {\n    height: 4px;\n    width: 100%;\n    background-color: #000;\n    margin: 5px auto;\n    border-radius: 2px;\n    transition: transform ease 1s, position ease 0.7s;\n}\n\n.mobileMenu__wrapper___1Z90H {\n    position: fixed;\n    z-index: 1;\n    background-color: #000;\n    height: 100vh;\n    width: 100vw;\n    color: white;\n    font-size: 30px;\n    padding: 30px;\n    line-height: 1;\n}\n\n.mobileMenu__menuItem___2xZHG {\n    margin-bottom: 5px;\n}\n\n.mobileMenu__menuItem___2xZHG a {\n    text-decoration: none;\n    color: inherit;\n    display: block;\n    padding: 15px;\n    border-radius: 20px;\n}\n\n.mobileMenu__menuItem___2xZHG a:hover {\n    cursor: pointer;\n    background-color: #666;\n}\n\n.mobileMenu__closeBar___3OU6R {\n    transform: rotate(45deg);\n    margin: 0;\n    position: absolute;\n    width: 32px;\n    top: 22px;\n}\n\n.mobileMenu__closeBar___3OU6R:nth-child(2) {\n    transform: rotate(135deg);\n}\n", ""]);
 	
 	// exports
 	exports.locals = {
@@ -27485,55 +27490,7 @@
 	exports.default = Vr;
 
 /***/ },
-/* 249 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	var About = function (_Component) {
-	  _inherits(About, _Component);
-	
-	  function About() {
-	    _classCallCheck(this, About);
-	
-	    return _possibleConstructorReturn(this, (About.__proto__ || Object.getPrototypeOf(About)).apply(this, arguments));
-	  }
-	
-	  _createClass(About, [{
-	    key: 'render',
-	    value: function render() {
-	      return _react2.default.createElement(
-	        'h1',
-	        null,
-	        'Hello this is about'
-	      );
-	    }
-	  }]);
-	
-	  return About;
-	}(_react.Component);
-	
-	exports.default = About;
-
-/***/ },
+/* 249 */,
 /* 250 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -28064,6 +28021,469 @@
 	}(_react.Component);
 	
 	exports.default = AgreementFaq;
+
+/***/ },
+/* 261 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _Menu = __webpack_require__(238);
+	
+	var _Menu2 = _interopRequireDefault(_Menu);
+	
+	var _Exec = __webpack_require__(262);
+	
+	var _Exec2 = _interopRequireDefault(_Exec);
+	
+	var _Execs = __webpack_require__(265);
+	
+	var _about = __webpack_require__(266);
+	
+	var _about2 = _interopRequireDefault(_about);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var About = function (_Component) {
+	  _inherits(About, _Component);
+	
+	  function About() {
+	    _classCallCheck(this, About);
+	
+	    return _possibleConstructorReturn(this, (About.__proto__ || Object.getPrototypeOf(About)).apply(this, arguments));
+	  }
+	
+	  _createClass(About, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        { className: _about2.default.wrapper },
+	        _react2.default.createElement(_Menu2.default, null),
+	        _react2.default.createElement(
+	          'div',
+	          { className: _about2.default.execs },
+	          _Execs.PEOPLE.map(function (person) {
+	            return _react2.default.createElement(_Exec2.default, { key: person.name, person: person });
+	          })
+	        )
+	      );
+	    }
+	  }]);
+	
+	  return About;
+	}(_react.Component);
+	
+	exports.default = About;
+
+/***/ },
+/* 262 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _exec = __webpack_require__(263);
+	
+	var _exec2 = _interopRequireDefault(_exec);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var EMAILLOGO = 'https://res.cloudinary.com/amsgda/image/upload/v1485133647/logos/email.png';
+	var LINKEDINLOGO = 'https://res.cloudinary.com/amsgda/image/upload/v1485133647/logos/linkedin.png';
+	var GITHUBLOGO = 'https://res.cloudinary.com/amsgda/image/upload/v1485133647/logos/github.png';
+	
+	var Exec = function (_Component) {
+	  _inherits(Exec, _Component);
+	
+	  function Exec(props) {
+	    _classCallCheck(this, Exec);
+	
+	    var _this = _possibleConstructorReturn(this, (Exec.__proto__ || Object.getPrototypeOf(Exec)).call(this, props));
+	
+	    _this.state = {
+	      isHover: false
+	    };
+	    _this.enableHoverState = _this.enableHoverState.bind(_this);
+	    _this.disableHoverState = _this.disableHoverState.bind(_this);
+	    return _this;
+	  }
+	
+	  _createClass(Exec, [{
+	    key: 'enableHoverState',
+	    value: function enableHoverState() {
+	      this.setState({ isHover: true });
+	    }
+	  }, {
+	    key: 'disableHoverState',
+	    value: function disableHoverState() {
+	      this.setState({ isHover: false });
+	    }
+	  }, {
+	    key: 'getExistingLinksOnly',
+	    value: function getExistingLinksOnly(contact) {
+	      var linkedinLink = contact.linkedin === '' ? null : _react2.default.createElement(
+	        'a',
+	        { href: contact.linkedin, className: _exec2.default.linkedin, target: '_blank' },
+	        _react2.default.createElement('img', { className: _exec2.default.logo, src: LINKEDINLOGO })
+	      );
+	      var githubLink = contact.github === '' ? null : _react2.default.createElement(
+	        'a',
+	        { href: contact.github, className: _exec2.default.github, target: '_blank' },
+	        _react2.default.createElement('img', { className: _exec2.default.logo, src: GITHUBLOGO })
+	      );
+	
+	      return _react2.default.createElement(
+	        'div',
+	        { className: _exec2.default.links },
+	        _react2.default.createElement(
+	          'a',
+	          { href: contact.email, className: _exec2.default.email, target: '_blank' },
+	          _react2.default.createElement('img', { className: _exec2.default.logo, src: EMAILLOGO })
+	        ),
+	        linkedinLink,
+	        githubLink
+	      );
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      var person = this.props.person;
+	      var isHover = this.state.isHover;
+	
+	      return _react2.default.createElement(
+	        'div',
+	        { className: _exec2.default.exec },
+	        _react2.default.createElement(
+	          'div',
+	          { className: _exec2.default.imageContainer },
+	          _react2.default.createElement(
+	            'div',
+	            { className: _exec2.default.imageWrapper },
+	            _react2.default.createElement('img', { className: _exec2.default.image,
+	              onMouseOver: this.enableHoverState,
+	              onMouseLeave: this.disableHoverState,
+	              src: isHover ? person.funshot : person.shot })
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: _exec2.default.infoWrapper },
+	          _react2.default.createElement(
+	            'div',
+	            { className: _exec2.default.info },
+	            _react2.default.createElement(
+	              'div',
+	              { className: _exec2.default.name },
+	              person.name
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: _exec2.default.position },
+	              person.position
+	            )
+	          ),
+	          this.getExistingLinksOnly(person.contact)
+	        )
+	      );
+	    }
+	  }]);
+	
+	  return Exec;
+	}(_react.Component);
+	
+	exports.default = Exec;
+	
+	
+	Exec.propTypes = {
+	  person: _react.PropTypes.object.isRequired
+	};
+
+/***/ },
+/* 263 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(264);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(237)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js?{\"modules\":true,\"localIdentName\":\"[name]__[local]___[hash:base64:5]\"}!./exec.css", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js?{\"modules\":true,\"localIdentName\":\"[name]__[local]___[hash:base64:5]\"}!./exec.css");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 264 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(236)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, ".exec__exec___1tkE2 {\n    width: 22%;\n    margin-bottom: 40px;\n    display: flex;\n    flex-direction: column;\n}\n\n.exec__imageContainer___3sSIl {\n\n}\n\n.exec__imageWrapper___idTiL {\n    position: relative;\n    padding-bottom: 140%;\n}\n\n.exec__image___MG5-e {\n    display: block;\n    width: 100%;\n    border-radius: 50%;\n    position: absolute;\n}\n\n.exec__infoWrapper___Jwfqa {\n    display: flex;\n    flex-direction: column;\n    flex-grow: 1;\n}\n\n.exec__info___1_wOk {\n    text-align: center;\n    padding: 15px 0;\n}\n\n.exec__name___2d9d3 {\n    padding-bottom: 5px;\n}\n\n.exec__position___2kPey {\n\n}\n\n.exec__links___3JUX1 {\n    display: flex;\n    flex-grow: 1;\n    justify-content: center;\n    align-items: flex-end;\n}\n\n.exec__email___1AeEg,\n.exec__linkedin___2Rcy3,\n.exec__github___3-wEc {\n    display: block;\n    width: 20%;\n    margin: 0 5px;\n}\n\n.exec__logo___1ioxK {\n    display: block;\n    width: 100%;\n}\n", ""]);
+	
+	// exports
+	exports.locals = {
+		"exec": "exec__exec___1tkE2",
+		"imageContainer": "exec__imageContainer___3sSIl",
+		"imageWrapper": "exec__imageWrapper___idTiL",
+		"image": "exec__image___MG5-e",
+		"infoWrapper": "exec__infoWrapper___Jwfqa",
+		"info": "exec__info___1_wOk",
+		"name": "exec__name___2d9d3",
+		"position": "exec__position___2kPey",
+		"links": "exec__links___3JUX1",
+		"email": "exec__email___1AeEg",
+		"linkedin": "exec__linkedin___2Rcy3",
+		"github": "exec__github___3-wEc",
+		"logo": "exec__logo___1ioxK"
+	};
+
+/***/ },
+/* 265 */
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	var urlPrefix = 'https://res.cloudinary.com/amsgda/image/upload/v1485126488/headshots/';
+	var funUrlPrefix = 'https://res.cloudinary.com/amsgda/image/upload/v1485126488/headshots/funshot-';
+	var extension = '.jpg';
+	
+	var GOWTHAM = {
+	  name: 'Gowtham Mohan',
+	  position: 'President',
+	  shot: 'https://res.cloudinary.com/amsgda/image/upload/v1485134027/headshots/gowtham.jpg',
+	  funshot: funUrlPrefix + 'gowtham' + extension,
+	  contact: {
+	    email: 'gowtham.mohan@amsgda.com',
+	    linkedin: 'https://www.linkedin.com/in/gowtham-mohan-4320b63a/',
+	    github: 'https://github.com/gowtham100'
+	  }
+	};
+	
+	var JEANIE = {
+	  name: 'Jeanie Suparman',
+	  position: 'VP Internal, VR Division Director',
+	  shot: urlPrefix + 'jeanie' + extension,
+	  funshot: funUrlPrefix + 'jeanie' + extension,
+	  contact: {
+	    email: 'jeanie.suparman@amsgda.com',
+	    linkedin: 'https://www.linkedin.com/in/jeanie-suparman-12b8aa102/',
+	    github: 'https://github.com/jeaniewu'
+	  }
+	};
+	
+	var MAIA = {
+	  name: 'Maia Kamyab',
+	  position: 'Secretary, Web Master',
+	  shot: urlPrefix + 'maia' + extension,
+	  funshot: funUrlPrefix + 'maia' + extension,
+	  contact: {
+	    email: 'maia.kamyab@amsgda.com',
+	    linkedin: 'https://www.linkedin.com/in/maiakamyab/',
+	    github: 'https://github.com/mahtaia'
+	  }
+	};
+	
+	var SHREY = {
+	  name: 'Shrey Nayak',
+	  position: 'Treasurer',
+	  shot: urlPrefix + 'shrey' + extension,
+	  funshot: funUrlPrefix + 'shrey' + extension,
+	  contact: {
+	    email: 'shrey.nayak@amsgda.com',
+	    linkedin: 'https://www.linkedin.com/in/shreysnayak/',
+	    github: ''
+	  }
+	};
+	
+	var JAY = {
+	  name: 'Jay Friso',
+	  position: 'Project Manager',
+	  shot: urlPrefix + 'jay' + extension,
+	  funshot: funUrlPrefix + 'jay' + extension,
+	  contact: {
+	    email: 'jay.friso@amsgda.com',
+	    linkedin: 'https://www.linkedin.com/in/jay-friso-39b963119/',
+	    github: 'https://github.com/jayfriso'
+	  }
+	};
+	
+	var PINIA = {
+	  name: 'Pinia Chandra',
+	  position: 'Events Director',
+	  shot: urlPrefix + 'pinia' + extension,
+	  funshot: funUrlPrefix + 'pinia' + extension,
+	  contact: {
+	    email: 'pinia.chandra@amsgda.com',
+	    linkedin: 'https://www.linkedin.com/in/ppnia/',
+	    github: ''
+	  }
+	};
+	
+	var MAX = {
+	  name: 'Max Ahn',
+	  position: 'Assistant Events Director',
+	  shot: urlPrefix + 'max' + extension,
+	  funshot: funUrlPrefix + 'max' + extension,
+	  contact: {
+	    email: 'max.ahn@amsgda.com',
+	    linkedin: 'https://www.linkedin.com/in/maxahn/',
+	    github: 'https://github.com/maxahn'
+	  }
+	};
+	
+	var JANET = {
+	  name: 'Janet Chen',
+	  position: 'VR Outreach Director',
+	  shot: urlPrefix + 'janet' + extension,
+	  funshot: funUrlPrefix + 'janet' + extension,
+	  contact: {
+	    email: 'janet.chen@amsgda.com',
+	    linkedin: '',
+	    github: ''
+	  }
+	};
+	
+	var EAMONN = {
+	  name: 'Eamonn Keane',
+	  position: 'VP External',
+	  shot: urlPrefix + 'eamonn' + extension,
+	  funshot: funUrlPrefix + 'eamonn' + extension,
+	  contact: {
+	    email: 'eamonn.keane@amsgda.com',
+	    linkedin: 'https://www.linkedin.com/in/eamonn-keane/',
+	    github: ''
+	  }
+	};
+	
+	var NATHAN = {
+	  name: 'Nathan Larson',
+	  position: 'Marketing Director',
+	  shot: '', //urlPrefix + 'nathan' + extension,
+	  funshot: '', //funUrlPrefix + 'nathan' + extension,
+	  contact: {
+	    email: 'nathan.larson@amsgda.com',
+	    linkedin: '',
+	    github: ''
+	  }
+	};
+	
+	var ALEX = {
+	  name: 'Alex McIntyre',
+	  position: 'Game Marketing Director',
+	  shot: urlPrefix + 'alex' + extension,
+	  funshot: funUrlPrefix + 'alex' + extension,
+	  contact: {
+	    email: 'alex.mcIntyre@amsgda.com',
+	    linkedin: 'https://ca.linkedin.com/in/alex-mcintyre-772063107',
+	    github: ''
+	  }
+	};
+	
+	var KYLE = {
+	  name: 'Kyle Swensson',
+	  position: 'Assistant Events Coordinator',
+	  shot: '', //urlPrefix + 'kyle' + extension,
+	  funshot: '', //funUrlPrefix + 'kyle' + extension,
+	  contact: {
+	    email: 'kyle.swensson@amsgda.com',
+	    linkedin: '',
+	    github: ''
+	  }
+	};
+	
+	var PEOPLE = exports.PEOPLE = [GOWTHAM, JEANIE, MAIA, SHREY, MAX, JAY, PINIA, EAMONN, JANET, ALEX, NATHAN, KYLE];
+
+/***/ },
+/* 266 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(267);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(237)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js?{\"modules\":true,\"localIdentName\":\"[name]__[local]___[hash:base64:5]\"}!./about.css", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js?{\"modules\":true,\"localIdentName\":\"[name]__[local]___[hash:base64:5]\"}!./about.css");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 267 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(236)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, ".about__execs____CeX0 {\n    display: flex;\n    flex-wrap: wrap;\n    max-width: 100vw;\n    justify-content: space-around;\n    padding: 20px;\n}\n", ""]);
+	
+	// exports
+	exports.locals = {
+		"execs": "about__execs____CeX0"
+	};
 
 /***/ }
 /******/ ]);

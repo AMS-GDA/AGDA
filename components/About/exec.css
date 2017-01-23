@@ -1,0 +1,61 @@
+.exec {
+    width: 22%;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.imageContainer {
+
+}
+
+.imageWrapper {
+    position: relative;
+    padding-bottom: 140%;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.infoWrapper {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.info {
+    text-align: center;
+    padding: 15px 0;
+}
+
+.name {
+    padding-bottom: 5px;
+}
+
+.position {
+
+}
+
+.links {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.email,
+.linkedin,
+.github {
+    display: block;
+    width: 20%;
+    margin: 0 5px;
+}
+
+.logo {
+    display: block;
+    width: 100%;
+}
