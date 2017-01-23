@@ -27068,18 +27068,17 @@
 	  _createClass(Menu, [{
 	    key: 'toggleDevice',
 	    value: function toggleDevice() {
-	      this.setState({ isMobile: (0, _utility.isMobile)() });
+	      (0, _underscore.debounce)(this.setState({ isMobile: (0, _utility.isMobile)() }), 500);
 	    }
 	  }, {
 	    key: 'componentDidMount',
 	    value: function componentDidMount() {
-	      var debounceToggle = (0, _underscore.debounce)(this.toggleDevice, 500);
-	      window.addEventListener('resize', debounceToggle);
+	      window.addEventListener('resize', this.toggleDevice);
 	    }
 	  }, {
 	    key: 'componentWillUnmount',
 	    value: function componentWillUnmount() {
-	      window.removeEventListener('resize');
+	      window.removeEventListener('resize', this.toggleDevice);
 	    }
 	  }, {
 	    key: 'render',
@@ -27193,7 +27192,7 @@
 	});
 	exports.isMobile = isMobile;
 	function isMobile() {
-	  return window !== null && typeof window !== 'undefined' && window.innerWidth < 500;
+	  return window !== null && typeof window !== 'undefined' && window.innerWidth < 550;
 	}
 
 /***/ },
@@ -28306,7 +28305,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".exec__exec___1tkE2 {\n    width: 22%;\n    margin-bottom: 40px;\n    display: flex;\n    flex-direction: column;\n}\n\n@media screen and (max-width: 500px) {\n    .exec__exec___1tkE2 {\n        width: 40%;\n    }\n}\n\n.exec__imageWrapper___idTiL {\n    position: relative;\n    padding-bottom: 140%;\n}\n\n.exec__image___MG5-e {\n    display: block;\n    width: 100%;\n    border-radius: 50%;\n    position: absolute;\n}\n\n.exec__infoWrapper___Jwfqa {\n    display: flex;\n    flex-direction: column;\n    flex-grow: 1;\n}\n\n.exec__info___1_wOk {\n    text-align: center;\n    padding: 15px 0;\n    flex-grow: 1;\n}\n\n.exec__name___2d9d3 {\n    padding-bottom: 5px;\n}\n\n.exec__position___2kPey {\n    padding-top: 5px;\n    border-top: #444 dashed 1px;\n}\n\n.exec__links___3JUX1 {\n    display: flex;\n    justify-content: center;\n    align-items: flex-end;\n}\n\n.exec__email___1AeEg,\n.exec__linkedin___2Rcy3,\n.exec__github___3-wEc {\n    display: block;\n    width: 20%;\n    margin: 0 5px;\n}\n\n.exec__logo___1ioxK {\n    display: block;\n    width: 100%;\n}\n", ""]);
+	exports.push([module.id, ".exec__exec___1tkE2 {\n    width: 22%;\n    margin-bottom: 40px;\n    display: flex;\n    flex-direction: column;\n}\n\n@media screen and (max-width: 550px) {\n    .exec__exec___1tkE2 {\n        width: 40%;\n    }\n}\n\n.exec__imageWrapper___idTiL {\n    position: relative;\n    padding-bottom: 140%;\n}\n\n.exec__image___MG5-e {\n    display: block;\n    width: 100%;\n    border-radius: 50%;\n    position: absolute;\n}\n\n.exec__infoWrapper___Jwfqa {\n    display: flex;\n    flex-direction: column;\n    flex-grow: 1;\n}\n\n.exec__info___1_wOk {\n    text-align: center;\n    padding: 15px 0;\n    flex-grow: 1;\n}\n\n.exec__name___2d9d3 {\n    padding-bottom: 5px;\n}\n\n.exec__position___2kPey {\n    padding-top: 5px;\n    border-top: #444 dashed 1px;\n}\n\n.exec__links___3JUX1 {\n    display: flex;\n    justify-content: center;\n    align-items: flex-end;\n}\n\n.exec__email___1AeEg,\n.exec__linkedin___2Rcy3,\n.exec__github___3-wEc {\n    display: block;\n    width: 20%;\n    margin: 0 5px;\n}\n\n.exec__logo___1ioxK {\n    display: block;\n    width: 100%;\n}\n", ""]);
 	
 	// exports
 	exports.locals = {

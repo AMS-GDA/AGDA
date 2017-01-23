@@ -16,16 +16,15 @@ export default class Menu extends Component {
   }
 
   toggleDevice() {
-    this.setState({isMobile: isMobile()});
+    debounce(this.setState({isMobile: isMobile()}), 500);
   }
 
   componentDidMount() {
-    const debounceToggle = debounce(this.toggleDevice, 500);
-    window.addEventListener('resize', debounceToggle);
+    window.addEventListener('resize', this.toggleDevice);
   }
 
   componentWillUnmount() {
-    window.removeEventListener('resize');
+    window.removeEventListener('resize', this.toggleDevice);
   }
 
   render() {
