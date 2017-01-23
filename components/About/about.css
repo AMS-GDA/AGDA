@@ -1,8 +1,17 @@
+.team {
+    padding: 20px;
+}
+
+.title {
+    padding: 20px 0 40px 0;
+    text-align: center;
+    font-size: 40px;
+}
+
 .execs {
     display: flex;
     flex-wrap: wrap;
     max-width: 950px;
     justify-content: space-around;
-    padding: 20px;
     margin: 0 auto;
 }

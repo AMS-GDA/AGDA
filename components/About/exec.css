@@ -32,6 +32,7 @@
 .info {
     text-align: center;
     padding: 15px 0;
+    flex-grow: 1;
 }
 
 .name {
@@ -45,7 +46,6 @@
 
 .links {
     display: flex;
-    flex-grow: 1;
     justify-content: center;
     align-items: flex-end;
 }

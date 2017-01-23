@@ -1,7 +1,10 @@
 export const EMAILLOGO = 'https://res.cloudinary.com/amsgda/image/upload/v1485133647/logos/email.png';
 export const LINKEDINLOGO = 'https://res.cloudinary.com/amsgda/image/upload/v1485133647/logos/linkedin.png';
 export const GITHUBLOGO = 'https://res.cloudinary.com/amsgda/image/upload/v1485133647/logos/github.png';
+export const CLUBLOGO = 'https://res.cloudinary.com/amsgda/image/upload/v1485141316/logos/logo.png';
 /* HEADSHOTS */
+export const PLACEHOLDER = 'https://res.cloudinary.com/amsgda/image/upload/v1485142595/headshots/person.jpg';
+export const PLACEHOLDER_F = 'https://res.cloudinary.com/amsgda/image/upload/v1485142595/headshots/FUNSHOT-person.jpg';
 export const GOW = 'https://res.cloudinary.com/amsgda/image/upload/v1485134027/headshots/gowtham.jpg';
 export const GOW_F = 'https://res.cloudinary.com/amsgda/image/upload/v1485126488/headshots/funshot-gowtham.jpg';
 export const JEA = 'https://res.cloudinary.com/amsgda/image/upload/v1485126488/headshots/jeanie.jpg';

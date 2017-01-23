@@ -27028,17 +27028,19 @@
 	
 	var _reactRouter = __webpack_require__(178);
 	
+	var _underscore = __webpack_require__(269);
+	
 	var _menu = __webpack_require__(239);
 	
 	var _menu2 = _interopRequireDefault(_menu);
-	
-	var _utility = __webpack_require__(241);
 	
 	var _MobileMenu = __webpack_require__(242);
 	
 	var _MobileMenu2 = _interopRequireDefault(_MobileMenu);
 	
-	var _underscore = __webpack_require__(269);
+	var _utility = __webpack_require__(241);
+	
+	var _CloudLinks = __webpack_require__(268);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -27102,8 +27104,8 @@
 	      { className: _menu2.default.wrapper },
 	      _react2.default.createElement(
 	        _reactRouter.Link,
-	        { to: '/', className: _menu2.default.menuItem },
-	        'Home'
+	        { to: '/', className: _menu2.default.homeMenuItem },
+	        _react2.default.createElement('img', { className: _menu2.default.logo, src: _CloudLinks.CLUBLOGO })
 	      ),
 	      _react2.default.createElement(
 	        'div',
@@ -27168,14 +27170,16 @@
 	
 	
 	// module
-	exports.push([module.id, ".menu__wrapper___3wYGK {\n    display: flex;\n    width: 100vw;\n    min-height: 40px;\n    justify-content: space-between;\n    color: #fff;\n    background-color: #000;\n    position: fixed;\n    top: 0;\n    left: 0;\n    box-shadow: 0px 0px 10px #fff;\n    z-index: 1;\n    align-items: center;\n}\n\n.menu__itemWrapper___3eztX {\n    display: flex;\n}\n\n.menu__menuItem___6eH0Z {\n    text-decoration: none;\n    color: inherit;\n    padding: 12px 5px;\n    line-height: 1;\n    display: block;\n    margin: 0 5px;\n}\n\n.menu__menuItem___6eH0Z:hover {\n    cursor: pointer;\n    background-color: #666;\n}\n\n.menu__placeholder___3FoNc {\n    height: 40px;\n    width:100%;\n    display: block;\n    position: relative;\n}\n", ""]);
+	exports.push([module.id, ".menu__wrapper___3wYGK {\n    display: flex;\n    width: 100vw;\n    min-height: 40px;\n    justify-content: space-between;\n    color: #fff;\n    background-color: #000;\n    position: fixed;\n    top: 0;\n    left: 0;\n    box-shadow: 0px 0px 10px #fff;\n    z-index: 1;\n    align-items: center;\n    padding: 0 10px;\n}\n\n.menu__itemWrapper___3eztX {\n    display: flex;\n}\n\n.menu__homeMenuItem___34yCF {\n    padding: 10px 5px;\n}\n\n.menu__menuItem___6eH0Z {\n    padding: 12px 5px;\n}\n\n.menu__homeMenuItem___34yCF,\n.menu__menuItem___6eH0Z {\n    text-decoration: none;\n    color: inherit;\n    line-height: 1;\n    display: block;\n    margin: 0 5px;\n}\n\n.menu__homeMenuItem___34yCF:hover,\n.menu__menuItem___6eH0Z:hover {\n    cursor: pointer;\n    background-color: #666;\n}\n\n.menu__placeholder___3FoNc {\n    height: 40px;\n    width:100%;\n    display: block;\n    position: relative;\n}\n\n.menu__logo___3eNOu {\n    height: 18px;\n}\n", ""]);
 	
 	// exports
 	exports.locals = {
 		"wrapper": "menu__wrapper___3wYGK",
 		"itemWrapper": "menu__itemWrapper___3eztX",
+		"homeMenuItem": "menu__homeMenuItem___34yCF",
 		"menuItem": "menu__menuItem___6eH0Z",
-		"placeholder": "menu__placeholder___3FoNc"
+		"placeholder": "menu__placeholder___3FoNc",
+		"logo": "menu__logo___3eNOu"
 	};
 
 /***/ },
@@ -28107,10 +28111,19 @@
 	        _react2.default.createElement(_Menu2.default, null),
 	        _react2.default.createElement(
 	          'div',
-	          { className: _about2.default.execs },
-	          _Execs.PEOPLE.map(function (person) {
-	            return _react2.default.createElement(_Exec2.default, { key: person.name, person: person });
-	          })
+	          { className: _about2.default.team },
+	          _react2.default.createElement(
+	            'div',
+	            { className: _about2.default.title },
+	            'The Team'
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: _about2.default.execs },
+	            _Execs.PEOPLE.map(function (person) {
+	              return _react2.default.createElement(_Exec2.default, { key: person.name, person: person });
+	            })
+	          )
 	        )
 	      );
 	    }
@@ -28293,7 +28306,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".exec__exec___1tkE2 {\n    width: 22%;\n    margin-bottom: 40px;\n    display: flex;\n    flex-direction: column;\n}\n\n@media screen and (max-width: 500px) {\n    .exec__exec___1tkE2 {\n        width: 40%;\n    }\n}\n\n.exec__imageWrapper___idTiL {\n    position: relative;\n    padding-bottom: 140%;\n}\n\n.exec__image___MG5-e {\n    display: block;\n    width: 100%;\n    border-radius: 50%;\n    position: absolute;\n}\n\n.exec__infoWrapper___Jwfqa {\n    display: flex;\n    flex-direction: column;\n    flex-grow: 1;\n}\n\n.exec__info___1_wOk {\n    text-align: center;\n    padding: 15px 0;\n}\n\n.exec__name___2d9d3 {\n    padding-bottom: 5px;\n}\n\n.exec__position___2kPey {\n    padding-top: 5px;\n    border-top: #444 dashed 1px;\n}\n\n.exec__links___3JUX1 {\n    display: flex;\n    flex-grow: 1;\n    justify-content: center;\n    align-items: flex-end;\n}\n\n.exec__email___1AeEg,\n.exec__linkedin___2Rcy3,\n.exec__github___3-wEc {\n    display: block;\n    width: 20%;\n    margin: 0 5px;\n}\n\n.exec__logo___1ioxK {\n    display: block;\n    width: 100%;\n}\n", ""]);
+	exports.push([module.id, ".exec__exec___1tkE2 {\n    width: 22%;\n    margin-bottom: 40px;\n    display: flex;\n    flex-direction: column;\n}\n\n@media screen and (max-width: 500px) {\n    .exec__exec___1tkE2 {\n        width: 40%;\n    }\n}\n\n.exec__imageWrapper___idTiL {\n    position: relative;\n    padding-bottom: 140%;\n}\n\n.exec__image___MG5-e {\n    display: block;\n    width: 100%;\n    border-radius: 50%;\n    position: absolute;\n}\n\n.exec__infoWrapper___Jwfqa {\n    display: flex;\n    flex-direction: column;\n    flex-grow: 1;\n}\n\n.exec__info___1_wOk {\n    text-align: center;\n    padding: 15px 0;\n    flex-grow: 1;\n}\n\n.exec__name___2d9d3 {\n    padding-bottom: 5px;\n}\n\n.exec__position___2kPey {\n    padding-top: 5px;\n    border-top: #444 dashed 1px;\n}\n\n.exec__links___3JUX1 {\n    display: flex;\n    justify-content: center;\n    align-items: flex-end;\n}\n\n.exec__email___1AeEg,\n.exec__linkedin___2Rcy3,\n.exec__github___3-wEc {\n    display: block;\n    width: 20%;\n    margin: 0 5px;\n}\n\n.exec__logo___1ioxK {\n    display: block;\n    width: 100%;\n}\n", ""]);
 	
 	// exports
 	exports.locals = {
@@ -28439,8 +28452,8 @@
 	var NATHAN = {
 	  name: 'Nathan Larson',
 	  position: 'Marketing Director',
-	  shot: links.NAT,
-	  funshot: links.NAT_F,
+	  shot: links.PLACEHOLDER,
+	  funshot: links.PLACEHOLDER_F,
 	  contact: {
 	    email: 'nathan.larson@amsgda.com',
 	    linkedin: '',
@@ -28463,8 +28476,8 @@
 	var KYLE = {
 	  name: 'Kyle Swensson',
 	  position: 'Assistant Events Coordinator',
-	  shot: links.KYL,
-	  funshot: links.KYL_F,
+	  shot: links.PLACEHOLDER,
+	  funshot: links.PLACEHOLDER_F,
 	  contact: {
 	    email: 'kyle.swensson@amsgda.com',
 	    linkedin: '',
@@ -28509,10 +28522,12 @@
 	
 	
 	// module
-	exports.push([module.id, ".about__execs____CeX0 {\n    display: flex;\n    flex-wrap: wrap;\n    max-width: 950px;\n    justify-content: space-around;\n    padding: 20px;\n    margin: 0 auto;\n}\n", ""]);
+	exports.push([module.id, ".about__team___19vUJ {\n    padding: 20px;\n}\n\n.about__title___1p1wa {\n    padding: 20px 0 40px 0;\n    text-align: center;\n    font-size: 40px;\n}\n\n.about__execs____CeX0 {\n    display: flex;\n    flex-wrap: wrap;\n    max-width: 950px;\n    justify-content: space-around;\n    margin: 0 auto;\n}\n", ""]);
 	
 	// exports
 	exports.locals = {
+		"team": "about__team___19vUJ",
+		"title": "about__title___1p1wa",
 		"execs": "about__execs____CeX0"
 	};
 
@@ -28528,7 +28543,10 @@
 	var EMAILLOGO = exports.EMAILLOGO = 'https://res.cloudinary.com/amsgda/image/upload/v1485133647/logos/email.png';
 	var LINKEDINLOGO = exports.LINKEDINLOGO = 'https://res.cloudinary.com/amsgda/image/upload/v1485133647/logos/linkedin.png';
 	var GITHUBLOGO = exports.GITHUBLOGO = 'https://res.cloudinary.com/amsgda/image/upload/v1485133647/logos/github.png';
+	var CLUBLOGO = exports.CLUBLOGO = 'https://res.cloudinary.com/amsgda/image/upload/v1485141316/logos/logo.png';
 	/* HEADSHOTS */
+	var PLACEHOLDER = exports.PLACEHOLDER = 'https://res.cloudinary.com/amsgda/image/upload/v1485142595/headshots/person.jpg';
+	var PLACEHOLDER_F = exports.PLACEHOLDER_F = 'https://res.cloudinary.com/amsgda/image/upload/v1485142595/headshots/FUNSHOT-person.jpg';
 	var GOW = exports.GOW = 'https://res.cloudinary.com/amsgda/image/upload/v1485134027/headshots/gowtham.jpg';
 	var GOW_F = exports.GOW_F = 'https://res.cloudinary.com/amsgda/image/upload/v1485126488/headshots/funshot-gowtham.jpg';
 	var JEA = exports.JEA = 'https://res.cloudinary.com/amsgda/image/upload/v1485126488/headshots/jeanie.jpg';

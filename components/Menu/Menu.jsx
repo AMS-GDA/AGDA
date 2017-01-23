@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router';
-import css from './menu.css';
-import {isMobile} from '../utility.js';
-import MobileMenu from './MobileMenu.jsx';
 import {debounce} from 'underscore';
+import css from './menu.css';
+import MobileMenu from './MobileMenu.jsx';
+import {isMobile} from '../utility.js';
+import {CLUBLOGO} from '../CloudLinks.js';
 
 export default class Menu extends Component {
   constructor(props) {
@@ -37,7 +38,9 @@ function desktopMenu() {
     <div>
       <div className={css.placeholder}></div>
       <div className={css.wrapper}>
-        <Link to="/" className={css.menuItem}>Home</Link>
+        <Link to="/" className={css.homeMenuItem}>
+          <img className={css.logo} src={CLUBLOGO} />
+        </Link>
         <div className={css.itemWrapper}>
           <Link to="about" className={css.menuItem}>About</Link>
           <Link to="calendar" className={css.menuItem}>Calendar</Link>

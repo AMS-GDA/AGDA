@@ -111,8 +111,8 @@ const EAMONN = {
 const NATHAN = {
   name: 'Nathan Larson',
   position: 'Marketing Director',
-  shot: links.NAT,
-  funshot: links.NAT_F,
+  shot: links.PLACEHOLDER,
+  funshot: links.PLACEHOLDER_F,
   contact: {
     email: 'nathan.larson@amsgda.com',
     linkedin: '',
@@ -135,8 +135,8 @@ const ALEX = {
 const KYLE = {
   name: 'Kyle Swensson',
   position: 'Assistant Events Coordinator',
-  shot: links.KYL,
-  funshot: links.KYL_F,
+  shot: links.PLACEHOLDER,
+  funshot: links.PLACEHOLDER_F,
   contact: {
     email: 'kyle.swensson@amsgda.com',
     linkedin: '',

@@ -9,12 +9,15 @@ export default class About extends Component {
     return (
       <div className={css.wrapper}>
         <Menu />
-        <div className={css.execs}>
-          {
-            PEOPLE.map((person) => {
-              return <Exec key={person.name} person={person} />;
-            })
-          }
+        <div className={css.team}>
+          <div className={css.title}>The Team</div>
+          <div className={css.execs}>
+            {
+              PEOPLE.map((person) => {
+                return <Exec key={person.name} person={person} />;
+              })
+            }
+          </div>
         </div>
       </div>
     );
