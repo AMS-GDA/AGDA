@@ -28560,7 +28560,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".about__content___kRC5G {\n    padding: 0 20px 20px 20px;\n}\n\n.about__team___19vUJ {\n    padding: 20px;\n}\n\n.about__title___1p1wa {\n    padding: 20px 0 40px 0;\n    text-align: center;\n    font-size: 40px;\n}\n\n.about__contentText___2QTxZ {\n    font-size: 18px;\n    line-height: 1.5;\n    text-align: center;\n    max-width: 950px;\n}\n\n.about__contentText___2QTxZ a {\n    color: #6495ed;\n    text-decoration: none;\n}\n\n.about__contentText___2QTxZ a:hover {\n    cursor: pointer;\n    text-shadow: 0 0 8px rgb(255,255,255);\n}\n\n.about__execs____CeX0 {\n    display: flex;\n    flex-wrap: wrap;\n    max-width: 950px;\n    justify-content: space-around;\n    margin: 0 auto;\n}\n", ""]);
+	exports.push([module.id, ".about__content___kRC5G {\n    padding: 0 20px 20px 20px;\n}\n\n.about__team___19vUJ {\n    padding: 20px;\n}\n\n.about__title___1p1wa {\n    padding: 20px 0 40px 0;\n    text-align: center;\n    font-size: 40px;\n}\n\n.about__contentText___2QTxZ {\n    font-size: 18px;\n    line-height: 1.5;\n    text-align: center;\n    max-width: 950px;\n    margin: 0 auto;\n}\n\n.about__contentText___2QTxZ a {\n    color: #6495ed;\n    text-decoration: none;\n}\n\n.about__contentText___2QTxZ a:hover {\n    cursor: pointer;\n    text-shadow: 0 0 8px rgb(255,255,255);\n}\n\n.about__execs____CeX0 {\n    display: flex;\n    flex-wrap: wrap;\n    max-width: 950px;\n    justify-content: space-around;\n    margin: 0 auto;\n}\n", ""]);
 	
 	// exports
 	exports.locals = {
