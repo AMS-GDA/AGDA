@@ -1,12 +1,10 @@
-const urlPrefix = 'https://res.cloudinary.com/amsgda/image/upload/v1485126488/headshots/';
-const funUrlPrefix = 'https://res.cloudinary.com/amsgda/image/upload/v1485126488/headshots/funshot-';
-const extension = '.jpg';
+import * as links from '../CloudLinks.js';
 
 const GOWTHAM = {
   name: 'Gowtham Mohan',
   position: 'President',
-  shot: 'https://res.cloudinary.com/amsgda/image/upload/v1485134027/headshots/gowtham.jpg',
-  funshot: funUrlPrefix + 'gowtham' + extension,
+  shot: links.GOW,
+  funshot: links.GOW_F,
   contact: {
     email: 'gowtham.mohan@amsgda.com',
     linkedin: 'https://www.linkedin.com/in/gowtham-mohan-4320b63a/',
@@ -17,8 +15,8 @@ const GOWTHAM = {
 const JEANIE = {
   name: 'Jeanie Suparman',
   position: 'VP Internal, VR Division Director',
-  shot: urlPrefix + 'jeanie' + extension,
-  funshot: funUrlPrefix + 'jeanie' + extension,
+  shot: links.JEA,
+  funshot: links.JEA_F,
   contact: {
     email: 'jeanie.suparman@amsgda.com',
     linkedin: 'https://www.linkedin.com/in/jeanie-suparman-12b8aa102/',
@@ -29,8 +27,8 @@ const JEANIE = {
 const MAIA = {
   name: 'Maia Kamyab',
   position: 'Secretary, Web Master',
-  shot: urlPrefix + 'maia' + extension,
-  funshot: funUrlPrefix + 'maia' + extension,
+  shot: links.MAI,
+  funshot: links.MAI_F,
   contact: {
     email: 'maia.kamyab@amsgda.com',
     linkedin: 'https://www.linkedin.com/in/maiakamyab/',
@@ -41,8 +39,8 @@ const MAIA = {
 const SHREY = {
   name: 'Shrey Nayak',
   position: 'Treasurer',
-  shot: urlPrefix + 'shrey' + extension,
-  funshot: funUrlPrefix + 'shrey' + extension,
+  shot: links.SHR,
+  funshot: links.SHR_F,
   contact: {
     email: 'shrey.nayak@amsgda.com',
     linkedin: 'https://www.linkedin.com/in/shreysnayak/',
@@ -53,8 +51,8 @@ const SHREY = {
 const JAY = {
   name: 'Jay Friso',
   position: 'Project Manager',
-  shot: urlPrefix + 'jay' + extension,
-  funshot: funUrlPrefix + 'jay' + extension,
+  shot: links.JAY,
+  funshot: links.JAY_F,
   contact: {
     email: 'jay.friso@amsgda.com',
     linkedin: 'https://www.linkedin.com/in/jay-friso-39b963119/',
@@ -65,8 +63,8 @@ const JAY = {
 const PINIA = {
   name: 'Pinia Chandra',
   position: 'Events Director',
-  shot: urlPrefix + 'pinia' + extension,
-  funshot: funUrlPrefix + 'pinia' + extension,
+  shot: links.PIN,
+  funshot: links.PIN_F,
   contact: {
     email: 'pinia.chandra@amsgda.com',
     linkedin: 'https://www.linkedin.com/in/ppnia/',
@@ -77,8 +75,8 @@ const PINIA = {
 const MAX = {
   name: 'Max Ahn',
   position: 'Assistant Events Director',
-  shot: urlPrefix + 'max' + extension,
-  funshot: funUrlPrefix + 'max' + extension,
+  shot: links.MAX,
+  funshot: links.MAX_F,
   contact: {
     email: 'max.ahn@amsgda.com',
     linkedin: 'https://www.linkedin.com/in/maxahn/',
@@ -89,8 +87,8 @@ const MAX = {
 const JANET = {
   name: 'Janet Chen',
   position: 'VR Outreach Director',
-  shot: urlPrefix + 'janet' + extension,
-  funshot: funUrlPrefix + 'janet' + extension,
+  shot: links.JAN,
+  funshot: links.JAN_F,
   contact: {
     email: 'janet.chen@amsgda.com',
     linkedin: '',
@@ -101,8 +99,8 @@ const JANET = {
 const EAMONN = {
   name: 'Eamonn Keane',
   position: 'VP External',
-  shot: urlPrefix + 'eamonn' + extension,
-  funshot: funUrlPrefix + 'eamonn' + extension,
+  shot: links.EAM,
+  funshot: links.EAM_F,
   contact: {
     email: 'eamonn.keane@amsgda.com',
     linkedin: 'https://www.linkedin.com/in/eamonn-keane/',
@@ -113,8 +111,8 @@ const EAMONN = {
 const NATHAN = {
   name: 'Nathan Larson',
   position: 'Marketing Director',
-  shot: '', //urlPrefix + 'nathan' + extension,
-  funshot: '', //funUrlPrefix + 'nathan' + extension,
+  shot: links.NAT,
+  funshot: links.NAT_F,
   contact: {
     email: 'nathan.larson@amsgda.com',
     linkedin: '',
@@ -125,8 +123,8 @@ const NATHAN = {
 const ALEX = {
   name: 'Alex McIntyre',
   position: 'Game Marketing Director',
-  shot: urlPrefix + 'alex' + extension,
-  funshot: funUrlPrefix + 'alex' + extension,
+  shot: links.ALE,
+  funshot: links.ALE_F,
   contact: {
     email: 'alex.mcIntyre@amsgda.com',
     linkedin: 'https://ca.linkedin.com/in/alex-mcintyre-772063107',
@@ -137,8 +135,8 @@ const ALEX = {
 const KYLE = {
   name: 'Kyle Swensson',
   position: 'Assistant Events Coordinator',
-  shot: '', //urlPrefix + 'kyle' + extension,
-  funshot: '', //funUrlPrefix + 'kyle' + extension,
+  shot: links.KYL,
+  funshot: links.KYL_F,
   contact: {
     email: 'kyle.swensson@amsgda.com',
     linkedin: '',

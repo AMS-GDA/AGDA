@@ -28112,6 +28112,8 @@
 	
 	var _exec2 = _interopRequireDefault(_exec);
 	
+	var _CloudLinks = __webpack_require__(268);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -28119,10 +28121,6 @@
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	var EMAILLOGO = 'https://res.cloudinary.com/amsgda/image/upload/v1485133647/logos/email.png';
-	var LINKEDINLOGO = 'https://res.cloudinary.com/amsgda/image/upload/v1485133647/logos/linkedin.png';
-	var GITHUBLOGO = 'https://res.cloudinary.com/amsgda/image/upload/v1485133647/logos/github.png';
 	
 	var Exec = function (_Component) {
 	  _inherits(Exec, _Component);
@@ -28156,12 +28154,12 @@
 	      var linkedinLink = contact.linkedin === '' ? null : _react2.default.createElement(
 	        'a',
 	        { href: contact.linkedin, className: _exec2.default.linkedin, target: '_blank' },
-	        _react2.default.createElement('img', { className: _exec2.default.logo, src: LINKEDINLOGO })
+	        _react2.default.createElement('img', { className: _exec2.default.logo, src: _CloudLinks.LINKEDINLOGO })
 	      );
 	      var githubLink = contact.github === '' ? null : _react2.default.createElement(
 	        'a',
 	        { href: contact.github, className: _exec2.default.github, target: '_blank' },
-	        _react2.default.createElement('img', { className: _exec2.default.logo, src: GITHUBLOGO })
+	        _react2.default.createElement('img', { className: _exec2.default.logo, src: _CloudLinks.GITHUBLOGO })
 	      );
 	
 	      return _react2.default.createElement(
@@ -28170,7 +28168,7 @@
 	        _react2.default.createElement(
 	          'a',
 	          { href: contact.email, className: _exec2.default.email, target: '_blank' },
-	          _react2.default.createElement('img', { className: _exec2.default.logo, src: EMAILLOGO })
+	          _react2.default.createElement('img', { className: _exec2.default.logo, src: _CloudLinks.EMAILLOGO })
 	        ),
 	        linkedinLink,
 	        githubLink
@@ -28194,7 +28192,8 @@
 	            _react2.default.createElement('img', { className: _exec2.default.image,
 	              onMouseOver: this.enableHoverState,
 	              onMouseLeave: this.disableHoverState,
-	              src: isHover ? person.funshot : person.shot })
+	              src: isHover ? person.funshot : person.shot,
+	              alt: person.name })
 	          )
 	        ),
 	        _react2.default.createElement(
@@ -28265,12 +28264,11 @@
 	
 	
 	// module
-	exports.push([module.id, ".exec__exec___1tkE2 {\n    width: 22%;\n    margin-bottom: 40px;\n    display: flex;\n    flex-direction: column;\n}\n\n.exec__imageContainer___3sSIl {\n\n}\n\n.exec__imageWrapper___idTiL {\n    position: relative;\n    padding-bottom: 140%;\n}\n\n.exec__image___MG5-e {\n    display: block;\n    width: 100%;\n    border-radius: 50%;\n    position: absolute;\n}\n\n.exec__infoWrapper___Jwfqa {\n    display: flex;\n    flex-direction: column;\n    flex-grow: 1;\n}\n\n.exec__info___1_wOk {\n    text-align: center;\n    padding: 15px 0;\n}\n\n.exec__name___2d9d3 {\n    padding-bottom: 5px;\n}\n\n.exec__position___2kPey {\n\n}\n\n.exec__links___3JUX1 {\n    display: flex;\n    flex-grow: 1;\n    justify-content: center;\n    align-items: flex-end;\n}\n\n.exec__email___1AeEg,\n.exec__linkedin___2Rcy3,\n.exec__github___3-wEc {\n    display: block;\n    width: 20%;\n    margin: 0 5px;\n}\n\n.exec__logo___1ioxK {\n    display: block;\n    width: 100%;\n}\n", ""]);
+	exports.push([module.id, ".exec__exec___1tkE2 {\n    width: 22%;\n    margin-bottom: 40px;\n    display: flex;\n    flex-direction: column;\n}\n\n@media screen and (max-width: 500px) {\n    .exec__exec___1tkE2 {\n        width: 40%;\n    }\n}\n\n.exec__imageWrapper___idTiL {\n    position: relative;\n    padding-bottom: 140%;\n}\n\n.exec__image___MG5-e {\n    display: block;\n    width: 100%;\n    border-radius: 50%;\n    position: absolute;\n}\n\n.exec__infoWrapper___Jwfqa {\n    display: flex;\n    flex-direction: column;\n    flex-grow: 1;\n}\n\n.exec__info___1_wOk {\n    text-align: center;\n    padding: 15px 0;\n}\n\n.exec__name___2d9d3 {\n    padding-bottom: 5px;\n}\n\n.exec__position___2kPey {\n    padding-top: 5px;\n    border-top: #444 dashed 1px;\n}\n\n.exec__links___3JUX1 {\n    display: flex;\n    flex-grow: 1;\n    justify-content: center;\n    align-items: flex-end;\n}\n\n.exec__email___1AeEg,\n.exec__linkedin___2Rcy3,\n.exec__github___3-wEc {\n    display: block;\n    width: 20%;\n    margin: 0 5px;\n}\n\n.exec__logo___1ioxK {\n    display: block;\n    width: 100%;\n}\n", ""]);
 	
 	// exports
 	exports.locals = {
 		"exec": "exec__exec___1tkE2",
-		"imageContainer": "exec__imageContainer___3sSIl",
 		"imageWrapper": "exec__imageWrapper___idTiL",
 		"image": "exec__image___MG5-e",
 		"infoWrapper": "exec__infoWrapper___Jwfqa",
@@ -28286,22 +28284,26 @@
 
 /***/ },
 /* 265 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	var urlPrefix = 'https://res.cloudinary.com/amsgda/image/upload/v1485126488/headshots/';
-	var funUrlPrefix = 'https://res.cloudinary.com/amsgda/image/upload/v1485126488/headshots/funshot-';
-	var extension = '.jpg';
+	exports.PEOPLE = undefined;
+	
+	var _CloudLinks = __webpack_require__(268);
+	
+	var links = _interopRequireWildcard(_CloudLinks);
+	
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 	
 	var GOWTHAM = {
 	  name: 'Gowtham Mohan',
 	  position: 'President',
-	  shot: 'https://res.cloudinary.com/amsgda/image/upload/v1485134027/headshots/gowtham.jpg',
-	  funshot: funUrlPrefix + 'gowtham' + extension,
+	  shot: links.GOW,
+	  funshot: links.GOW_F,
 	  contact: {
 	    email: 'gowtham.mohan@amsgda.com',
 	    linkedin: 'https://www.linkedin.com/in/gowtham-mohan-4320b63a/',
@@ -28312,8 +28314,8 @@
 	var JEANIE = {
 	  name: 'Jeanie Suparman',
 	  position: 'VP Internal, VR Division Director',
-	  shot: urlPrefix + 'jeanie' + extension,
-	  funshot: funUrlPrefix + 'jeanie' + extension,
+	  shot: links.JEA,
+	  funshot: links.JEA_F,
 	  contact: {
 	    email: 'jeanie.suparman@amsgda.com',
 	    linkedin: 'https://www.linkedin.com/in/jeanie-suparman-12b8aa102/',
@@ -28324,8 +28326,8 @@
 	var MAIA = {
 	  name: 'Maia Kamyab',
 	  position: 'Secretary, Web Master',
-	  shot: urlPrefix + 'maia' + extension,
-	  funshot: funUrlPrefix + 'maia' + extension,
+	  shot: links.MAI,
+	  funshot: links.MAI_F,
 	  contact: {
 	    email: 'maia.kamyab@amsgda.com',
 	    linkedin: 'https://www.linkedin.com/in/maiakamyab/',
@@ -28336,8 +28338,8 @@
 	var SHREY = {
 	  name: 'Shrey Nayak',
 	  position: 'Treasurer',
-	  shot: urlPrefix + 'shrey' + extension,
-	  funshot: funUrlPrefix + 'shrey' + extension,
+	  shot: links.SHR,
+	  funshot: links.SHR_F,
 	  contact: {
 	    email: 'shrey.nayak@amsgda.com',
 	    linkedin: 'https://www.linkedin.com/in/shreysnayak/',
@@ -28348,8 +28350,8 @@
 	var JAY = {
 	  name: 'Jay Friso',
 	  position: 'Project Manager',
-	  shot: urlPrefix + 'jay' + extension,
-	  funshot: funUrlPrefix + 'jay' + extension,
+	  shot: links.JAY,
+	  funshot: links.JAY_F,
 	  contact: {
 	    email: 'jay.friso@amsgda.com',
 	    linkedin: 'https://www.linkedin.com/in/jay-friso-39b963119/',
@@ -28360,8 +28362,8 @@
 	var PINIA = {
 	  name: 'Pinia Chandra',
 	  position: 'Events Director',
-	  shot: urlPrefix + 'pinia' + extension,
-	  funshot: funUrlPrefix + 'pinia' + extension,
+	  shot: links.PIN,
+	  funshot: links.PIN_F,
 	  contact: {
 	    email: 'pinia.chandra@amsgda.com',
 	    linkedin: 'https://www.linkedin.com/in/ppnia/',
@@ -28372,8 +28374,8 @@
 	var MAX = {
 	  name: 'Max Ahn',
 	  position: 'Assistant Events Director',
-	  shot: urlPrefix + 'max' + extension,
-	  funshot: funUrlPrefix + 'max' + extension,
+	  shot: links.MAX,
+	  funshot: links.MAX_F,
 	  contact: {
 	    email: 'max.ahn@amsgda.com',
 	    linkedin: 'https://www.linkedin.com/in/maxahn/',
@@ -28384,8 +28386,8 @@
 	var JANET = {
 	  name: 'Janet Chen',
 	  position: 'VR Outreach Director',
-	  shot: urlPrefix + 'janet' + extension,
-	  funshot: funUrlPrefix + 'janet' + extension,
+	  shot: links.JAN,
+	  funshot: links.JAN_F,
 	  contact: {
 	    email: 'janet.chen@amsgda.com',
 	    linkedin: '',
@@ -28396,8 +28398,8 @@
 	var EAMONN = {
 	  name: 'Eamonn Keane',
 	  position: 'VP External',
-	  shot: urlPrefix + 'eamonn' + extension,
-	  funshot: funUrlPrefix + 'eamonn' + extension,
+	  shot: links.EAM,
+	  funshot: links.EAM_F,
 	  contact: {
 	    email: 'eamonn.keane@amsgda.com',
 	    linkedin: 'https://www.linkedin.com/in/eamonn-keane/',
@@ -28408,8 +28410,8 @@
 	var NATHAN = {
 	  name: 'Nathan Larson',
 	  position: 'Marketing Director',
-	  shot: '', //urlPrefix + 'nathan' + extension,
-	  funshot: '', //funUrlPrefix + 'nathan' + extension,
+	  shot: links.NAT,
+	  funshot: links.NAT_F,
 	  contact: {
 	    email: 'nathan.larson@amsgda.com',
 	    linkedin: '',
@@ -28420,8 +28422,8 @@
 	var ALEX = {
 	  name: 'Alex McIntyre',
 	  position: 'Game Marketing Director',
-	  shot: urlPrefix + 'alex' + extension,
-	  funshot: funUrlPrefix + 'alex' + extension,
+	  shot: links.ALE,
+	  funshot: links.ALE_F,
 	  contact: {
 	    email: 'alex.mcIntyre@amsgda.com',
 	    linkedin: 'https://ca.linkedin.com/in/alex-mcintyre-772063107',
@@ -28432,8 +28434,8 @@
 	var KYLE = {
 	  name: 'Kyle Swensson',
 	  position: 'Assistant Events Coordinator',
-	  shot: '', //urlPrefix + 'kyle' + extension,
-	  funshot: '', //funUrlPrefix + 'kyle' + extension,
+	  shot: links.KYL,
+	  funshot: links.KYL_F,
 	  contact: {
 	    email: 'kyle.swensson@amsgda.com',
 	    linkedin: '',
@@ -28478,12 +28480,51 @@
 	
 	
 	// module
-	exports.push([module.id, ".about__execs____CeX0 {\n    display: flex;\n    flex-wrap: wrap;\n    max-width: 100vw;\n    justify-content: space-around;\n    padding: 20px;\n}\n", ""]);
+	exports.push([module.id, ".about__execs____CeX0 {\n    display: flex;\n    flex-wrap: wrap;\n    max-width: 950px;\n    justify-content: space-around;\n    padding: 20px;\n    margin: 0 auto;\n}\n", ""]);
 	
 	// exports
 	exports.locals = {
 		"execs": "about__execs____CeX0"
 	};
+
+/***/ },
+/* 268 */
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	var EMAILLOGO = exports.EMAILLOGO = 'https://res.cloudinary.com/amsgda/image/upload/v1485133647/logos/email.png';
+	var LINKEDINLOGO = exports.LINKEDINLOGO = 'https://res.cloudinary.com/amsgda/image/upload/v1485133647/logos/linkedin.png';
+	var GITHUBLOGO = exports.GITHUBLOGO = 'https://res.cloudinary.com/amsgda/image/upload/v1485133647/logos/github.png';
+	/* HEADSHOTS */
+	var GOW = exports.GOW = 'https://res.cloudinary.com/amsgda/image/upload/v1485134027/headshots/gowtham.jpg';
+	var GOW_F = exports.GOW_F = 'https://res.cloudinary.com/amsgda/image/upload/v1485126488/headshots/funshot-gowtham.jpg';
+	var JEA = exports.JEA = 'https://res.cloudinary.com/amsgda/image/upload/v1485126488/headshots/jeanie.jpg';
+	var JEA_F = exports.JEA_F = 'https://res.cloudinary.com/amsgda/image/upload/v1485126488/headshots/funshot-jeanie.jpg';
+	var MAI = exports.MAI = 'https://res.cloudinary.com/amsgda/image/upload/v1485126488/headshots/maia.jpg';
+	var MAI_F = exports.MAI_F = 'https://res.cloudinary.com/amsgda/image/upload/v1485126488/headshots/funshot-maia.jpg';
+	var SHR = exports.SHR = 'https://res.cloudinary.com/amsgda/image/upload/v1485126488/headshots/shrey.jpg';
+	var SHR_F = exports.SHR_F = 'https://res.cloudinary.com/amsgda/image/upload/v1485126488/headshots/funshot-shrey.jpg';
+	var JAY = exports.JAY = 'https://res.cloudinary.com/amsgda/image/upload/v1485126488/headshots/jay.jpg';
+	var JAY_F = exports.JAY_F = 'https://res.cloudinary.com/amsgda/image/upload/v1485126488/headshots/funshot-jay.jpg';
+	var PIN = exports.PIN = 'https://res.cloudinary.com/amsgda/image/upload/v1485126488/headshots/pinia.jpg';
+	var PIN_F = exports.PIN_F = 'https://res.cloudinary.com/amsgda/image/upload/v1485126488/headshots/funshot-pinia.jpg';
+	var MAX = exports.MAX = 'https://res.cloudinary.com/amsgda/image/upload/v1485126488/headshots/max.jpg';
+	var MAX_F = exports.MAX_F = 'https://res.cloudinary.com/amsgda/image/upload/v1485126488/headshots/funshot-max.jpg';
+	var EAM = exports.EAM = 'https://res.cloudinary.com/amsgda/image/upload/v1485126488/headshots/eamonn.jpg';
+	var EAM_F = exports.EAM_F = 'https://res.cloudinary.com/amsgda/image/upload/v1485126488/headshots/funshot-eamonn.jpg';
+	var JAN = exports.JAN = 'https://res.cloudinary.com/amsgda/image/upload/v1485126488/headshots/janet.jpg';
+	var JAN_F = exports.JAN_F = 'https://res.cloudinary.com/amsgda/image/upload/v1485126488/headshots/funshot-janet.jpg';
+	var ALE = exports.ALE = 'https://res.cloudinary.com/amsgda/image/upload/v1485126488/headshots/alex.jpg';
+	var ALE_F = exports.ALE_F = 'https://res.cloudinary.com/amsgda/image/upload/v1485126488/headshots/funshot-alex.jpg';
+	var KYL = exports.KYL = ''; //'https://res.cloudinary.com/amsgda/image/upload/v1485126488/headshots/kyle.jpg';
+	var KYL_F = exports.KYL_F = ''; //'https://res.cloudinary.com/amsgda/image/upload/v1485126488/headshots/funshot-kyle.jpg';
+	var NAT = exports.NAT = ''; //'https://res.cloudinary.com/amsgda/image/upload/v1485126488/headshots/nathan.jpg';
+	var NAT_F = exports.NAT_F = ''; //'https://res.cloudinary.com/amsgda/image/upload/v1485126488/headshots/funshot-nathan.jpg';
+	/* HEADSHOTS END */
 
 /***/ }
 /******/ ]);

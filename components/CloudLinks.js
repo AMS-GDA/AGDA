@@ -1,0 +1,29 @@
+export const EMAILLOGO = 'https://res.cloudinary.com/amsgda/image/upload/v1485133647/logos/email.png';
+export const LINKEDINLOGO = 'https://res.cloudinary.com/amsgda/image/upload/v1485133647/logos/linkedin.png';
+export const GITHUBLOGO = 'https://res.cloudinary.com/amsgda/image/upload/v1485133647/logos/github.png';
+/* HEADSHOTS */
+export const GOW = 'https://res.cloudinary.com/amsgda/image/upload/v1485134027/headshots/gowtham.jpg';
+export const GOW_F = 'https://res.cloudinary.com/amsgda/image/upload/v1485126488/headshots/funshot-gowtham.jpg';
+export const JEA = 'https://res.cloudinary.com/amsgda/image/upload/v1485126488/headshots/jeanie.jpg';
+export const JEA_F = 'https://res.cloudinary.com/amsgda/image/upload/v1485126488/headshots/funshot-jeanie.jpg';
+export const MAI = 'https://res.cloudinary.com/amsgda/image/upload/v1485126488/headshots/maia.jpg';
+export const MAI_F = 'https://res.cloudinary.com/amsgda/image/upload/v1485126488/headshots/funshot-maia.jpg';
+export const SHR = 'https://res.cloudinary.com/amsgda/image/upload/v1485126488/headshots/shrey.jpg';
+export const SHR_F = 'https://res.cloudinary.com/amsgda/image/upload/v1485126488/headshots/funshot-shrey.jpg';
+export const JAY = 'https://res.cloudinary.com/amsgda/image/upload/v1485126488/headshots/jay.jpg';
+export const JAY_F = 'https://res.cloudinary.com/amsgda/image/upload/v1485126488/headshots/funshot-jay.jpg';
+export const PIN = 'https://res.cloudinary.com/amsgda/image/upload/v1485126488/headshots/pinia.jpg';
+export const PIN_F = 'https://res.cloudinary.com/amsgda/image/upload/v1485126488/headshots/funshot-pinia.jpg';
+export const MAX = 'https://res.cloudinary.com/amsgda/image/upload/v1485126488/headshots/max.jpg';
+export const MAX_F = 'https://res.cloudinary.com/amsgda/image/upload/v1485126488/headshots/funshot-max.jpg';
+export const EAM = 'https://res.cloudinary.com/amsgda/image/upload/v1485126488/headshots/eamonn.jpg';
+export const EAM_F = 'https://res.cloudinary.com/amsgda/image/upload/v1485126488/headshots/funshot-eamonn.jpg';
+export const JAN = 'https://res.cloudinary.com/amsgda/image/upload/v1485126488/headshots/janet.jpg';
+export const JAN_F = 'https://res.cloudinary.com/amsgda/image/upload/v1485126488/headshots/funshot-janet.jpg';
+export const ALE = 'https://res.cloudinary.com/amsgda/image/upload/v1485126488/headshots/alex.jpg';
+export const ALE_F = 'https://res.cloudinary.com/amsgda/image/upload/v1485126488/headshots/funshot-alex.jpg';
+export const KYL = ''; //'https://res.cloudinary.com/amsgda/image/upload/v1485126488/headshots/kyle.jpg';
+export const KYL_F = ''; //'https://res.cloudinary.com/amsgda/image/upload/v1485126488/headshots/funshot-kyle.jpg';
+export const NAT = ''; //'https://res.cloudinary.com/amsgda/image/upload/v1485126488/headshots/nathan.jpg';
+export const NAT_F = ''; //'https://res.cloudinary.com/amsgda/image/upload/v1485126488/headshots/funshot-nathan.jpg';
+/* HEADSHOTS END */

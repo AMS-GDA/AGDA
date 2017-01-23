@@ -5,8 +5,10 @@
     flex-direction: column;
 }
 
-.imageContainer {
-
+@media screen and (max-width: 500px) {
+    .exec {
+        width: 40%;
+    }
 }
 
 .imageWrapper {
@@ -37,7 +39,8 @@
 }
 
 .position {
-
+    padding-top: 5px;
+    border-top: #444 dashed 1px;
 }
 
 .links {

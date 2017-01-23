@@ -1,9 +1,6 @@
 import React, {Component, PropTypes} from 'react';
 import css from './exec.css';
-
-const EMAILLOGO = 'https://res.cloudinary.com/amsgda/image/upload/v1485133647/logos/email.png';
-const LINKEDINLOGO = 'https://res.cloudinary.com/amsgda/image/upload/v1485133647/logos/linkedin.png';
-const GITHUBLOGO = 'https://res.cloudinary.com/amsgda/image/upload/v1485133647/logos/github.png';
+import {EMAILLOGO,LINKEDINLOGO,GITHUBLOGO} from '../CloudLinks.js';
 
 export default class Exec extends Component {
   constructor(props) {
@@ -58,7 +55,8 @@ export default class Exec extends Component {
               <img className={css.image}
                 onMouseOver={this.enableHoverState}
                 onMouseLeave={this.disableHoverState}
-                src={isHover ? person.funshot : person.shot} />
+                src={isHover ? person.funshot : person.shot}
+                alt={person.name} />
           </div>
         </div>
         <div className={css.infoWrapper}>
