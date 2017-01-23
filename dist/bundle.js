@@ -27481,45 +27481,241 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	exports.default = Vr;
 	
 	var _react = __webpack_require__(1);
 	
 	var _react2 = _interopRequireDefault(_react);
 	
+	var _vr = __webpack_require__(270);
+	
+	var _vr2 = _interopRequireDefault(_vr);
+	
+	var _Menu = __webpack_require__(238);
+	
+	var _Menu2 = _interopRequireDefault(_Menu);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	function Vr() {
+	  return _react2.default.createElement(
+	    'div',
+	    null,
+	    _react2.default.createElement(_Menu2.default, null),
+	    _react2.default.createElement(
+	      'section',
+	      { className: _vr2.default.main },
+	      _react2.default.createElement(
+	        'div',
+	        { className: _vr2.default.wrapper },
+	        _react2.default.createElement(
+	          'p',
+	          { className: _vr2.default.welcome },
+	          'Welcome to the'
+	        ),
+	        _react2.default.createElement(
+	          'header',
+	          { className: _vr2.default.mainHeader },
+	          'AGDA VR Division'
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: _vr2.default.signup },
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            _react2.default.createElement(
+	              'a',
+	              { href: 'https://goo.gl/forms/QCd8ayp6Qv0EFkzi1', target: '_blank' },
+	              'Sign up here to receive updates!'
+	            )
+	          )
+	        )
+	      )
+	    ),
+	    explain(),
+	    pros(),
+	    requirements(),
+	    contact()
+	  );
+	}
 	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	function explain() {
+	  return _react2.default.createElement(
+	    'section',
+	    { id: 'pitch', className: _vr2.default.pitch },
+	    _react2.default.createElement(
+	      'div',
+	      { className: _vr2.default.wrapper },
+	      _react2.default.createElement(
+	        'p',
+	        { className: _vr2.default.header },
+	        'Interested in working with virtual reality?'
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: _vr2.default.introduction },
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'Faculties across UBC are getting involved with VR in the classroom and in their field (think anywhere from linguistics to geography to math). The integration of VR into education is just beginning and AGDA wants students involved in this effort.'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'We are calling out to anyone who is interested in VR development!'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'Experience is not necessary. We will prioritize applicants with passion and a willingness to learn!'
+	        )
+	      )
+	    )
+	  );
+	}
 	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	function pros() {
+	  return _react2.default.createElement(
+	    'section',
+	    { id: 'pros', className: _vr2.default.pros },
+	    _react2.default.createElement(
+	      'div',
+	      { className: _vr2.default.wrapper },
+	      _react2.default.createElement(
+	        'p',
+	        { className: _vr2.default.header },
+	        'Why consider joining'
+	      ),
+	      _react2.default.createElement(
+	        'ul',
+	        { className: _vr2.default.prosList },
+	        _react2.default.createElement(
+	          'li',
+	          null,
+	          'Interesting and cool personal projects'
+	        ),
+	        _react2.default.createElement(
+	          'li',
+	          null,
+	          'Collaborations with UBC faculties, professors, and students'
+	        ),
+	        _react2.default.createElement(
+	          'li',
+	          null,
+	          'Develop for VR with access to high-end VR hardware (HTC Vive and Microsoft HoloLens)'
+	        ),
+	        _react2.default.createElement(
+	          'li',
+	          null,
+	          'Experience working with a team to make an impactful project'
+	        ),
+	        _react2.default.createElement(
+	          'li',
+	          null,
+	          'A possibility to evolve the project into a grant project (depending on faculty)'
+	        ),
+	        _react2.default.createElement(
+	          'li',
+	          null,
+	          'Learn Unity and/or VR asset creation through hands-on experience'
+	        ),
+	        _react2.default.createElement(
+	          'li',
+	          null,
+	          'Be involved in an ongoing discussion about VR in education'
+	        )
+	      )
+	    )
+	  );
+	}
 	
-	var Vr = function (_Component) {
-	  _inherits(Vr, _Component);
+	function requirements() {
+	  return _react2.default.createElement(
+	    'section',
+	    { id: 'require', className: _vr2.default.require },
+	    _react2.default.createElement(
+	      'div',
+	      { className: _vr2.default.wrapper },
+	      _react2.default.createElement(
+	        'p',
+	        { className: _vr2.default.header },
+	        'Requirements for joining'
+	      ),
+	      _react2.default.createElement(
+	        'ul',
+	        { className: _vr2.default.requireList },
+	        _react2.default.createElement(
+	          'li',
+	          null,
+	          'Sign up as a member of AGDA (required for an AMS club)'
+	        ),
+	        _react2.default.createElement(
+	          'li',
+	          null,
+	          'Able to attend ',
+	          _react2.default.createElement(
+	            'strong',
+	            null,
+	            'weekly'
+	          ),
+	          ' meetup: ',
+	          _react2.default.createElement(
+	            'strong',
+	            null,
+	            'Thursday 5-7 PM'
+	          ),
+	          '(Let us know if this does not work)'
+	        ),
+	        _react2.default.createElement(
+	          'li',
+	          null,
+	          'Time Commitment:  8 - 10 hours per week, including the meetup'
+	        ),
+	        _react2.default.createElement(
+	          'li',
+	          null,
+	          'Able to commit to tasks you have agreed to take on'
+	        ),
+	        _react2.default.createElement(
+	          'li',
+	          null,
+	          'Experience in VR is preferable, otherwise willingness to learn is a must!'
+	        )
+	      )
+	    )
+	  );
+	}
 	
-	  function Vr() {
-	    _classCallCheck(this, Vr);
-	
-	    return _possibleConstructorReturn(this, (Vr.__proto__ || Object.getPrototypeOf(Vr)).apply(this, arguments));
-	  }
-	
-	  _createClass(Vr, [{
-	    key: 'render',
-	    value: function render() {
-	      return _react2.default.createElement(
-	        'h1',
-	        null,
-	        'Hello this is vr'
-	      );
-	    }
-	  }]);
-	
-	  return Vr;
-	}(_react.Component);
-	
-	exports.default = Vr;
+	function contact() {
+	  return _react2.default.createElement(
+	    'section',
+	    { id: 'contact', className: _vr2.default.contact },
+	    _react2.default.createElement(
+	      'div',
+	      { className: _vr2.default.wrapper },
+	      _react2.default.createElement(
+	        'p',
+	        { className: _vr2.default.header },
+	        'Do you have questions?'
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: _vr2.default.introduction },
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'Feel free to contact us through',
+	          _react2.default.createElement(
+	            'a',
+	            { href: 'mailto:vr@amsgda.com' },
+	            'vr@amsgda.com'
+	          )
+	        )
+	      )
+	    )
+	  );
+	}
 
 /***/ },
 /* 249 */,
@@ -30166,6 +30362,60 @@
 	  }
 	}.call(this));
 
+
+/***/ },
+/* 270 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(271);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(237)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../node_modules/css-loader/index.js?{\"modules\":true,\"localIdentName\":\"[name]__[local]___[hash:base64:5]\"}!./vr.css", function() {
+				var newContent = require("!!./../node_modules/css-loader/index.js?{\"modules\":true,\"localIdentName\":\"[name]__[local]___[hash:base64:5]\"}!./vr.css");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 271 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(236)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, ".vr__main___3WntL,\n.vr__pitch___9EwIs,\n.vr__pros___2mtXS,\n.vr__require___20fpW {\n    border-bottom: #fff solid 1px;\n}\n\n.vr__wrapper___HQFuR {\n    padding: 50px;\n    min-height: 100vh;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    flex-direction: column;\n}\n\n.vr__main___3WntL,\n.vr__pros___2mtXS,\n.vr__contact___VZ886 {\n    background-image: url(\"https://res.cloudinary.com/amsgda/image/upload/v1485133716/backgrounds/vr.png\");\n    background-size: contain;\n    background-repeat: no-repeat;\n    background-position: center 40px;\n    background-attachment: fixed;\n}\n\n.vr__main___3WntL {\n    padding: 0;\n}\n\n.vr__header___20d09 {\n    font-size: 25px;\n    text-align: center;\n}\n\n.vr__mainHeader___3xL-a {\n    font-size: 65px;\n    padding: 20px;\n    text-align: center;\n}\n\n.vr__welcome___3knlN {\n    margin: 0;\n    font-size: 20px;\n}\n\n.vr__introduction___2Hz2s {\n    text-align: center;\n    font-size: 18px;\n}\n\n.vr__introduction___2Hz2s p {\n    margin: 0 0 10px;\n}\n\n.vr__prosList___1J85-,\n.vr__requireList___ZulHY {\n    list-style-type: circle;\n    padding-left: 10px;\n}\n\n.vr__prosList___1J85- li,\n.vr__requireList___ZulHY li {\n    padding: 5px 0;\n}\n\n.vr__signup___1GLg1 {\n    text-align: center;\n    padding: 20px 10px;\n}\n\n.vr__signup___1GLg1 a {\n    color: #fff;\n    cursor: pointer;\n    font-size: 40px;\n    text-decoration: none;\n}\n\n.vr__signup___1GLg1 a:hover {\n    text-shadow: 0 0 8px rgb(255,255,255);\n}\n\n.vr__contact___VZ886 a {\n    color: #fff;\n    text-decoration: none;\n}\n\n@media all and (max-width: 550px) {\n    .vr__mainHeader___3xL-a {\n        font-size: 50px;\n    }\n\n    .vr__main___3WntL,\n    .vr__pros___2mtXS,\n    .vr__contact___VZ886 {\n        background-position: center center;\n    }\n\n    .vr__signup___1GLg1 a {\n      font-size: 30px;\n    }\n}\n", ""]);
+	
+	// exports
+	exports.locals = {
+		"main": "vr__main___3WntL",
+		"pitch": "vr__pitch___9EwIs",
+		"pros": "vr__pros___2mtXS",
+		"require": "vr__require___20fpW",
+		"wrapper": "vr__wrapper___HQFuR",
+		"contact": "vr__contact___VZ886",
+		"header": "vr__header___20d09",
+		"mainHeader": "vr__mainHeader___3xL-a",
+		"welcome": "vr__welcome___3knlN",
+		"introduction": "vr__introduction___2Hz2s",
+		"prosList": "vr__prosList___1J85-",
+		"requireList": "vr__requireList___ZulHY",
+		"signup": "vr__signup___1GLg1"
+	};
 
 /***/ }
 /******/ ]);

@@ -1,0 +1,102 @@
+.main,
+.pitch,
+.pros,
+.require {
+    border-bottom: #fff solid 1px;
+}
+
+.wrapper {
+    padding: 50px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main,
+.pros,
+.contact {
+    background-image: url("https://res.cloudinary.com/amsgda/image/upload/v1485133716/backgrounds/vr.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center 40px;
+    background-attachment: fixed;
+}
+
+.main {
+    padding: 0;
+}
+
+.header {
+    font-size: 25px;
+    text-align: center;
+}
+
+.mainHeader {
+    font-size: 65px;
+    padding: 20px;
+    text-align: center;
+}
+
+.welcome {
+    margin: 0;
+    font-size: 20px;
+}
+
+.introduction {
+    text-align: center;
+    font-size: 18px;
+}
+
+.introduction p {
+    margin: 0 0 10px;
+}
+
+.prosList,
+.requireList {
+    list-style-type: circle;
+    padding-left: 10px;
+}
+
+.prosList li,
+.requireList li {
+    padding: 5px 0;
+}
+
+.signup {
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.signup a {
+    color: #fff;
+    cursor: pointer;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+.signup a:hover {
+    text-shadow: 0 0 8px rgb(255,255,255);
+}
+
+.contact a {
+    color: #fff;
+    text-decoration: none;
+}
+
+@media all and (max-width: 550px) {
+    .mainHeader {
+        font-size: 50px;
+    }
+
+    .main,
+    .pros,
+    .contact {
+        background-position: center center;
+    }
+
+    .signup a {
+      font-size: 30px;
+    }
+}
