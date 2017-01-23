@@ -27416,7 +27416,7 @@
 	function Calendar() {
 	  var calendarLink = 'https://calendar.google.com/calendar/embed?title=AGDA%20Events%20%26%20Deadlines&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=ja39g1205oba012pbbt1j4ci74%40group.calendar.google.com&amp;color=%23B1440E&amp;src=fna27vp4jdb7sb15d0rqvk5ljs%40group.calendar.google.com&amp;color=%23691426&amp;ctz=America%2FVancouver';
 	  var deviceHeight = window.innerHeight;
-	  var iframeLink = _react2.default.createElement('iframe', { src: calendarLink, width: '100%', height: (0, _utility.isMobile)() ? deviceHeight - 40 : deviceHeight - 54, frameBorder: '0', scrolling: 'no' });
+	  var iframeLink = _react2.default.createElement('iframe', { src: calendarLink, width: '100%', height: (0, _utility.isMobile)() ? deviceHeight - 40 : deviceHeight - 64, frameBorder: '0', scrolling: 'no' });
 	  return _react2.default.createElement(
 	    'div',
 	    null,
