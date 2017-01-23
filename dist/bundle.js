@@ -28110,6 +28110,45 @@
 	        _react2.default.createElement(_Menu2.default, null),
 	        _react2.default.createElement(
 	          'div',
+	          { className: _about2.default.content },
+	          _react2.default.createElement(
+	            'div',
+	            { className: _about2.default.title },
+	            'About AGDA'
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: _about2.default.contentText },
+	            'Hi there! We\'re AGDA , a student-run game development team here at UBC. Every year, we get together and make new games, mixing in our collective talent and creative efforts to make a fun, engaging game that\'s hard to put down. Our goal is to work towards expanding our knowledge of the tools, techniques, and processes used in video game development. Speakers from the industry also come in and do Q&As. We also host an annual Vancouver game jam!',
+	            _react2.default.createElement('br', null),
+	            'Can you code? Illustrate? Make music? Love games? Join us! We accept anyone willing to contribute. If you aren\u2019t a pro then here\u2019s your chance to become one. Even if you\'d rather play games than make them, there is still a place for you here.',
+	            _react2.default.createElement('br', null),
+	            _react2.default.createElement(
+	              'strong',
+	              null,
+	              _react2.default.createElement(
+	                'a',
+	                { href: 'http://eepurl.com/b-6aWz' },
+	                'Sign up for our newsletter'
+	              )
+	            ),
+	            _react2.default.createElement('br', null),
+	            'or',
+	            _react2.default.createElement('br', null),
+	            _react2.default.createElement(
+	              'strong',
+	              null,
+	              _react2.default.createElement(
+	                'a',
+	                { href: 'mailto:info@amsgda.com' },
+	                'email us '
+	              )
+	            ),
+	            'to get information on how to formally join the club'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
 	          { className: _about2.default.team },
 	          _react2.default.createElement(
 	            'div',
@@ -28521,12 +28560,14 @@
 	
 	
 	// module
-	exports.push([module.id, ".about__team___19vUJ {\n    padding: 20px;\n}\n\n.about__title___1p1wa {\n    padding: 20px 0 40px 0;\n    text-align: center;\n    font-size: 40px;\n}\n\n.about__execs____CeX0 {\n    display: flex;\n    flex-wrap: wrap;\n    max-width: 950px;\n    justify-content: space-around;\n    margin: 0 auto;\n}\n", ""]);
+	exports.push([module.id, ".about__content___kRC5G {\n    padding: 0 20px 20px 20px;\n}\n\n.about__team___19vUJ {\n    padding: 20px;\n}\n\n.about__title___1p1wa {\n    padding: 20px 0 40px 0;\n    text-align: center;\n    font-size: 40px;\n}\n\n.about__contentText___2QTxZ {\n    font-size: 18px;\n    line-height: 1.5;\n    text-align: center;\n    max-width: 950px;\n}\n\n.about__contentText___2QTxZ a {\n    color: #6495ed;\n    text-decoration: none;\n}\n\n.about__contentText___2QTxZ a:hover {\n    cursor: pointer;\n    text-shadow: 0 0 8px rgb(255,255,255);\n}\n\n.about__execs____CeX0 {\n    display: flex;\n    flex-wrap: wrap;\n    max-width: 950px;\n    justify-content: space-around;\n    margin: 0 auto;\n}\n", ""]);
 	
 	// exports
 	exports.locals = {
+		"content": "about__content___kRC5G",
 		"team": "about__team___19vUJ",
 		"title": "about__title___1p1wa",
+		"contentText": "about__contentText___2QTxZ",
 		"execs": "about__execs____CeX0"
 	};
 
