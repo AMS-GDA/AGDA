@@ -27683,7 +27683,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".members__content___1vGER {\n    max-width: 800px;\n}\n\n.members__title___2-3BO {\n    padding: 30px;\n    font-size: 25px;\n}\n\n.members__workshop___2qFrW {\n    display: block;\n    line-height: 1;\n    padding-left: 20px;\n}\n\n.members__workshop___2qFrW span {\n    display: flex;\n    align-items: baseline;\n}\n", ""]);
+	exports.push([module.id, ".members__content___1vGER {\n    max-width: 800px;\n    margin: 0 auto;\n}\n\n.members__title___2-3BO {\n    padding: 30px;\n    font-size: 25px;\n}\n\n.members__workshop___2qFrW {\n    display: block;\n    line-height: 1;\n    padding-left: 20px;\n}\n\n.members__workshop___2qFrW span {\n    display: flex;\n    align-items: baseline;\n}\n", ""]);
 	
 	// exports
 	exports.locals = {
